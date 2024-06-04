@@ -1,0 +1,18 @@
+.banner-content {
+    margin-top: -180px !important;
+    text-align: center;
+}
+.mockup-container {
+    margin-top: -20em !important;
+}
+
+.img-fluid {
+    max-width: 100% !important;
+    height: 300px !important;
+}
+
+.img-logo-parceiros {
+    max-width: 100% !important;
+    margin: auto;
+    padding: 0 10% 0 10%;
+}
