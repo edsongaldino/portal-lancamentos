@@ -95,7 +95,8 @@ class HomeController extends Controller
     }
 
     public function Busca(){
-        $empreendimentos = Empreendimento::latest()->where('status', 'Liberada')->paginate(10);
+        $empreendimentos = Empreendimento::latest()->where('status', 'Liberada')->paginate(50);
+        $subtipos = Subtipo::all();
         return view('site-2023.lista', compact('empreendimentos', 'subtipos'));
     }
 
