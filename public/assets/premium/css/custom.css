@@ -1,0 +1,3204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&family=Urbanist:wght@300&display=swap');
+
+body, html {
+	font-family: 'Roboto', sans-serif !important;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+	width: 100%;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url('/assets/images/premium/img_parallax.jpg');
+
+	/* Full height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.uppercase{
+	text-transform: uppercase !important;
+}
+
+.topo{
+	width: 100%;
+    height: 85px;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    border-bottom: 5px solid #333;
+}
+.topo .logo{
+	width: 25%;
+	float: left;
+}
+.topo .logo img{
+	width: 80px;
+	margin: 0 auto;
+}
+
+.topo .logo-empreendimento{
+	width: 50%;
+	height: 80px;
+	float: left;
+	background-color: #FFF;
+}
+
+.topo .logo-empreendimento img{
+	margin: 0 auto;
+	width: 100px !important;
+	height: 100%;
+}
+
+.topo .logo-empreendimento img.d-block {
+    display: block !important;
+}
+
+.topo .sair{
+	width: 25%;
+	height: 80px;
+	float: right;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: #555;
+}
+
+.topo .chat{
+	width: 25%;
+	height: 80px;
+	float: right;
+    text-align: center;
+	padding-top: 10px;
+}
+
+.topo .chat i{
+	font-size: 40px;
+    color: rgb(9 189 77);
+}
+
+.topo .chat .corretor-on{
+	font-size: 14px;
+    color: rgb(8, 117, 50);
+}
+
+.topo .chat img{
+	margin: auto;
+    height: 45px;
+    border-radius: 50%;
+    width: auto;
+}
+
+.topo .chat .corretor-on{
+	font-size: 14px;
+    color: rgb(8, 117, 50);
+}
+
+.topo .chat-corretor{
+	width: 25%;
+	height: 80px;
+	float: right;
+    text-align: center;
+	padding-top: 10px;
+}
+
+.topo .chat-corretor i{
+	font-size: 40px;
+    color: rgb(9 189 77);
+}
+
+.topo .chat-corretor .corretor-on{
+	font-size: 14px;
+    color: rgb(8, 117, 50);
+}
+
+.topo .chat-corretor img{
+	margin: auto;
+    height: 45px;
+    border-radius: 50%;
+    width: auto;
+}
+
+.topo .chat-corretor .corretor-on{
+	font-size: 14px;
+    color: rgb(8, 117, 50);
+}
+
+.topo .chat-corretor i{
+	font-size: 20px;
+    color: rgb(9 189 77);
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    text-shadow: 1px 1px #175e28;
+}
+
+.conteudo{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.conteudo .botao-unidades{
+	width: 94%;
+	height: 140px;
+	background-color: rgb(0 76 75 / 50%);
+	position: absolute;
+	top: 0px;
+	margin: 100px 0 0 3%;
+}
+
+.conteudo .botao-plantas{
+	width: 94%;
+	height: 140px;
+	background-color: #286090c2;
+	position: absolute;
+	top: 0px;
+	margin: 260px 0 0 3%;
+}
+
+.conteudo .botao-disponibilidade{
+	width: 94%;
+	height: 140px;
+	background-color: #337ab7a1;
+	position: absolute;
+	top: 0px;
+	margin: 420px 0 0 3%;
+}
+
+.conteudo .botao-garagem{
+	width: 94%;
+	height: 140px;
+	background-color: rgb(0 0 0 / 50%);
+	position: absolute;
+	top: 0px;
+	margin: 580px 0 0 3%;
+}
+
+.home .botao .icone{
+	width: 30%;
+	height: auto;
+	line-height: 140px;
+	font-size: 50px;
+	text-align: center;
+	color: #FFF;
+	float: left;
+    margin-top: 45px;
+}
+
+.home .botao .texto{
+	width: 70%;
+	height: 140px;
+	float: left;
+}
+
+.home .botao .texto .titulo{
+	width: 100%;
+	height: 60px;
+	text-align: left;
+	font-size: 25px;
+	line-height: 25px;
+	color: #FFF;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.home .botao .texto .subtitulo{
+	width: 100%;
+	height: 30px;
+	text-align: left;
+	font-size: 15px;
+	line-height: 15px;
+	color: #ccc;
+}
+
+.rodape{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	bottom: -1px;
+	background-color: rgba(1, 35, 66, 0.968);
+}
+
+.rodape .btn-foto{
+	width: 33%;
+	height: 80px;
+	float: left;
+	line-height: 80px;
+	font-size: 40px;
+	text-align: center;
+	color: #FFF;
+	background-color: rgba(1, 16, 31, 0.968);
+}
+
+.rodape .btn-video{
+	width: 34%;
+	height: 80px;
+	float: left;
+	line-height: 80px;
+	font-size: 40px;
+	text-align: center;
+	color: #FFF;
+	background-color: rgb(1 16 31 / 0%);
+}
+
+.rodape .btn-produto{
+	width: 33%;
+	height: 80px;
+	float: left;
+	line-height: 80px;
+	font-size: 40px;
+	text-align: center;
+	color: #FFF;
+	background-color: rgb(2 3 4 / 97%);
+}
+
+.rodape .btn-condicoes-construtora{
+	width: 50%;
+	height: 60px;
+	float: left;
+	line-height: 16px;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+	padding: 15px 0 10px 0;
+	background-color: #05609c;
+}
+
+.rodape .btn-voltar{
+	width: 30%;
+    height: 60px;
+    float: left;
+    line-height: 60px !important;
+    text-align: center;
+    color: #FFF;
+    font-size: 30px;
+    background-color: #0d4d63;
+}
+
+.rodape .btn-voltar i{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 60px;
+}
+
+.rodape .btn-voltar-foto {
+    width: 100%;
+    height: 80px;
+    float: left;
+    line-height: 80px !important;
+    text-align: center;
+    color: #FFF;
+    font-size: 30px;
+    background-color: #0d4d63;
+}
+
+.rodape .btn-condicoes-pagamento{
+	width: 70%;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+    /* padding: 15px 0 10px 0; */
+    background-color: #05609c;
+}
+
+.rodape .btn-proposta{
+	width: 70%;
+	height: 60px;
+	float: right;
+	line-height: 40px;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 0 10px 0;
+	background-color: #28a745;
+}
+
+.rodape .btn-proposta-enviar{
+	width: 50%;
+	height: 60px;
+	float: right;
+	line-height: 40px;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 0 10px 0;
+	background-color: #059494;
+}
+
+.rodape .btn-gravar-dados{
+	width: 70%;
+	height: 60px;
+	float: right;
+	line-height: 40px;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 0 10px 0;
+	background-color: #059494;
+}
+
+
+
+.rodape .btn-editar{
+	width: 50%;
+    height: 60px;
+    float: left;
+    line-height: 60px !important;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    background-color: #0d4d63;
+}
+
+.rodape .btn-editar i{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 60px;
+}
+
+.rodape .btn-enviar-proposta{
+	width: 50%;
+	height: 60px;
+	float: right;
+	line-height: 40px;
+	text-align: center;
+	color: #FFF;
+	font-size: 18px;
+	padding: 10px 0 10px 0;
+	background-color: #3c763d;
+}
+
+.rodape .btn-nova-proposta{
+	width: 100%;
+	height: 60px;
+	float: right;
+	line-height: 40px;
+	text-align: center;
+	color: #FFF;
+	font-size: 18px;
+	padding: 10px 0 10px 0;
+	background-color: #17a2b8;
+}
+
+
+
+/**UNIDADES*/
+.unidades{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px;
+    padding: 20px 20px 150px 20px;
+}
+
+.unidades .topo-unidades{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+
+.unidades .topo-unidades .titulo{
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+    width: 70%;
+    float: left;
+}
+
+.unidades .topo-unidades .qtd-unidades{
+    width: 30%;
+    background-color: rgb(4, 115, 134);
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 20px;
+    text-align: center;
+    float: right;
+    border-radius: 10px;
+}
+
+.unidades .linha-unidade{
+    width: 100%;
+    height: 65px;
+    float: left;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+}
+
+.unidades .linha-unidade:nth-child(even) {
+    background: #f5f5f5;
+}
+.unidades .linha-unidade:nth-child(odd) {
+    background: #FFF;
+}
+
+.unidades .linha-unidade .nascente{
+	color: rgb(6, 108, 177) !important;
+}
+.unidades .linha-unidade .poente{
+	color: rgb(230, 164, 23) !important;
+}
+
+.unidades .linha-unidade:active{
+	background-color: #f9f9f9 !important;
+	border: 1px dashed #3e3c3c;
+}
+
+.unidades .linha-unidade .linha{
+    width: 100%;
+    height: 25px;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .unidade{
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgb(0, 104, 104);
+    color: #FFF;
+    text-align: center;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .metragem{
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(48, 46, 46);
+    text-align: center;
+    font-size: 12px;
+    float: left;
+	padding: 0 5px;
+}
+
+.unidades .linha-unidade .linha .metragem.lote{
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(48, 46, 46);
+    text-align: center;
+    font-size: 14px;
+    float: left;
+	padding: 0 5px;
+}
+
+.unidades .linha-unidade .linha .valor_m2{
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(48, 46, 46);
+    text-align: center;
+    font-size: 12px;
+    float: left;
+	padding: 0 5px;
+}
+
+.unidades .linha-unidade .linha .garagem{
+    width: 15%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(0, 122, 106);
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.unidades .linha-unidade .linha .valor{
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(211, 155, 0);
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    font-weight: bold;
+}
+
+.unidades .linha-unidade .linha .valor.casa{
+    width: 35%;
+}
+
+.unidades .linha-unidade .linha .valor2{
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(211, 155, 0);
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    font-weight: bold;
+}
+
+.unidades .linha-unidade .linha .andar{
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .area{
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    font-size: 10px;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .area.lote{
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    font-size: 10px;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .m2_valor{
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    font-size: 10px;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .vaga{
+    width: 15%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .preco{
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+
+.unidades .linha-unidade .linha .preco.casa{
+    width: 35%;
+}
+
+.unidades .linha-unidade .linha .preco2{
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+
+.conteudo .btn-voltar{
+	height: 60px;
+	width: 100%;
+	background-color: #059494;
+	color: #f5f5f5;
+	text-align: center;
+	line-height: 60px;
+	font-size: 18px;
+	position: absolute;
+    top: 80px;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('/assets/images/git-lancamentos.gif') 50% 50% no-repeat white;
+}
+
+.conteudo .btn-voltar.editar-proposta{
+	position: fixed;
+}
+
+.conteudo .btn-voltar.und{
+	position: fixed;
+	margin-left: -20px;
+	border-bottom: 5px solid #043a54;
+}
+
+.conteudo .implantacao-3d{
+	height: auto;
+	width: 100%;
+	background-color: #f5f5f5;
+    margin-top: 80px;
+	float: left;
+}
+
+#conteudo .implantacao-3d .implantacao-empreendimento{
+	width: 100% !important;
+}
+
+#conteudo .implantacao-3d #myMap{
+	width: 100% !important;
+	height: 300px;
+}
+
+.conteudo .implantacao-3d .posicao-unidade{
+	height: 40px;
+    width: 100%;
+    background-color: #333333b8;
+    position: absolute;
+    margin-top: -40px;
+	text-align: center;
+	font-size: 20px;
+    color: #FFF;
+    line-height: 40px;
+	text-transform: uppercase;
+}
+
+.conteudo .implantacao-3d .titulo-posicao-unidade{
+	height: 20px;
+    width: 100%;
+    background-color: #020202b8;
+    position: absolute;
+    margin-top: -60px;
+	text-align: center;
+	font-size: 12px;
+    color: #ccc;
+    line-height: 20px;
+}
+
+.conteudo .implantacao-3d .titulo-mapa-horizontal{
+	height: 50px;
+    width: 100%;
+    background-color: #000000cc;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 16px;
+    color: #fffcfc;
+    line-height: 50px;
+}
+
+.detalhe-lote{
+	height: auto;
+	width: 100%;
+	background-color: #f5f5f5;
+	padding: 20px 20px 20px 20px;
+	float: left;
+}
+
+.detalhe-lote .lote{
+	height: 50px;
+	width: 50%;
+	background-color: #e0d7d7;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.detalhe-lote .quadra{
+	height: 50px;
+	width: 50%;
+	background-color: #e0d7d7;
+	float: right;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.detalhe-lote .metragem{
+	height: 50px;
+    width: 100%;
+    background-color: #dee2e6;
+    color: #043a54;
+    float: right;
+    text-align: center;
+    line-height: 50px;
+    font-size: 23px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.detalhe-lote .dimensao-lote{
+	height: 80px;
+	width: 100%;
+	float: left;
+}
+
+.detalhe-lote .dimensao-lote .item{
+	height: 60px;
+	width: 24%;
+	float: left;
+	margin-right: 1%;
+}
+
+.detalhe-lote .dimensao-lote .item .titulo{
+	height: 30px;
+    width: 100%;
+    background-color: #243c42;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.detalhe-lote .dimensao-lote .item .valor{
+	height: 30px;
+    width: 100%;
+    background-color: #d1d7d8;
+    float: left;
+    color: #05141b;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+
+.conteudo .detalhe-unidade{
+	height: auto;
+	width: 100%;
+	background-color: #f5f5f5;
+	padding: 20px 20px 150px 20px;
+	float: left;
+}
+
+.conteudo .detalhe-unidade.condicoes{
+	height: auto;
+	width: 100%;
+	background-color: #FFF;
+	padding: 20px;
+	float: left;
+	margin-top: 70px;
+}
+
+.conteudo .detalhe-unidade.condicoes h2{
+	font-size: 18px;
+    color: #059494;
+    margin: 20px 0 10px 0;
+    /* border-bottom: 5px solid #999; */
+    padding-bottom: 10px;
+    border-bottom: 5px solid #eee;
+}
+
+.conteudo .detalhe-unidade.proposta-construtora{
+	height: auto;
+	width: 100%;
+	background-color: #FFF;
+	padding: 0px 20px 10px 20px;
+	float: left;
+	margin-top: 110px;
+}
+
+.conteudo .detalhe-unidade.proposta-construtora h2{
+	font-size: 18px;
+    color: #059494;
+    margin: 0px 0 10px 0;
+    /* border-bottom: 5px solid #999; */
+    padding-bottom: 10px;
+    border-bottom: 5px solid #eee;
+}
+
+.conteudo .detalhe-unidade .topo-unidade{
+	width: 100%;
+	height: 60px;
+	border-bottom: 5px solid #eee;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .unidade{
+	width: 35%;
+	height: 40px;
+	float: left;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .unidade .tit{
+	width: 50%;
+	height: 25px;
+	float: left;
+	line-height: 25px;
+	font-size: 16px;
+	color: #333;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .unidade .andar{
+	width: 50%;
+	height: 15px;
+	float: left;
+	line-height: 15px;
+	font-size: 12px;
+	color: #059494;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .unidade .numero{
+	width: 40%;
+	height: 40px;
+	float: right;
+	line-height: 30px;
+	font-size: 16px;
+	color: #FFF;
+	background-color: #059494;
+	padding: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .planta{
+	width: 45%;
+	height: 40px;
+	float: left;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .planta .tit{
+	width: 40%;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .planta .numero{
+	width: 60%;
+	height: 40px;
+	float: right;
+	line-height: 30px;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #ffc107;
+	padding: 5px;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .vaga{
+	width: 20%;
+	height: 50px;
+	float: left;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .vaga .icone{
+	width: 50%;
+	height: 25px;
+	float: left;
+	line-height: 20px;
+	font-size: 16px;
+	color: #333;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .topo-unidade .vaga .numero{
+	width: 50%;
+	height: 40px;
+	float: right;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFF;
+	background-color: #286090;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .valor-unidade-topo .titulo{
+	color: #333;
+	font-size: 12px !important;
+}
+
+.conteudo .detalhe-unidade .valor-unidade-topo{
+	height: 100px;
+	width: 100%;
+	background-color: #FFF;
+	float: left;
+	margin-top: 10px;
+	background-color: #f8f9fa;
+    padding: 0px 10px;
+    border: 1px dashed #ccc;
+	color: #ffc107;
+	font-size: 30px;
+    line-height: 25px;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .valor-unidade-topo .descricao-valor{
+	width: 100%;
+    height: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+	margin-top: 5px;
+}
+
+.conteudo .detalhe-unidade .descricao-unidade{
+	width: 100%;
+    height: auto;
+    float: left;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 20px;
+}
+
+.conteudo .detalhe-unidade .descricao-unidade h2{
+	font-size: 14px;
+	color: #333;
+	margin: 10px 0 10px 0;
+}
+
+.conteudo .detalhe-unidade .descricao-unidade .itens{
+	width: 100%;
+	height: auto;
+}
+
+.conteudo .detalhe-unidade .descricao-unidade .itens .item{
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #059494;
+	font-size: 14px;
+    float: left;
+    padding: 0 20px 0 0;
+}
+
+.conteudo .detalhe-unidade .valor-planta{
+	width: 100%;
+	height: 60px;
+	float: left;
+	margin-top: 20px;
+}
+
+.conteudo .detalhe-unidade .valor-planta .valor-unidade{
+	width: 60%;
+	height: 60px;
+	float: left;
+}
+
+.conteudo .detalhe-unidade .valor-planta .valor-unidade .icone{
+	width: 20%;
+    height: 60px;
+    float: left;
+    text-align: left;
+    color: #ffc107;
+    font-size: 60px;
+}
+
+.conteudo .detalhe-unidade .valor-planta .valor-unidade .valor{
+	width: 75%;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    text-align: left;
+    color: #ffc107;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.conteudo .detalhe-unidade .valor-planta .valor-unidade .descricao-valor{
+	width: 75%;
+    height: 20px;
+    line-height: 10px;
+    float: right;
+    text-align: left;
+    color: #333;
+    font-size: 10px;
+}
+
+.conteudo .detalhe-unidade .valor-planta .ver-planta{
+	width: 40%;
+	height: 60px;
+	float: right;
+}
+
+.conteudo .detalhe-unidade .valor-planta .ver-planta .icone{
+	width: 100%;
+	height: 40px;
+	color: #036161;
+	font-size: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.conteudo .detalhe-unidade .valor-planta .ver-planta .texto{
+	width: 100%;
+    height: 20px;
+    color: #059494;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.conteudo .detalhe-unidade .valor-unidade{
+	width: 100%;
+	float: left;
+	height: 110px;
+	font-family: 'Urbanist', sans-serif !important;
+	padding: 15px !important;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-right: 2%;
+	margin-bottom: 4%;
+    font-size: 30px;
+    text-align: center;
+    color: coral;
+}
+
+.conteudo .detalhe-unidade .valor-unidade .descricao-valor{
+    color: #333 !important;
+	font-size: 12px !important;
+    line-height: 16px !important;
+}
+
+.conteudo .detalhe-unidade .valor-unidade .descricao-valor .desconto-avista{
+    color: rgb(32 204 213) !important;
+	font-size: 16px !important;
+}
+
+
+
+
+.conteudo .detalhe-unidade .caracteristicas{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.conteudo .detalhe-unidade .caracteristicas .titulo{
+	color: #555 !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    margin-bottom: 15px !important;
+}
+
+.conteudo .detalhe-unidade .caracteristicas .item{
+	width: 32%;
+	float: left;
+	height: 100px;
+	font-family: 'Urbanist', sans-serif !important;
+	padding: 15px 5px !important;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+.conteudo .detalhe-unidade .caracteristicas .item:nth-of-type(3n){
+	margin-right: 0% !important;
+}
+
+
+.conteudo .detalhe-unidade .caracteristicas .item .icone-caracteristica{
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+	color: #555;
+}
+
+.conteudo .detalhe-unidade .caracteristicas .item .icone-caracteristica.nascente{
+	color: rgb(6, 108, 177);
+}
+.conteudo .detalhe-unidade .caracteristicas .item .icone-caracteristica.poente{
+	color: rgb(230, 164, 23);
+}
+
+.conteudo .detalhe-unidade .caracteristicas .item .titulo-caracteristica{
+	width: 100%;
+	height: 15px;
+	overflow: hidden;
+    line-height: 20px;
+    font-size: 14px;
+	color: #282f31;
+	margin-bottom: 0px !important;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .caracteristicas .item .valor-caracteristica{
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #090b0c;
+	text-align: center;
+	font-weight: 900;
+}
+
+
+
+
+.conteudo .detalhe-unidade .caracteristicas.lote .item{
+	width: 49%;
+	float: left;
+	height: 100px;
+	font-family: 'Urbanist', sans-serif !important;
+	padding: 15px !important;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-right: 2% !important;
+	margin-bottom: 2%;
+}
+
+.conteudo .detalhe-unidade .caracteristicas.lote .item:nth-of-type(2n){
+	margin-right: 0% !important;
+}
+
+
+
+.conteudo .detalhe-unidade .item-unidade{
+	width: 100%;
+	float: left;
+	height: 80px;
+	font-family: 'Urbanist', sans-serif !important;
+	padding: 15px !important;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+.conteudo .detalhe-unidade .item-unidade .icone-item{
+	width: 30%;
+    height: 60px;
+    float: left;
+    font-size: 50px;
+    color: #555;
+	text-align: center;
+}
+
+.conteudo .detalhe-unidade .item-unidade .titulo-item{
+	width: 70%;
+    height: 30px;
+    float: right;
+    font-size: 20px;
+    line-height: 30px;
+    color: #090b0c;
+    text-align: left;
+    font-weight: 900;
+}
+.conteudo .detalhe-unidade .item-unidade .descricao-item{
+	width: 70%;
+    height: 20px;
+    float: right;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    text-align: left;
+    font-weight: 900;
+}
+
+.conteudo .detalhe-unidade .planta-unidade{
+	width: 49%;
+	float: left;
+	height: 120px;
+	font-family: 'Urbanist', sans-serif !important;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-right: 2%;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position: top center;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.conteudo .detalhe-unidade .planta-unidade .titulo-planta{
+	width: 100%;
+    height: 40px;
+    background-color: #333333d1;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+    line-height: 40px;
+	position: relative;
+    bottom: -40px;
+}
+
+.conteudo .detalhe-unidade .fotos-decorado{
+	width: 49%;
+	float: left;
+	height: 120px;
+	font-family: 'Urbanist', sans-serif !important;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position: top center;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.conteudo .detalhe-unidade .fotos-decorado .titulo-decorado{
+	width: 100%;
+    height: 40px;
+    background-color: #333333d1;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+    line-height: 40px;
+	position: relative;
+    bottom: -40px;
+}
+
+
+.conteudo .condicoes-construtora{
+	width: 100%;
+    height: auto;
+    float: left;
+    padding: 0 20px 150px 20px;
+	margin-top: 80px;
+}
+
+.conteudo .condicoes-construtora.abaResumo{
+    padding: 0px !important;
+    margin-top: 0px !important;
+}
+
+
+.conteudo .condicoes-construtora .mensagem{
+	text-align: center;
+	font-size: 20px;
+    color: #059494;
+    margin: 170px 0 0px 0;
+}
+
+.conteudo .condicoes-construtora .mensagem i{
+	font-size: 60px;
+    color: #ffc107;
+    margin: 0px 0 10px 0;
+}
+
+.conteudo .condicoes-construtora h2{
+	font-size: 20px;
+    color: #333;
+    margin: 20px 0 0px 0;
+    /* border-bottom: 5px solid #999; */
+    padding-bottom: 10px;
+    border-bottom: 5px solid #eee;
+}
+
+.conteudo .condicoes-construtora .item{
+	width: 100%;
+	height: auto;
+	padding: 10px 0 10px 0;
+	float: left;
+}
+
+.conteudo .condicoes-construtora .item .titulo{
+	width: 100%;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	color: #333;
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.conteudo .condicoes-construtora .item .titulo.avista{
+	text-align: center;
+}
+
+.conteudo .condicoes-construtora .item .titulo .subtitulo{
+	font-size: 12px !important;
+}
+
+.conteudo .condicoes-construtora .item .titulo .percentual{
+	font-size: 14px !important;
+	color: #ffc107;
+	font-weight: bold;
+	text-align: right;
+}
+
+
+.conteudo .condicoes-construtora .item .saldo-remanescente{
+	width: 70%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    color: #f5f5f5;
+    font-weight: bold;
+    background-color: #17a2b8;
+    padding: 0 0 0 0px;
+}
+
+.conteudo .condicoes-construtora .item .pagamento-avista{
+	width: 100%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    color: #f5f5f5;
+    font-weight: bold;
+    background-color: #04cab0;
+    padding: 0 0 0 0px;
+}
+
+.conteudo .condicoes-construtora .item .percentual-remanescente{
+	width: 30%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ffc107;
+    padding: 0 0 0 0px;
+}
+
+.conteudo .condicoes-construtora .item .valor{
+	width: 50%;
+    height: 40px;
+    float: left;
+    line-height: 30px;
+    color: rgb(8, 144, 185);
+    font-size: 18px;
+    text-align: left;
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+	border: 1px dashed #ccc;
+}
+
+.conteudo .condicoes-construtora .item .valor.total-balao{
+	color: #ffc107;
+}
+
+.conteudo .condicoes-construtora .item .percentual{
+	width: 50%;
+    height: 40px;
+    float: right;
+    line-height: 30px;
+    color: #ffc107;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.conteudo .condicoes-construtora .item .percentual.linha-dupla{
+    line-height: 20px !important;
+    padding: 0px 10px !important;
+}
+
+.conteudo .condicoes-construtora .item .data{
+	width: 50%;
+    height: 40px;
+    float: right;
+    line-height: 30px;
+    color: rgb(8, 144, 185);
+    font-size: 14px;
+    text-align: left;
+    background-color: #eeeeee47;
+    padding: 5px 10px;
+}
+
+.conteudo .condicoes-construtora .valor-integral{
+	width: 100%;
+    height: 50px;
+    float: left;
+    text-align: left;
+    font-size: 30px;
+    line-height: 50px;
+    color: #f5f5f5;
+    font-weight: bold;
+    background-color: #3c763d;
+    padding: 0 0 0 10px;
+	margin-top: 30px;
+}
+
+.conteudo .condicoes-construtora .saldo-remanescente{
+	width: 100%;
+    height: 50px;
+    float: left;
+    text-align: left;
+    font-size: 30px;
+    line-height: 50px;
+    color: #f5f5f5;
+    font-weight: bold;
+    background-color: #068f8f;
+    padding: 0 0 0 10px;
+	margin-top: 0px;
+}
+
+.conteudo .condicoes-construtora .valor-desconto{
+	width: 100%;
+    height: 30px;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    color: #a94442;
+    text-decoration: line-through;
+    padding: 0 0 0 10px;
+}
+
+.conteudo .condicoes-construtora .descricao-condicao{
+	width: 100%;
+    height: auto;
+    float: right;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #333;
+}
+
+.conteudo .condicoes-construtora .descricao-condicao .desconto{
+	font-size: 12px;
+    color: #3c763d;
+    font-weight: bold;
+}
+
+.conteudo .dados-cliente{
+	margin-top: 70px;
+	padding: 20px;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 150px;
+}
+
+.conteudo .dados-cliente h2{
+	font-size: 22px;
+    text-align: justify;
+    padding: 15px 0;
+    color: #3c763d;
+}
+
+.btn-info-unidade{
+    /* position: absolute; */
+    width: 100px;
+    right: 20px;
+    background-color: #059494;
+    color: #FFF;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    right: 0px;
+    float: right;
+    margin-top: -60px;
+    border-radius: 5px;
+	font-size: 14px;
+}
+
+.botoes{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 20px;
+}
+
+/*SELECIONAR VAGAS*/
+
+.conteudo .vagas{
+	/* margin-top: 10px; */
+	padding: 0px 20px;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 150px;
+	margin-top: 15px;
+}
+
+.conteudo .mapa{
+	/* margin-top: 10px; */
+	padding: 0px 20px;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+.conteudo .mapa .btn-mapa-vagas{
+	float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.conteudo .vagas .vaga{
+	width: 30%;
+    height: auto;
+    line-height: 25px;
+    float: left;
+    background-color: #f5f5f5;
+    color: #646e78 !important;
+    text-align: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 15px 0;
+    border: 1px dashed #c5c5c5;
+    border-radius: 5px;
+}
+
+.conteudo .vagas .vaga .icone-vaga{
+	font-size: 20px;
+}
+
+.conteudo .vagas .vaga .nome-vaga{
+	font-size: 16px;
+}
+
+.conteudo .vagas .vaga:nth-of-type(3n){
+	margin-right: 0% !important;
+}
+
+.conteudo .garagens{
+	padding: 0px 20px;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 105px;
+}
+
+
+
+.conteudo .garagens .titulo-vagas-proposta{
+	float: left;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    line-height: 50px;
+    color: #f8f9fa;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #04adad;
+    font-size: 18px;
+}
+
+.conteudo .garagens .titulo-vagas-proposta.extra{
+    background-color: #026b6b;
+}
+
+.conteudo .garagens .garagem{
+	float: left;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 5px;
+	background-color: #F5F5F5;
+	line-height: 50px;
+	color: #353738;
+	padding: 0px;
+}
+
+.conteudo .garagens .garagem .icone{
+	float: left;
+	width: 15%;
+	font-size: 20px;
+	text-align: center;
+	color: #6e8181;
+}
+
+.conteudo .garagens .garagem .nome{
+	float: left;
+    width: 37%;
+    font-size: 16px;
+    padding: 10px 5px 0px 5px;
+    line-height: 15px;
+}
+
+.conteudo .garagens .garagem .nome .pavimento{
+	font-size: 12px;
+    color: #999;
+    line-height: 15px;
+}
+
+.conteudo .garagens .garagem .tipo{
+	float: left;
+    width: 48%;
+    font-size: 16px;
+    padding: 10px 5px 0px 5px;
+    line-height: 15px;
+    color: #17a2b8;
+}
+
+.conteudo .garagens .garagem .tipo .tipo-vaga{
+	font-size: 12px;
+    color: #999;
+    line-height: 15px;
+}
+
+.conteudo .garagens .garagem .valor{
+	float: left;
+	width: 30%;
+	font-size: 18px;
+	color: #d17002;
+}
+
+.conteudo .garagens .garagem .valor .formato-vaga{
+	font-size: 12px;
+    color: #999;
+    line-height: 15px;
+}
+
+.conteudo .garagens .garagem .excluirVaga{
+	float: left;
+	width: 10%;
+	font-size: 20px;
+	color: #a5231a;
+}
+
+.conteudo .vaga-extra-select{
+	padding: 10px 20px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    float: left;
+    width: 100%;
+}
+
+.conteudo .vaga-extra-select select{
+	height: 60px;
+    text-align: center;
+    font-size: 25px;
+    color: #06889d;
+}
+
+.conteudo .titulo-vaga-extra{
+	text-align: center;
+	font-size: 16px;
+	color: #007297;
+}
+
+.conteudo .titulo-vaga-extra .tit{
+	text-align: center;
+	font-size: 18px;
+	color: #ffc107;
+    font-weight: bold;
+}
+
+
+
+#ModalGaragem .modal-dialog {
+	width: 95%;
+    height: 97%;
+	padding: 0;
+}
+
+#ModalGaragem .modal-header{
+	background-color: #333 !important;
+	color: #FFF;
+}
+
+.conteudo .inputBusca{
+	height: 60px;
+	width: 80%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#ModalVaga .titulo-modal-vaga{
+	font-size: 20px;
+	color: darkcyan;
+	text-align: center;
+}
+
+.conteudo .buscarVaga{
+	height: 60px;
+	width: 20%;
+	float: right;
+	background-color: #337c81;
+	color: #FFF;
+	font-size: 18px;
+	border: 0px;
+}
+
+#ModalGaragem .modal-body {
+	padding: 0px !important;
+}
+
+#ModalGaragem .modal-header .close {
+	color: #FFF;
+	font-size: 30px;
+}
+
+#ModalGaragem .modal-content {
+	height: 100%;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+#ModalGaragem .modal-content .conteudo-mapa{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+#ModalGaragem ul#zoom_triggers{
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #333;
+	padding-inline-start: 0px;
+	list-style: none;
+}
+
+#ModalGaragem ul#zoom_triggers li{
+	width: 40px;
+	height: 50px;
+	float: left;
+	color: #FFF;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+}
+
+
+#ModalMapaUnidades .modal-body {
+	padding: 0px !important;
+}
+
+#ModalMapaUnidades .modal-header .close {
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+}
+
+#ModalMapaUnidades .modal-content {
+	height: 98vh !important;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+#ModalMapaUnidades .modal-content .conteudo-mapa{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+#ModalMapaUnidades .modal-content .conteudo-mapa { zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; }
+
+#ModalMapaUnidades ul#zoom_triggers{
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #333;
+	padding-inline-start: 0px;
+	list-style: none;
+}
+
+#ModalMapaUnidades ul#zoom_triggers li{
+	width: 40px;
+	height: 50px;
+	float: left;
+	color: #FFF;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.condicoes-construtora.minha-proposta{
+	padding: 0 30px 30px 30px !important;
+    margin-top: 0px !important;
+}
+
+.botoes .btn-minha-propostra{
+    width: 100%;
+    background-color: #059494;
+    color: #FFF;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    right: 0px;
+    float: right;
+	font-size: 16px;
+}
+
+.conteudo .preferencias{
+	padding: 20px 30px 150px 30px;
+
+}
+
+.conteudo .preferencias label{
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.conteudo .preferencias label .nome{
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.conteudo .preferencias select{
+	font-size: 20px;
+	width: 100%;
+	height: 60px;
+	color: #337c81;
+}
+
+.conteudo .dados-cliente input.form-control{
+	height: 60px;
+	margin-bottom: 10px;
+	font-size: 1.6rem;
+}
+
+.conteudo .dados-cliente label{
+	color: #999;
+}
+
+.conteudo .dados-proposta{
+	margin-top: -30px;
+    padding: 25px;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 200px;
+}
+
+.conteudo .dados-proposta h2{
+	font-size: 22px;
+    text-align: justify;
+    padding: 15px 0;
+    color: #17a2b8;
+}
+
+.conteudo .dados-proposta input.form-control{
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.conteudo .dados-proposta select.form-control{
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.conteudo .dados-proposta label{
+	color: #999;
+}
+.conteudo .dados-proposta .linha-balao{
+	width: 100%;
+	height: 60px;
+	float: left;
+}
+
+.conteudo .dados-proposta .linha-balao .valor-balao{
+	width: 45% !important;
+	height: 50px !important;
+	float: left;
+	font-size: 20px;
+    color: #02779b;
+    text-align: center;
+    font-weight: 900;
+}
+
+.conteudo .dados-proposta .linha-balao .data-balao{
+	width: 40% !important;
+	height: 50px !important;
+	float: left;
+	margin-left: 2.5%;
+	font-size: 14px;
+    color: #02779b;
+    text-align: center;
+    font-weight: 600;
+}
+
+.conteudo .dados-proposta .linha-balao .add-balao{
+	width: 10% !important;
+	float: right;
+	height: 25px;
+	margin-top: 0px;
+	background-color: #059494;
+	color: #FFF;
+	border: 0px;
+}
+
+.conteudo .dados-proposta .linha-balao .delBalao {
+    width: 10% !important;
+    float: right;
+    height: 25px;
+    margin-top: 0px;
+    background-color: #a5231a;
+    color: #FFF;
+    border: 0px;
+}
+
+.conteudo .dados-proposta .valor-avista{
+	font-size: 30px;
+    color: #036161;
+    text-align: center;
+    font-weight: 900;
+}
+
+.conteudo .dados-proposta .valor-entrada{
+	font-size: 25px;
+    color: #02779b;
+    text-align: center;
+    font-weight: 900;
+}
+
+.conteudo .dados-proposta .mensais{
+	width: 100%;
+	float: left;
+}
+
+.conteudo .dados-proposta .mensais .qtd-mensal {
+    font-size: 25px;
+    color: #02779b;
+    text-align: center;
+    font-weight: 900;
+	width: 35%;
+	float: left;
+}
+
+.conteudo .dados-proposta #saldo-remanescente label {
+    color: #17a2b8;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.conteudo .dados-proposta #saldo-remanescente input {
+	color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+    background: #17a2b8;
+	text-align: center;
+}
+
+.conteudo .dados-proposta .mensais .valor-mensal {
+    font-size: 25px;
+    color: #02779b;
+    text-align: center;
+    font-weight: 900;
+	width: 60%;
+	float: right;
+}
+
+.conteudo .dados-proposta .data-nascimento{
+	font-size: 25px;
+    color: #237088;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.conteudo .check{
+	margin-top: -60px;
+    padding: 25px;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 200px;
+}
+
+.conteudo .check h2.mensagem{
+	text-align: center;
+    margin-top: 150px;
+    color: #02779b;
+    font-size: 25px;
+}
+
+.conteudo .check h2.mensagem i{
+    color: #119791;
+    font-size: 80px;
+}
+
+.conteudo .check h2.mensagem .msg{
+    font-size: 18px;
+}
+
+.conteudo .check .tempo-resposta{
+	text-align: center;
+    color: #353738;
+    font-size: 18px;
+	margin: 20px 0;
+	background-color: #f8f9fadb;
+    padding: 20px;
+}
+
+.conteudo .check .tempo-resposta i{
+    color: #d17002;
+    font-size: 30px;
+}
+
+.conteudo .check .tempo-resposta .tempo{
+    color: #d17002;
+    font-size: 25px;
+}
+
+.conteudo .check .info{
+	text-align: center;
+    color: #353738;
+    font-size: 15px;
+	margin-bottom: 40px;
+	background-color: #f8f9fadb;
+    padding: 20px;
+}
+
+.conteudo .check .info i{
+    color: #02b9d1;
+    font-size: 30px;
+}
+
+.conteudo .check .suporte{
+	text-align: center;
+    color: #353738;
+    font-size: 14px;
+	margin: 10px 0;
+}
+
+
+.conteudo .check .whatsapp{
+	width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 22px;
+    margin: 10px 0;
+    line-height: 60px;
+}
+
+/*Detalhe do empreendimento*/
+.detalhe-empreendimento{
+	height: auto;
+	width: 100%;
+	background-color: #f5f5f5;
+	padding: 20px 20px 150px 20px;
+	float: left;
+}
+
+.conteudo .foto{
+	width: 100%;
+	height: 250px;
+	background-color: #333;
+}
+
+
+/********** FILTERABLE GALLERY **********/
+
+.conteudo.fotos{
+	width: 100%;
+	height: 80% !important;
+}
+
+.fotos{
+	padding: 78px 0 150px 5px;
+	height: 200px !important;
+}
+
+.gallery-filter {
+	display: inline-block;
+	margin: 0 5px 10px 5px;
+	padding: 0 20px 0 20px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.08em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.gallery-grid {
+	width: 100%;
+	margin-top: 34px;
+}
+
+.gallery-grid-item {
+	display: block;
+	overflow: hidden;
+    position: relative;
+	width: 25%;
+	text-align: center;
+	padding: 5px 5px 5px 0px !important;
+}
+
+.gallery-grid-item img {
+	width: 100%;
+}
+
+.gallery-grid-sizer {
+  width: 25%;
+}
+
+.gallery-grid-item span {
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    z-index: 1;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition:    opacity .5s ease-in-out;
+	-ms-transition:     opacity .5s ease-in-out;
+	-o-transition:      opacity .5s ease-in-out;
+	transition:         opacity .5s ease-in-out;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-decoration: none !important;
+	font-weight: bold;
+	font-size: 1.54em;
+	opacity: 0;
+	text-transform: uppercase;
+}
+
+.gallery-grid-item span i.fa {
+	padding-top: 5px;
+}
+
+.gallery-grid-item .big-triangle  {
+	border-width: 0 0 0 0;
+	opacity: 0.85;
+}
+
+html.no-pointerevents.no-touchevents .gallery-grid-item:hover .big-triangle  {
+	border-width: 0 0 900px 900px;
+	opacity: 0.85;
+}
+
+html.no-pointerevents.no-touchevents .gallery-grid-item:hover span  {
+	opacity: 1;
+}
+
+/********** NEARBY PLACES **********/
+
+
+#swiper2 {
+    width: 100%;
+    height: 350px !important;
+	margin-top: 90px;
+}
+
+#swiper2 .swiper2-navigation {
+    width: 100%;
+    font-size: 40px;
+}
+
+.link-banner-mobile {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: -250px;
+    background-color: transparent;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+/*DETALHES EMPREENDIMENTO*/
+#detalhes-empreendimento{
+	width: 100%;
+	height: auto;
+	padding: 20px 20px 150px 20px;
+    float: left;
+}
+
+#detalhes-empreendimento .nome-empreendimento{
+	color: #555;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#detalhes-empreendimento .subtitulo-empreendimento{
+	color: #333638;
+	font-size: 16px;
+	text-transform: none;
+	line-height: 30px;
+}
+
+#detalhes-empreendimento .descricao{
+	width: 100%;
+	color: #777;
+	font-size: 14px;
+	text-transform: none;
+	line-height: 20px;
+	text-align: justify;
+	margin: 20px 0;
+	float: left;
+}
+
+#detalhes-empreendimento .caracteristicas{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+#detalhes-empreendimento .caracteristicas .titulo{
+	color: #555 !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    margin-bottom: 15px !important;
+}
+
+#detalhes-empreendimento .caracteristicas .item{
+	width: 48%;
+	float: left;
+	height: 100px;
+	font-family: 'Urbanist', sans-serif !important;
+	padding: 15px 10px !important;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-right: 4%;
+	margin-bottom: 4%;
+}
+
+#detalhes-empreendimento .caracteristicas .item:nth-of-type(odd){
+	margin-right: 0% !important;
+}
+
+
+#detalhes-empreendimento .caracteristicas .item .icone-caracteristica{
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+	color: #555;
+}
+
+#detalhes-empreendimento .caracteristicas .item .titulo-caracteristica{
+	width: 100%;
+	height: 15px;
+    line-height: 20px;
+    font-size: 14px;
+	color: #282f31;
+	margin-bottom: 0px !important;
+	text-align: center;
+}
+
+#detalhes-empreendimento .caracteristicas .item .valor-caracteristica{
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #090b0c;
+	text-align: center;
+	font-weight: 900;
+}
+
+
+
+#detalhes-empreendimento .conteudo-abas{
+	-webkit-box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 35%);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 35%);
+}
+
+#detalhes-empreendimento .abas{
+	width: 100%;
+	height: 60px;
+	float: left;
+}
+
+#detalhes-empreendimento .abas .nav-item{
+	width: 40%;
+	height: 35px;
+	float: left;
+	line-height: 35px;
+	margin-top: 15px;
+	color: #333;
+	font-size: 14px;
+	padding: 0 10px;
+	text-align: center;
+	background-color: #eee;
+}
+
+#detalhes-empreendimento .abas .nav-item.active{
+	height: 50px;
+	float: left;
+	margin-top: 0px;
+	line-height: 50px;
+	color: #FFF;
+	background-color: #64828a;
+}
+
+#detalhes-empreendimento #itens-lazer{
+	width: 100%;
+    height: auto;
+	float: left;
+}
+
+#detalhes-empreendimento #itens-lazer .item{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 0 15px;
+}
+
+#detalhes-empreendimento #itens-lazer .item i{
+	color: #31708f;
+}
+
+#detalhes-empreendimento #itens-lazer .item:nth-of-type(odd){
+	background: #f5f5f5;
+}
+
+#detalhes-empreendimento #infra-estrutura{
+	width: 100%;
+    height: auto;
+	float: left;
+}
+
+#detalhes-empreendimento #infra-estrutura .item{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 0 15px;
+}
+
+#detalhes-empreendimento #infra-estrutura .item i{
+	color: #31708f;
+}
+
+#detalhes-empreendimento #infra-estrutura .item:nth-of-type(odd){
+	background: #f5f5f5;
+}
+
+#detalhes-empreendimento #botoes{
+	width: 100%;
+    height: auto;
+	float: left;
+	margin-bottom: 30px;
+}
+
+#detalhes-empreendimento #botoes .titulo-botoes{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+	color: #555;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+}
+
+#detalhes-empreendimento #botoes .unidades-disponiveis{
+	height: 70px;
+    width: 100%;
+    float: left;
+    line-height: 70px;
+    font-size: 20px;
+    color: #f8f9fa;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700;
+    background-color: #17a2b8;
+    text-align: center;
+    border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+    margin-bottom: 4%;
+}
+
+#detalhes-empreendimento .memorial-descritivo{
+	height: 70px;
+	width: 100%;
+	float: left;
+	line-height: 70px;
+	font-size: 18px;
+	color: rgb(32, 2, 49);
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-bottom: 4%;
+}
+
+#detalhes-empreendimento #botoes .implantacao-3d{
+	height: 70px;
+	width: 100%;
+	float: left;
+	line-height: 70px;
+	font-size: 18px;
+	color: rgb(4, 184, 216);
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-bottom: 4%;
+	margin-top: 10px;
+}
+
+#detalhes-empreendimento #botoes .vagas-disponiveis{
+	height: 70px;
+	width: 100%;
+	float: left;
+	line-height: 70px;
+	font-size: 18px;
+	color: rgb(77 57 0 / 71%);
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-bottom: 4%;
+}
+
+#detalhes-empreendimento #botoes .vagas-disponiveis:active{
+	background-color: #d8d4d4 !important;
+}
+
+#detalhes-empreendimento #botoes .plantas-disponiveis{
+	height: 70px;
+	width: 100%;
+	float: left;
+	line-height: 70px;
+	font-size: 18px;
+	color: #555;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-bottom: 4%;
+}
+
+#detalhes-empreendimento #botoes .galeria-fotos{
+	height: 70px;
+	width: 100%;
+	float: left;
+	line-height: 70px;
+	font-size: 18px;
+	color: #af8989;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-bottom: 4%;
+}
+
+#detalhes-empreendimento #botoes .tour-360{
+	height: 70px;
+	width: 100%;
+	float: left;
+	line-height: 70px;
+	font-size: 18px;
+	color: #337c81;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+	margin-bottom: 4%;
+}
+
+#detalhes-empreendimento .video{
+	width: 100%;
+	height: 310px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#detalhes-empreendimento .video .titulo-video{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+	color: #555;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+}
+
+#detalhes-empreendimento .video .video-youtube{
+	width: 100%;
+	height: 250px;
+	float: left;
+	border: 0px;
+	position: absolute;
+    left: 0;
+}
+
+#detalhes-empreendimento .video .outros-videos{
+	height: 70px;
+    width: 100%;
+    float: left;
+    line-height: 70px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700;
+    background-color: #eeeeee5c;
+    text-align: center;
+    border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 12px !important;
+    margin-bottom: 4%;
+    margin-top: 270px;
+}
+
+#detalhes-empreendimento .localizacao{
+	width: 100%;
+	height: 400px;
+	float: left;
+	margin: 20px 0;
+}
+
+#detalhes-empreendimento .localizacao .titulo-mapa{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+	color: #555;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+}
+
+#detalhes-empreendimento .localizacao .mapa-google{
+	width: 100%;
+	height: 350px;
+	float: left;
+	border: 0px;
+	position: absolute !important;
+    left: 0;
+}
+
+.rodape .valor{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+
+.rodape .valor{
+	width: 50%;
+	height: auto;
+	float: left;
+	padding: 20px;
+}
+
+.rodape.detalhes{
+	background-color: rgb(255, 255, 255) !important;
+	box-shadow: 0 0 20px 2px #ccc;
+}
+
+.rodape.detalhes .valor .inicial{
+	font-size: 25px;
+    color: #31708f;
+	line-height: 20px;
+}
+
+.rodape.detalhes .valor .texto{
+	font-size: 12px;
+	color: #282f31;
+    font-weight: lighter;
+    line-height: 10px;
+}
+
+.rodape.detalhes .negociar{
+	width: 45%;
+    height: 50px;
+    background-color: #f50;
+    float: right;
+    margin: 15px 15px 0 0;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(255, 251, 251);
+    font-size: 14px;
+}
+
+.btn-condicoes-pagamento.fale-com-a-construtora{
+    background-color: #f50 !important;
+}
+
+.rodape.detalhes .negociar.fale-com-o-corretor{
+	background-color: #10982f !important;
+	width: 45%;
+    font-size: 14px !important;
+}
+
+.rodape.detalhes .negociar.fale-com-a-construtora{
+	width: 45%;
+    font-size: 12px;
+}
+
+.navigation-box-next{
+    position: absolute !important;
+    right: 0;
+}
+
+
+.conteudo #tour{
+	width: 100%;
+    height: auto;
+	float: left;
+	margin-bottom: 130px;
+	margin-top: 100px;
+    padding: 20px;
+}
+
+.conteudo #tour .titulo-tour{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+	color: #555;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+}
+
+
+.conteudo #garagem{
+	width: 100%;
+    height: auto;
+	float: left;
+	margin-bottom: 130px;
+	margin-top: 80px;
+    padding: 20px;
+}
+
+.conteudo #garagem .titulo-tour{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+	color: #555;
+	font-family: 'Urbanist', sans-serif !important;
+	font-weight: 700;
+}
+
+.conteudo #tour .tour{
+	height: 350px;
+	width: 100%;
+}
+
+.conteudo #plantas{
+	width: 100%;
+    height: auto;
+	float: left;
+	margin-bottom: 130px;
+	margin-top: 80px;
+    padding: 20px;
+}
+
+.conteudo #plantas .titulo-plantas{
+	height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 25px;
+    color: #555;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700;
+    border-bottom: 3px solid #999;
+    margin-bottom: 15px;
+}
+
+
+
+.conteudo #plantas .plantas-empreendimento{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.conteudo #plantas .plantas-empreendimento .titulo-planta{
+	width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 2px solid #17a2b8;
+}
+
+.conteudo #plantas .plantas-empreendimento .foto-planta{
+	width: 100%;
+    height: auto;
+    padding: 10px
+}
+
+.conteudo #plantas .plantas-empreendimento .btn-metragem{
+	width: 60%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f8f9fa;
+    color: #02779b;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    font-weight: 700;
+}
+
+.conteudo #plantas .plantas-empreendimento .btn-detalhes{
+	width: 40%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #17a2b8;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+}
+
+.conteudo #plantas .plantas-empreendimento .btn-unidades-disponiveis{
+	width: 100%;
+	height: 50px;
+    line-height: 50px;
+    background-color: #0f8c9f;
+    color: #f8f9fa;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+	border-bottom: 3px solid #07535f;
+}
+
+.conteudo #plantas .plantas-empreendimento .btn-unidades-disponiveis:active{
+	background-color: #07535f !important;
+	border-bottom: 3px solid #01161a;
+}
+
+.detalhe-planta .item-planta{
+	width: 50%;
+	height: 50px;
+	float: left;
+}
+
+.detalhe-planta .item-planta .icone{
+	width: 30%;
+	float: left;
+	font-size: 30px;
+	color: #02779b;
+	line-height: 50px;
+	text-align: center;
+}
+
+.detalhe-planta .item-planta .valor{
+	width: 70%;
+    float: left;
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+}
+
+.detalhe-planta .item-planta .valor .titulo{
+	font-size: 10px;
+	color: #333;
+	line-height: 14px;
+}
+
+.detalhe-planta .img-planta img{
+	width: 100%;
+	height: auto;
+}
+
+.detalhe-planta .caracteristicas-planta{
+	width: 100%;
+    height: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+.detalhe-planta .caracteristicas-planta .item{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 0 15px;
+}
+
+.detalhe-planta .caracteristicas-planta .item i{
+	color: #31708f;
+}
+
+.detalhe-planta .caracteristicas-planta .item:nth-of-type(odd){
+	background: #f5f5f5;
+}
+
+.formular-proposta{
+	width: 100% !important;
+    height: 50px;
+    background-color: #02779b;
+    border: 0px;
+    padding: 0 30px;
+}
+
+.confirma{
+	font-size: 22px;
+	width: 100%;
+	padding: 0px 20px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #059494;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.confirma i{
+	font-size: 40px;
+	color: #059494;
+}
+
+.fotos-empreendimento{
+	width: 1px;
+	height: 1px;
+	float: left;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog .modalAtendimento {
+	width: 90%;
+    position: relative;
+    margin: 50% 5% 0 5%;
+    padding: 5px 20px 13px 20px;
+    border-radius: 0px;
+    background: #fff;
+}
+
+.modalDialog .icone-chat-modal{
+	margin: -80px 0 0 0px;
+}
+
+.modalDialog .icone-chat-modal.chat-center{
+	margin: -80px 0 0 30%;
+}
+
+.modalDialog .modalAtendimento .titulo-chat-modal{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #007297 !important;
+}
+
+.modalDialog .modalAtendimento form{
+	background: #FFF !important;
+    border: 0px !important;
+	padding: 0 !important;
+}
+
+.modalDialog .modalAtendimento form .nome-modal{
+	width: 100%;
+    float: left;
+    height: 50px;
+	margin: 10px 0;
+    font-size: 20px;
+    color: rgb(0 0 0 / 50%);
+	border: 1px solid #3797dd36;
+}
+
+.modalDialog .modalAtendimento form .whatsapp-modal{
+	width: 100%;
+	float: left;
+	height: 50px;
+	font-size: 20px;
+    color: rgb(0 0 0 / 50%);
+	border: 1px solid #3797dd36;
+	margin-bottom: 15px;
+}
+
+.modalDialog .modalAtendimento .chat-mobile{
+	width: 100% !important;
+	background-color: #41c2df !important;
+    margin-top: 0px;
+    font-size: 16px;
+	border: 0px;
+    border-bottom: 0px;
+	height: 60px;
+	color: #FFF !important;
+}
+
+.modalDialog .modalAtendimento .ligar-mobile{
+	width: 100% !important;
+	background-color: #41c2df !important;
+    margin-top: 0px;
+    font-size: 16px;
+	border: 0px;
+    border-bottom: 0px;
+	height: 60px;
+	color: #FFF !important;
+}
+
+.modalDialog .modalAtendimento .btn-whatsapp{
+	width: 100%;
+    background-color: #00c35c !important;
+    margin-top: 15px;
+    font-size: 18px;
+    border: 0px;
+    border-bottom: 0px;
+    height: 80px;
+}
+
+.modalDialog .modalAtendimento .btn-whatsapp-off{
+	width: 100%;
+    background-color: #acacac !important;
+    margin-top: 15px;
+    font-size: 18px;
+    border: 0px;
+    border-bottom: 0px;
+    height: 80px;
+	color: #484b5b;
+}
+
+.modalDialog .modalAtendimento .btn-ligar{
+	width: 100%;
+    background-color: #0fa0aa !important;
+    margin-top: 15px;
+    font-size: 18px;
+    border: 0px;
+    border-bottom: 0px;
+    height: 80px;
+}
+
+
+.modalDialog .modalAtendimento .btn-ligar-off{
+	width: 100%;
+    background-color: #acacac !important;
+    margin-top: 15px;
+    font-size: 18px;
+    border: 0px;
+    border-bottom: 0px;
+    height: 80px;
+	color: #484b5b;
+}
+
+.close {
+	background: rgb(27 127 204);
+    color: #FFFFFF !important;
+    line-height: 40px !important;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 50px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    opacity: 100 !important;
+}
+
+.fechar-modal{
+	width: 50px !important;
+    margin-top: 20px !important;
+    margin-right: 25px !important;
+    border-radius: 5px !important;
+    background: rgb(27 127 204) !important;
+    line-height: 10px !important;
+}
+
+.modalDialog .img-responsive {
+	width: auto !important;
+	height: auto;
+}
+
+.modalDialog .foto-user {
+    width: 120px !important;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+}
+
+.modalDialog .texto-chat-modal{
+	font-size: 18px;
+    line-height: 20px;
+    margin: 10px 5px;
+    color: #13665b;
+}
+
+.modalDialog .ChatMobileEnviar{
+	width: 100%;
+    background-color: #0fa0aa !important;
+    margin-top: 20px !important;
+    font-size: 18px;
+    border: 0px;
+    height: 60px;
+}
+
+
+.close:hover { background: #00d9ff; }
+
+.conteudo .btn-tour-360{
+	width: 100%;
+	height: 180px;
+	float: left;
+	background-image: url('/assets/premium/img/BG-TOUR.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px !important;
+	margin-bottom: 15px;
+}
+
+
+.conteudo .btn-tour-360 .title{
+	width: 100%;
+    height: 80px;
+    margin-top: 50px;
+    float: right;
+    background-color: #1a2427d9;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.conteudo .btn-tour-360 .subtitulo{
+	font-size: 12px;
+    color: #ccc;
+    line-height: 12px !important;
+    text-align: center;
+    /* margin-top: 10px !important; */
+    position: relative;
+    top: 20px;
+}
+
+.fancybox__content{
+	padding: 0px !important;
+}
+
+.modal-header .close.modal-form {
+    margin-top: -2px;
+    background-color: #337ab7;
+    margin-right: 10px;
+    height: 40px;
+    line-height: 10px !important;
+}
+
+/*FORMULÁRIO MODAL*/
+.input-field {
+	border:1px solid #ddd;
+	padding: 10px 0px 10px 15px;
+	margin-bottom:15px;
+	background-color: #FFF;
+	font-size: 14px !important;
+}
+.input-field.no-border {
+	border: 1px solid #ddd;
+    padding: 10px 0px 10px 15px;
+    margin-bottom: 15px;
+    background-color: #FFF;
+}
+.input-field .icons {
+	margin: 0px 5px 0 0;
+    color: rgba(24, 71, 118, 0.46);
+	float:left;
+}
+.input-field .icons.icone_campo {
+	margin: 7px 5px 0 0;
+    color: rgba(24, 71, 118, 0.46);
+	float:left;
+}
+.input-field .input-form {
+	border:none;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.input-field.no-border select {
+	border: none;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 0px !important;
+    height: 40px !important;
+    margin-top: -3px;
+	color: #333;
+    font-weight: initial;
+}
+.input-field .input-form:focus {
+}
+.input-field .input-form.with-icons {
+	/*width:calc(100% - 30px);*/
+	display: inline-block;
+    width: 80%;
+    height: 35px;
+    color: #333;
+}
+
+.modal-header.form {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #343a40;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.textarea{
+	width: 95% !important;
+	height: 80px !important;
+}
+
+.button-field .button-form {
+	width: 100%;
+    margin-bottom: 15px;
+    height: 60px;
+    border: 0px;
+    background-color: #337ab7;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.logo-construtora{
+	width: 80px !important;
+}

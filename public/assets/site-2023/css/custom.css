@@ -1,0 +1,40 @@
+.header-nav{
+  background-color: rgb(0, 163, 217) !important;
+}
+
+.caracteristicas{
+  padding-left: 0;
+}
+
+.caracteristicas li{
+  font-size: 16px;
+  color: rgb(88, 124, 138);
+}
+
+.caracteristicas input[type=checkbox]{
+  width: 30px;
+  height: 16px;
+}
+
+.caracteristicas li label{
+  margin-top: -15px !important;
+}
+
+.txt-modalidade{
+  color: #FFF !important;
+}
+
+.container.portal{
+  max-width: 1370px !important;
+}
+
+h4.resumo{
+  font-size: 16px !important;
+  font-weight: lighter !important;
+  text-align: justify !important;
+}
+
+.logo-construtora{
+  max-width: 70px !important;
+  height: auto !important;
+}

@@ -1,0 +1,1976 @@
+/* Add here all your CSS customizations */
+
+.btn-oferta{
+    font-size: 20px;
+    color: rgb(0, 178, 104);
+}
+
+.btn-incluir-oferta{
+    font-size: 20px;
+    color: darkorange;
+}
+
+.btn-oferta-off{
+    font-size: 20px;
+    color: darkorange;
+}
+
+.btn-download{
+    height: 50px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.btn-download-off{
+    height: 50px;
+    line-height: 35px;
+    font-size: 20px;
+    background-color: #F5F5F5 !important;
+    color: #ccc !important;
+}
+
+.btn-editar{
+    font-size: 20px;
+    color: lightseagreen;
+}
+
+.btn-remover{
+    font-size: 20px;
+    color: brown;
+}
+
+.add-produto{
+    margin-bottom: 20px !important;
+    margin-top: -10px !important;
+}
+
+.add-construtora{
+    margin-bottom: 20px !important;
+    margin-top: -10px !important;
+    height: 50px;
+    float: right;
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+}
+
+li.oferta{
+    background-color: #014358 !important;
+}
+
+li.active{
+    background-color: #171717 !important;
+}
+
+span.desconto{
+    color: darkorange;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-buscar{
+    height: 55px;
+    width: 100%;
+}
+
+.topo-blackmonth{
+    background-color: black;
+    color: #FFF !important;
+}
+
+.topo-blackmonth .panel-title{
+    color: #FFF !important;
+}
+
+.modal-block.modal-blackmonth {
+    max-width: 800px;
+}
+
+.modal-block.modal-blackmonth-site {
+    max-width: 100% !important;
+    padding: 0 !important;
+	text-align: left;
+	margin: 0px auto !important;
+	position: relative;
+}
+
+.btn-add-parcela{
+    height: 32px !important;
+    padding: 2px 10px;
+}
+
+.remove_campo{
+    height: 32px !important;
+    padding: 2px 10px;
+}
+
+.finish a.enviar{
+    background-color: #00B2B2 !important;
+    color: #FFF !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.principal{
+    width: 100%;
+    float: left;
+}
+
+img.foto-produto{
+    width: 100% !important;
+    height: 250px !important;
+}
+
+.acesso-construtora{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 50px;
+    background-color: rgb(1, 67, 88);
+}
+.acesso-construtora h2{
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+}
+.acesso-construtora .logo-construtora{
+    border-radius:50%;
+    width: 150px;
+    margin: 0 0 0 70px;
+}
+
+.produto-lista{
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.produto-lista .foto-produto-lista{
+    height: 50px;
+}
+
+.input-group textarea{
+    width: 100% !important;
+}
+
+.termos-uso{
+    width: 740px;
+    height: 100px;
+    overflow-y: scroll;
+    background-color: #F5F5F5;
+    text-align: justify;
+}
+
+
+.informacoes-proposta{
+    width: 100%;
+    height: 200px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn-add-parcela{
+    margin-right: 20px !important;
+    float: right;
+}
+
+.btn-remove-parcela{
+    margin-right: 20px !important;
+    float: right;
+}
+
+.unidades-oferta{
+    color: orange;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 10px !important;
+}
+
+.form-group.linha-50{
+    width: 50%;
+    float: left;
+}
+
+.form-group.linha-50.left{
+    padding-right: 20px;
+}
+
+
+.valor-desconto{
+    font-size: 18px;
+    color: darkred;
+}
+
+.box-parcelas-balao{
+    background-color: #FFFFD5;
+    padding: 0px 0 20px 0;
+    height: 155px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.saldo{
+    background-color: #DDF7FF;
+    padding: 0px 20px 10px 20px;
+}
+
+@media (min-width: 768px){
+    .box-parcelas-balao .col-sm-3 {
+        width: 25.2% !important;
+    }
+}
+
+.box-parcelas-balao .titulo-box-balao{
+    background-color: #FFE599;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.saldo .titulo-box-saldo{
+    background-color: #99E5FF;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+    padding-left: 20px;
+}
+
+.saldo .titulo-box-saldo .btn-atualizar{
+    height: 40px;
+    border: 0px;
+    float: right;
+    padding: 0 10px 0 10px;
+}
+
+.saldo .titulo-box-saldo .btn-atualizar:hover{
+    background-color: #00B2B2;
+    cursor: pointer;
+}
+
+.box-parcelas-balao .texto-baloes{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 20% 0 20%;
+    line-height: 25px;
+    color: #B25900;
+}
+
+.saldo .control-label{
+    margin-top: 40px !important;
+}
+
+.saldo input{
+    height:60px !important;
+}
+.saldo input.valor{
+    font-size: 30px;
+    color: #B25900;
+}
+
+.rodape-proposta{
+    padding: 10px 15px;
+    background-color: transparent !important;
+    border-top: 0px solid #dddddd !important;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-top: -45px;
+}
+
+.botao-avancar{
+    background-color: #00B2B2 !important;
+    color: #F5F5F5 !important;
+}
+
+form{
+    margin-bottom: 0px !important;
+}
+
+.botoes-balao{
+    float: right !important;
+}
+
+.btn-renda{
+    background-color: #00B2B2;
+}
+
+.renda .control-label{
+    margin-top: 15px !important;
+}
+
+.renda input{
+    height:60px !important;
+}
+.renda input.renda{
+    font-size: 30px;
+    color: #00B2B2;
+}
+
+.montar-proposta{
+    width: 280px;
+    height: 40px;
+    position: absolute;
+    left: 370px;
+    bottom: 60px;
+    font-size: 18px;
+    background-color: #00B2B2 !important;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.montar-proposta:hover{
+    cursor: pointer;
+}
+
+.btn-invisible{
+    background-color: transparent !important;
+}
+
+.resumo-proposta{
+    background-color: #EAFFFF;
+    height: 240px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.topo-resumo{
+    width: 100%;
+    background-color: #00B2B2;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #FFF;
+}
+
+.resumo-proposta .item-resumo{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.resumo-proposta .item-resumo .descricao-item{
+    width: 60%;
+    float: left;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.resumo-proposta .item-resumo .descricao-item span.mensais{
+    font-size: 12px !important;
+}
+
+.resumo-proposta .item-resumo .valor-item{
+    width: 40%;
+    float: left;
+    color: #00B2B2;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.resumo-proposta .item-resumo .valor-item.proposta{
+    color: #FFBF00;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.resumo-proposta .item-saldo{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+}
+
+.resumo-proposta .item-saldo .descricao-item{
+    width: 50%;
+    float: left;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.resumo-proposta .item-saldo .valor-item{
+    width: 50%;
+    float: right;
+    color: #FF4000;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.image-confirmacao{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.texto-confirmacao{
+    width: 100%;
+    padding: 0 15% 0 15%;
+    color: #00B2B2;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.texto-erro{
+    width: 100%;
+    padding: 0 15% 0 15%;
+    color: #FFBF00;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.texto-confirmacao-email{
+    width: 100%;
+    padding: 0 25% 0 25%;
+    color: #384C68;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto-email{
+    width: 100%;
+    padding: 0 25% 0 25%;
+    color: #00B2B2;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px 0 60px 0;
+}
+
+.complementar-proposta{
+    margin-top: 0px;
+    background-color: #DDF7FF;
+    width: 100%;
+    height: 80px;
+}
+
+.complementar-proposta label{
+    font-weight: bold;
+    color: #333;
+}
+
+.complementar-proposta .descricao-valores{
+    width: 100% !important;
+    height: 53px !important;
+    margin-top: 10px;
+}
+
+.complementar-proposta .negociar-financiamento{
+    line-height: 20px;
+    color: #00B2B2;
+    font-size: 14px;
+    text-align: center;
+    height: 80px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.select label.error{
+    display: none !important;
+}
+
+.checkbox-terms label.error{
+    margin-top: 30px !important;
+    margin-left: -35px;
+}
+
+.checkbox-terms label.error input{
+    display: none !important;
+}
+
+.checkbox-terms label.error:before {
+    display: none;
+
+}
+
+.titulo{
+    width: 66%;
+    float: left;
+}
+
+.sol{
+    width: 8%;
+    float: left;
+}
+
+.sol img{
+    align-content: center;
+}
+
+.metragem{
+    width: 12%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.metragem img{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.quartos{
+    width: 7%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.suites{
+    width: 7%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.area_lote{
+    width: 12%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.area_app{
+    width: 12%;
+    float: left;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.qtd_unidades{
+    width: 10%;
+    float: left;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.checkbox-custom .outros-bens{
+    margin-top: 7px !important;
+}
+
+.outros-comentarios{
+    width: 100% !important;
+    height: 120px !important;
+    padding: 10px !important;
+}
+
+.margin-top-20{
+    margin-top: 20px !important;
+}
+
+.margin-bottom-20{
+    margin-bottom: 20px !important;
+}
+
+.dropdown-menu > li > a{
+    padding: 5px 30px 5px 30px;
+}
+
+.pieLabel{
+    font-size: 16px !important;
+}
+
+.topo-lead-card{
+    height: 135px;
+}
+
+.foto{
+    width: 50px;
+}
+
+select.populate{
+    height: 50px !important;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.B i{
+    color: #FF4000;
+    font-size: 40px;
+}
+
+.A i{
+    color: #00B2B2;
+    font-size: 40px;
+}
+
+/*ACCORDIONS*/
+.panel-group .panel-accordion-green .panel-heading .panel-title a {
+	background: #00B2B2;
+	color: #FFF;
+}
+
+.panel-group .panel-accordion-orange .panel-heading .panel-title a {
+	background: #ECBE7B;
+	color: #FFF;
+}
+
+.panel-group .panel-accordion-midias .panel-heading .panel-title a {
+	background: cornflowerblue;
+	color: #FFF;
+}
+
+.panel-group .panel-accordion-honorarios .panel-heading .panel-title a {
+	background: rgb(141 88 42);
+	color: #FFF;
+}
+
+.btn-add {
+	background: #00B2B2;
+    color: #FFF;
+    border: 0px;
+    line-height: 40px;
+    width: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.salvar-canais-atendimento{
+    background: #00B2B2;
+    color: #FFF;
+    height: 50px;
+    float: right;
+}
+
+.salvar-canais-atendimento:hover{
+    background: #086d6d;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btn-remove {
+	background: firebrick;
+    color: #FFF;
+    border: 0px;
+    line-height: 30px;
+    width: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+  }
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .avatar-upload .avatar-edit input + label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+  .avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .avatar-upload .avatar-preview .construtora{
+    border-radius: 5% !important;
+  }
+  .avatar-upload .avatar-preview .construtora > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .input-group .form-control {
+    height: 50px !important;
+}
+
+.input-group .form-control.textarea{
+    height: 100px !important;
+}
+
+.titulo-row{
+    width: 100%;
+    height: 35px;
+    line-height: 30px;
+    font-size: 16px;
+    border-bottom: 3px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.canal-atendimento {
+    height: 50px !important;
+    width: 100% !important;
+}
+
+
+.input-group .descricao{
+    height: 100px !important;
+}
+
+form > label.control-label {
+    height: 50px !important;
+    line-height: 50px !important;
+}
+
+.qualidade-anuncio{
+    position: relative;
+    left: 50%;
+    margin-left:-90px !important;
+}
+
+.box-info-empreendimento{
+    margin-top: -15px;
+}
+
+.item-box-editar-empreendimento .btn-editar{
+    position: relative;
+    float: right;
+    right: -5px;
+    top: -40px;
+    font-size: 30px;
+    color: #FFF;
+}
+
+.botoes-acao{
+    margin-bottom: 15px;
+}
+
+.botoes-acao .btn-group-justified{
+    height: 70px !important;
+}
+
+.botoes-acao .btn-group-justified a > i{
+    font-size: 20px;
+}
+
+.checkbox-lazer{
+    background: #00B2B2;
+}
+
+.form-group .populate{
+    border: 0px !important;
+    padding: 0;
+}
+
+.box-planta{background-color: #FFF; margin-top: 20px;}
+ul.itens-planta li{width: 100%; float: left; height: 25px;}
+ul.itens-planta li i{font-size: 20px; float: left; color: #00B2B2; width: 10%;}
+ul.itens-planta li .metragem{font-size: 14px; line-height: 20px; float: left; padding-left: 15px; width: 90%;}
+.dados-planta{float: left;}
+.box-caracteristicas-planta{float: left; margin-top: 20px; width: 100%;}
+.box-planta .botoes-acao{position: absolute; top: 0; right: 15px;}
+
+.incluir-planta{width: 200px; height: 50px; background-color: #00B2B2 !important; margin-bottom: 20px; border: 0px;}
+.salvar-planta{width: 300px; height: 50px; float: right; background-color: #00B2B2 !important; margin-bottom: 20px; border: 0px;}
+
+form.planta input{
+    height: 50px !important;
+}
+
+form.planta .upload-imagem input{
+    height: 75px !important;
+}
+
+form.planta select{
+    border: 1px solid #ccc !important;
+    height: 50px;
+}
+form.planta .itens-planta{
+    padding: 0px !important;
+    height: auto !important;
+}
+
+.btn-unidades{
+    padding: 20px !important;
+    width: 100% !important;
+}
+
+.btn-garagens {
+    padding: 20px !important;
+    width: 100% !important;
+}
+
+.box-empreendimento img.foto-destaque{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.box-empreendimento .bloqueado{
+    width: 105% !important;
+    height: 80px !important;
+    position: absolute;
+    left: -2.5%;
+    right: -2.5%;
+    top: 10px;
+    background-image: url('../images/tag-bloqueado.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+
+.box-empreendimento .cpcvendido{
+    width: 105% !important;
+    height: 80px !important;
+    position: absolute;
+    left: -2.5%;
+    right: -2.5%;
+    top: 10px;
+    background-image: url('../images/tag-100%vendido.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+
+.btn-adicionar{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #00B2B2 !important;
+    border: 0px !important;
+}
+
+/* IUcones Editar */
+.icone-acao {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.icone-acao a {
+	background: #00B2B2;
+	border-radius: 5px;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 60px;
+}
+
+.icone-acao a.edit {
+	background: #00B2B2 !important;
+}
+
+.icone-acao a.view {
+	background: #0b71b6 !important;
+}
+
+.icone-acao a.car {
+	background: #5bc0de !important;
+}
+
+.icone-acao a.remove {
+	background: #B20000 !important;
+}
+
+.icone-acao a:hover {
+	text-decoration: none;
+}
+
+.icone-acao a span {
+	display: none;
+}
+
+.icone-acao a i {
+	font-size: 1.35rem;
+	color: #FFF;
+	font-weight: normal;
+}
+
+.salvar-dados{
+    height: 50px;
+    float: right;
+    padding: 0 20px 0 20px;
+}
+
+
+.salvar-tour{
+    height: 50px;
+    float: right;
+    padding: 0 20px 0 20px;
+    margin-right: -15px;
+    margin-top: 20px;
+}
+
+
+.simple-card-list li.valor-pago {
+    background: #06c3ba;
+    color: #FFF;
+}
+
+.panel-group .panel-accordion-lilas .panel-heading .panel-title a {
+    background: #720394;
+    color: #FFF;
+}
+
+select.tipo-imagem{
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+}
+
+.dados-usuario{
+    float: left;
+    width: 60%;
+}
+
+.acoes-usuario{
+    float: right;
+    width: 40%;
+}
+
+.acoes-usuario button{
+    float: right;
+}
+
+.editar-unidade-quadra{
+    font-size: 12px;
+    color: #d6d6d6;
+}
+
+#botao-unidade{
+    width: 100%;
+}
+
+.btn-gerar-quadras-torres{
+    height: 60px;
+    margin-bottom: 20px !important;
+}
+
+#unidades .col-6{
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+#unidades .col-md-4{
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+#unidades .col-lg-2{
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+.foto-empreendimento-admin{
+    height: 180px !important;
+}
+
+#unidades .btn-editar-unidade{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+}
+
+/*EDITAR UNIDADES*/
+
+.btn-unidade-editar{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+li.editar-situacao-unidade{
+    padding: 10px !important;
+}
+
+.dropdown-menu.editar-unidades{
+    width: 250px !important;
+    margin: 2px 0 0 -20px !important;
+}
+
+/*TOPO PAINEIS ACCORDIONS*/
+.panel-group .panel-accordion-seo .panel-heading .panel-title a {
+	background: #088bac;
+	color: #FFF;
+}
+
+.logo-construtora{
+    width: 100% !important;
+}
+
+/*
+.btn-group > .btn-group{
+    width: 100% !important;
+}
+
+.btn-group .btn-default{
+    width: 100% !important;
+    height: 50px !important;
+}*/
+
+.btn-alterar-valor{
+    width: 150px;
+    height: 40px;
+    background-color: teal;
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+    /* float: right; */
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.btn-alterar-valor:hover{
+    background-color: rgb(1, 80, 80);
+    cursor: pointer;
+}
+
+
+.topo-alteracoes-lote{
+    height: 60px;
+}
+
+input.valor-alteracao{
+    font-size: 20px;
+    color: #00B2B2;
+    font-weight: bold;
+}
+
+.input-group-addon.valor{
+    background-color: #00B2B2;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.input-group-addon.desconto{
+    background-color: #dfa300;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.input-group-addon.valor-final{
+    background-color: #cf2d05;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.input-group-addon.oferta{
+    background-color: #00B2B2;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.input-group-addon.proposta-online{
+    background-color: #f5b609;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.editar-mapa{
+    float: right;
+    line-height: 30px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.visualizar-mapa{
+    float: right;
+    line-height: 30px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.btn-acao-pdf{
+    float: right;
+    width: 60px;
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+.btn-acao-print{
+    float: right;
+    width: 60px;
+    line-height: 40px;
+    background-color: #00B2B2 !important;
+    border: 1px solid #00B2B2 !important;
+}
+
+.mg-r-10{
+    margin-right: 10px !important;
+}
+
+.btn-acao-mapa {
+    float: left;
+    width: 60px;
+    margin-right: 10px;
+    line-height: 40px;
+    background-color: rgb(85, 22, 112) !important;
+    border: 1px solid rgb(85, 22, 112) !important;
+}
+
+.btn-copiar-linkMapa {
+    float: left;
+    width: 60px;
+    margin-right: 10px;
+    line-height: 40px;
+    background-color: rgb(235, 136, 8) !important;
+    border: 1px solid rgb(255, 153, 0) !important;
+}
+
+.btn-acao-editar-mapa {
+    float: left;
+    width: auto;
+    padding: 5px 20px 7px 20px;
+    margin-right: 10px;
+    line-height: 40px;
+    background-color: rgb(3, 133, 150) !important;
+    border: 1px solid rgb(3, 133, 150) !important;
+}
+
+.btn-outros{
+    background-color: #024e61 !important;
+    color: #FFF !important;
+}
+
+
+/* LINKS COMPARTILHAMENTO BOTÕES*/
+.link-user{
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: rgb(3, 133, 150) !important;
+    border: 1px solid rgb(3, 133, 150) !important;
+}
+
+.link-construtora{
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: rgb(7, 154, 232) !important;
+    border: 1px solid rgb(3, 133, 150) !important;
+}
+
+.link-externo{
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: rgb(72, 4, 127) !important;
+    border: 1px solid rgb(22, 2, 54) !important;
+}
+
+.input-link-mapa{
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    color: #ccc;
+    border: 0px;
+}
+
+.todas-quadras{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.todas-quadras a{
+    width: 32.5%;
+    float: left;
+    line-height: 40px;
+}
+
+.btn-ver-anuncio{
+    width: 100%;
+    line-height: 60px;
+    background-color: #008C8C !important;
+    font-size: 14px;
+    border: 0px solid #008C8C;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+
+
+.btn-acessar-domus{
+    width: 100%;
+    line-height: 50px;
+    background-color: #8C0000 !important;
+    font-size: 14px;
+    border: 0px solid #B20000;
+}
+
+.btn-acessar-domus:hover{
+    background-color: #B20000 !important;
+    cursor: pointer;
+}
+
+.btn-acessar-domus .fa-university{
+    font-size: 25px !important;
+    margin-right: 10px;
+}
+
+.box-quadra{
+    width: 15.66%;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 1%;
+}
+
+.box-quadra:nth-child(6n){
+    width: 16.7%;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 0%;
+
+}
+
+.box-quadra .btn-quadra{
+    width: 100%;
+    float: left;
+    line-height: 40px;
+}
+
+tr.lista-vendas td{
+    font-size: 14px !important;
+}
+
+tr.lista-vendas td.valor-venda{
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #06c3ba;
+}
+
+tr.lista-vendas td.info-venda{
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #088bac;
+    text-align: center;
+}
+
+.lista-vendas > .nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+    font-size: 16px !important;
+}
+
+
+tr.lista-boletos{
+    font-size: 14px !important;
+    line-height: 30px;
+}
+
+tr.lista-boletos td{
+    line-height: 40px !important;
+}
+
+tr.lista-boletos td.situacao-vencido{
+    font-size: 25px !important;
+    font-weight: bold;
+    color: #B20000;
+    text-align: center;
+}
+
+tr.lista-boletos .btn-group .btn-default{
+    width: 100% !important;
+    height: 35px !important;
+}
+
+.select-empreendimento{
+    height: 50px !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel.filtro .panel-heading {
+    background: #f6f6f6;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #DADADA;
+    padding: 18px;
+    position: relative;
+    height: 55px;
+    margin-bottom: 10px;
+}
+
+.panel-body.form-filtro {
+    padding: 0px !important;
+}
+
+.panel-body.form-filtro .nome-comprador{
+    height: 50px !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-body.form-filtro .campo-filtro{
+    height: 50px !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-body.form-filtro .botao-filtrar{
+    height: 50px !important;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+}
+
+.bg-quartenary .widget-summary .summary-icon {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-acoes-boleto{
+    width: 190px !important;
+}
+
+.fa.icon-chart{
+    line-height: 90px !important;
+}
+
+.exportar-excel {
+        background-color: darkcyan !important;
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        width: 250px;
+        /* height: 50px; */
+        line-height: 40px;
+        font-size: 16px;
+        border: 0px solid;
+}
+
+.exportar-excel:hover {
+    background-color: rgb(4, 49, 49) !important;
+    cursor: pointer;
+}
+
+.box-integracao{
+    padding: 30px !important;
+}
+
+.subtitulo-integracao{
+    color: #f3ca35 !important;
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.box-integracao p{
+    font-size: 14px;
+}
+
+.titulo-conexao-on{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #00B259;
+    border-radius: 30px;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.titulo-conexao-ativar{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #00B259;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 30px;
+
+}
+
+.titulo-conexao-off{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 30px;
+    color: #8C0000;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titulo-conexao-remover{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 30px;
+    color: #8C0000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titulo-conexao-remover:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ativar-conexao{
+    margin: auto;
+    text-align: center;
+}
+
+.desativar-conexao{
+    margin: auto;
+    text-align: center;
+}
+
+h4.title-users{
+    font-size: 16px !important;
+}
+
+.info{
+    line-height: 50px;
+    font-size: 20px;
+    color: #007DA6;
+}
+
+.alert-danger-fin {
+    color: #a94442;
+    background-color: #FFBF00;
+    border-color: #FFBF00;
+}
+
+.titulo-bloqueio{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mensagem-bloqueio{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mensagem-bloqueio a{
+    color: #a94442;
+}
+
+
+/*OFERTA 2020*/
+.banner-oferta-painel{
+    background-color: #00A3D9;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+.banner-oferta-painel .banner-col-meio{
+    background-color: #00455B;
+    border-radius: 10px;
+}
+
+.banner-oferta-painel .banner-logo-oferta img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-oferta-painel .banner-col-meio img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-oferta-painel .btn-publicar-oferta{
+    width: 250px;
+    height: 60px;
+    background-color: #FFF;
+    border-radius: 35px;
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-oferta-painel .btn-publicar-oferta:hover{
+    background-color: #FFBF00;
+    cursor: pointer;
+}
+
+.form-publicacao .control-label{
+    height: 50px !important;
+    line-height: 30px !important;
+}
+
+.form-publicacao .form-control{
+    height: 50px !important;
+}
+
+.form-publicacao .form-control.textarea{
+    height: 130px !important;
+}
+
+.form-publicacao .form-control.textarea-completo{
+    height: 300px !important;
+}
+
+
+.form-publicacao .form-control.status{
+    height: 50px !important;
+    color: #555 !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+}
+
+.form-publicacao .salvar-publicacao{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: teal;
+    float: right;
+}
+
+.publicacoes-lista{
+    font-size: 16px !important;
+}
+
+.publicacoes-lista .icones{
+    font-size: 30px !important;
+}
+
+.publicacoes-lista .icones .excluir-publicacao{
+    color: #FF4000;
+    cursor: pointer;
+}
+
+
+.resumo-unidades{
+    width: 220px;
+    height: 60px;
+    float: left;
+    margin-right: 5px;
+}
+
+.resumo-unidades .und-disponiveis{
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+.resumo-unidades .und-disponiveis .qtd{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #47a447;
+}
+
+.resumo-unidades .und-disponiveis .cor{
+    width: 100%;
+    height: 24px;
+    background-color: #47a447;
+}
+
+.resumo-unidades .und-vendidas{
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+.resumo-unidades .und-vendidas .qtd{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #d2322d;
+}
+
+.resumo-unidades .und-vendidas .cor{
+    width: 100%;
+    height: 24px;
+    background-color: #d2322d;
+}
+
+.resumo-unidades .und-reservadas{
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+.resumo-unidades .und-reservadas .qtd{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #e89113;
+}
+
+.resumo-unidades .und-reservadas .cor{
+    width: 100%;
+    height: 24px;
+    background-color: #e89113;
+}
+
+.resumo-unidades .und-bloqueadas{
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+.resumo-unidades .und-bloqueadas .qtd{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #131a24;
+}
+
+.resumo-unidades .und-bloqueadas .cor{
+    width: 100%;
+    height: 24px;
+    background-color: #131a24;
+}
+
+.resumo-unidades .und-outros{
+    width: 40px;
+    float: left;
+}
+
+.resumo-unidades .und-outros .qtd{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #088bac;
+}
+
+.resumo-unidades .und-outros .cor{
+    width: 100%;
+    height: 24px;
+    background-color: #024e61;
+}
+
+
+/*EDITAR UNIDADE*/
+.valor-unidade{
+    color: #00B2B2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-salvar-alteracoes{
+    width: 100%;
+    height: 50px;
+    /* line-height: 50px; */
+    text-align: center;
+    font-size: 18px;
+    background-color: #088bac !important;
+    border: 1px solid #088bac !important;
+    margin-top: 15px;
+}
+
+.titulo-topo{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.titulo-topo .nome-torre{
+    width: 50%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    background-color: #088bac;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 0 0 10px;
+}
+
+.titulo-topo .nome-unidade{
+    width: 50%;
+    float: right;
+    height: 50px;
+    background-color: #F7F7F7;
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+    padding: 0 0 0 10px;
+    text-align: center;
+}
+
+.input-reserva{
+    height: 50px;
+    background-color: #F7F7F7;
+    font-size: 16px;
+    color: #333;
+}
+
+.data-final-reserva{
+    height: 50px;
+    background-color: #F7F7F7;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(7, 116, 116);
+}
+
+.alterar-reserva-btn{
+    padding: 0 30px;
+    background-color: #007DA6 !important;
+    float: right;
+    height: 50px;
+    width: 100%;
+    border: 0px !important;
+}
+
+
+/*EDITAR GARAGENS*/
+.btn-garagem-editar{
+    width: 100% !important;
+}
+
+.chat-suporte{
+    position: absolute !important;
+    bottom: 20px;
+    width: 100%;
+    background-color: forestgreen;
+    /* padding: 30px 0 30px 0; */
+    /* position: absolute;*/
+    font-size: 20px !important;
+}
+
+.chat-suporte i{
+    font-size: 30px !important;
+    width: 0.0em !important;
+    margin-left: -5px;
+    margin-right: 1.0em !important;
+}
+
+.chat-suporte:hover{
+    background-color: rgb(0, 85, 33);
+    cursor: pointer;
+}
+
+/*TABELA OMLINE*/
+
+.tabela-online .previsao-entrega{
+    color: #e89113;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* GARAGENS */
+.btn-alterar-garagem{
+    float: right;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #008C8C !important;
+    border: 0px !important;
+    margin-top: 27px;
+    width: 100%;
+}
+
+.titulo-empreendimento{
+    font-size: 14px !important;
+}
+
+span.unidade-garagem{
+    color: #fbff00 !important;
+}
+
+span.valor-garagem{
+    color: #8eeebe !important;
+}
+span.valor-garagem i{
+    color: #8eeebe !important;
+}
+
+.formato-vaga-padrao{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #014358;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.formato-vaga-extra{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e89113;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.formato-vaga-visitante{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #720394;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+input.valor-vaga{
+    color: #008C8C;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swal2-popup {
+    font-size: 1.8rem !important;
+}
+
+.torre .form-control{
+    height: 50px !important;
+}
+
+.form-tour{
+    padding: 10px !important;
+}
+
+.copy-tour{
+    height: 50px !important;
+}
+
+.removeTour{
+    height: 50px !important;
+}
+
+.botoes-mapa{
+    width: 50%;
+    float: right;
+}
+
+.botoes-mapa a{
+    width: 47% !important;
+    float: left;
+    margin-left: 3%;
+    padding: 6px 12px;
+}
+
+.btn-torre{
+    padding: 10px 20px !important;
+}
+
+.bloco-vertical{
+    margin-bottom: 20px !important;
+}
+
+.btn-tooltip{
+    color: #337ab7 !important;
+}
+
+.valor-percentual-honorario{
+    font-size: 30px;
+    color: #633a17 !important;
+    font-weight: bold;
+    text-align: center;
+}

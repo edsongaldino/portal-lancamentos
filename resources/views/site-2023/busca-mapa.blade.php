@@ -601,7 +601,7 @@
 												<div class="fp_single_item_slider">
                                                     @foreach($empreendimento->getFotosCarrossel() as $foto)
 													<div class="item">
-														<a href="/imoveis/{{ url_amigavel($empreendimento->subtipo->nome)}}-{{ url_amigavel($empreendimento->nome)}}-{{ $empreendimento->id }}.html" target="_blank"><img class="img-whp" src="{{ $foto->getUrl() }}" alt="{{ $foto->nome }}"></a>
+														<a href="/imoveis/{{ url_amigavel($empreendimento->subtipo->nome)}}-{{ url_amigavel($empreendimento->nome)}}-{{ $empreendimento->id }}.html" target="_blank"><img class="img-whp" src="{{ $foto->getUrl("400x300") }}" alt="{{ $foto->nome }}"></a>
 													</div>
                                                     @endforeach
 												</div>

@@ -294,7 +294,7 @@
 								<div class="fp_single_item_slider">
 									@foreach($empreendimento->getFotosCarrosselMapa() as $foto)
 									<div class="item">
-										<a href="/imoveis/{{ url_amigavel($empreendimento->subtipo->nome)}}-{{ url_amigavel($empreendimento->nome)}}-{{ $empreendimento->id }}.html" target="_blank"><img class="img-whp" src="{{ $foto->getUrl() }}" alt="{{ $foto->nome }}"></a>
+										<a href="/imoveis/{{ url_amigavel($empreendimento->subtipo->nome)}}-{{ url_amigavel($empreendimento->nome)}}-{{ $empreendimento->id }}.html" target="_blank"><img class="img-whp" src="{{ $foto->getUrl("400x300") }}" alt="{{ $foto->nome }}"></a>
 									</div>
 									@endforeach
 								</div>
@@ -306,7 +306,12 @@
 											<li class="list-inline-item"><a href="#"><i class="fas fa-building"></i> {{ $empreendimento->subtipo->nome }}</a></li>
 											<li class="list-inline-item"><a href="#">{{ $empreendimento->modalidade }}</a></li>
 										</ul>
-										<a class="fp_price" href="#">R$ {{ $empreendimento->valor_inicial }}<small>,00</small></a>
+										@if($empreendimento->valor_inicial == 0)
+											<a class="fp_price" href="#">Consulte</a>
+										@else
+											<a class="fp_price" href="#">R$ {{ $empreendimento->valor_inicial }}<small>,00</small></a>
+										@endif
+										
 									</div>
 									<p class="text-thm">{{ $empreendimento->variacao->nome }}</p>
 									<h4>{{ $empreendimento->nome }}</h4>
