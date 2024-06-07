@@ -56,6 +56,7 @@
 		                <a href="/empreendimentos/3-condominiofechado.html"><span class="title"><i class="fas fa-house-damage"></i> Condomínios Horizontais</span></a>
 		            </li>
 	                <li class="list-inline-item add_listing"><a href="/plataforma-lancamentos-online.html" target="_blank"><i class="fas fa-rocket"></i><span class="dn-lg"> Anuncie</span></a></li>
+					<li class="list-inline-item painel"><a href="/painel-anunciante.html" target="_blank"><i class="fas fa-cogs"></i><span class="dn-lg"> Painel do Anunciante</span></a></li>
 		        </ul>
 		    </nav>
 		</div>
@@ -114,6 +115,8 @@
 							<li class="list-inline-item"><a href="/empreendimentos/2-salascomerciais.html"><i class="fas fa-store"></i> Salas Comerciais</a></li>
 							<li class="list-inline-item"><a href="/empreendimentos/3-condominiofechado.html"><i class="fas fa-house-damage"></i> Condomínios Horizontais</a></li>
 							<li class="list-inline-item"><a href="/plataforma-lancamentos-online.html" target="_blank"><i class="fas fa-rocket"></i> Anuncie</a></li>
+							<li class="list-inline-item"><a href="/painel-anunciante.html" target="_blank"><i class="fas fa-cogs"></i> Painel Anunciante</a></li>
+							
 						</ul>
 					</div>
 				</div>

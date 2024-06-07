@@ -685,6 +685,7 @@ Route::get('/deleta-caracteristicas/{id}', function($id) {
 Route::any('busca-mapa.html', 'Site\BuscaController@index');
 Route::get('resultado-busca.html', 'Site\HomeController@Busca');
 Route::get('index.html', 'Site\HomeController@NovaIndex');
+Route::get('painel-anunciante.html', 'Admin\AdminController@dashboard');
 
 /* Rotas Corretor */
 Route::get('/home-corretor', 'Corretor\AuthController@home')->name('home-corretor');

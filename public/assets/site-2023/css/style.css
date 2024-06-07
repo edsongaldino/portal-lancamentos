@@ -1004,7 +1004,16 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing{
   position: relative;
   text-align: center;
   vertical-align: middle;
-  width: 200px;
+  width: 150px;
+}
+header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel{
+  background-color: #3e4c66;
+  border-radius: 10px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 230px;
 }
 header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing.home5,
 header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing.home2.style2,
@@ -1406,6 +1415,13 @@ header.header-nav.menu_style_home_one.style2.home10 ul.ace-responsive-menu li.li
 }
 header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.add_listing{
   background-color: rgb(251 214 76);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(20, 19, 19, 0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(37, 35, 35, 0.3);
+  -o-box-shadow: 0px 1px 4px 0px rgba(20, 19, 19, 0.3);
+  box-shadow: 0px 1px 4px 0px rgba(17, 17, 17, 0.3);
+}
+header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.painel{
+  background-color: #3e4c66;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(20, 19, 19, 0.3);
   -moz-box-shadow: 0px 1px 4px 0px rgba(37, 35, 35, 0.3);
   -o-box-shadow: 0px 1px 4px 0px rgba(20, 19, 19, 0.3);
