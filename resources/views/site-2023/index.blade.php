@@ -22,7 +22,7 @@
 					<form action="busca-mapa.html" method="GET">
 					@csrf
 					<ul class="h1ads_1st_list mb0">
-						<li class="list-inline-item">
+						<li class="list-inline-item" style="display: none">
 							<div class="search_option_two home2">
 								<div class="candidate_revew_select">
 									<select class="selectpicker w100 show-tick" name="modalidade" id="modalidade">
@@ -34,7 +34,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="list-inline-item">
+						<li class="list-inline-item tipo-busca">
 							<div class="search_option_two home2">
 								<div class="candidate_revew_select">
 									<select class="selectpicker w100 show-tick" name="subtipo_id" id="subtipo_id">
@@ -296,26 +296,19 @@
 								<img class="img-whp" src="{{ $destaque->fotoPrincipal() }}" alt="{{ $destaque->nome }}">
 								<div class="thmb_cntnt">
 									<ul class="tag mb0">
-										<li class="list-inline-item">Oferta</li>
-										<li class="list-inline-item">Proposta</li>
+										<li class="list-inline-item subtipo">{{ $destaque->subtipo->nome }}</li>
 									</ul>
-									<div class="fp_price">R$ {{ $destaque->valor_inicial }}<small>,00</small></div>
+									<div class="fp_price valor-destaque">R$ {{ $destaque->valor_inicial }}<small>,00</small></div>
 								</div>
 							</div>
 							<div class="details">
 								<div class="tc_content">
-									<p class="text-thm">{{ $destaque->subtipo->nome }}</p>
 									<h4>{{ $destaque->nome }}</h4>
 									<p><span class="flaticon-placeholder"></span> 
 										@if ($destaque->endereco)
 										{{ $destaque->endereco->bairro->nome }}, {{ $destaque->endereco->cidade->nome }} - {{ $destaque->endereco->cidade->estado->nome }}
 										@endif	
 									</p>
-									<ul class="prop_details mb0">
-										<li class="list-inline-item"><i class="fas fa-bed"></i> {!! qtd_dormitorio($destaque, true) !!}</li>
-										<li class="list-inline-item"><i class="fas fa-toilet"></i> {!! qtd_banheiro($destaque) !!}</li>
-										<li class="list-inline-item"><i class="fas fa-ruler-combined"></i> {{ qtd_metragem($destaque)}} m<sup>2</sup></li>
-									</ul>
 								</div>
 								<div class="fp_footer">
 									<ul class="fp_meta float-left mb0">

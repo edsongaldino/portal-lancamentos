@@ -38,3 +38,30 @@ h4.resumo{
   max-width: 70px !important;
   height: auto !important;
 }
+
+.list-inline-item.subtipo{
+  width: auto !important;
+  color: #FFF !important;
+}
+.fp_price.valor-destaque{
+  bottom: 15px !important;
+  left: 10px !important;
+  background-color: #0000008a !important;
+  padding: 10px 15px !important;
+}
+
+header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
+  padding: 15px !important;
+}
+
+.home1-advnc-search .tipo-busca .search_option_two .dropdown.bootstrap-select>.dropdown-toggle {
+  width: 300px !important;
+}
+
+.home1-advnc-search .bootstrap-select .dropdown-menu li a {
+  width: 300px !important;
+}
+
+.home1-advnc-search ul li:nth-child(3) .form-group .form-control {
+  width: 585px !important;
+}
