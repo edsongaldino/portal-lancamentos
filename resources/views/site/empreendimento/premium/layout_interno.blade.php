@@ -91,7 +91,7 @@
 
     @else
     <div class="topo">
-        <a href="/empreendimento/{{ $empreendimento->id }}/premium"><div class="logo"><img src="{{ url($empreendimento->construtora->getLogoPremium()) }}" alt="" class="img-responsive center-block d-block mx-auto"></div></a>
+        <a href="/pagina-inicial.html"><div class="logo"><img src="{{ url($empreendimento->construtora->getLogoPremium()) }}" alt="" class="img-responsive center-block d-block mx-auto"></div></a>
         <div class="logo-empreendimento"><img src="{{ url($empreendimento->getLogo()) }}" class="img-responsive center-block d-block mx-auto" alt="" width="100" height="76"></div>
 
         <a href="#openModal" id="ModalChat">

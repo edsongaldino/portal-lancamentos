@@ -9,8 +9,10 @@ use App\Models\Empreendimento;
 use App\Models\Newsletter;
 use App\Models\Publicacao;
 use App\Http\Requests\NewsletterRequest;
+use App\Models\Cidade;
 use App\Models\ContatoComercial;
 use App\Models\Subtipo;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -19,7 +21,7 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->viewHome = isMobile() ? 'site.home.mobile.index' : 'site.home.desktop.index';
+        $this->viewHome = isMobile() ? 'site.home.mobile.index' : 'site-2023.index';
         $this->viewConstrutora = isMobile() ? 'site.construtora.mobile.index' : 'site.construtora.desktop.index';
     }
 
@@ -31,6 +33,10 @@ class HomeController extends Controller
         $this->data['salas'] = Empreendimento::where('subtipo_id', 2)->where('status', 'Liberada')->get()->count();
         $this->data['lotes'] = Empreendimento::where('subtipo_id', 4)->where('status', 'Liberada')->get()->count();
         $this->data['noticias'] = Publicacao::where('status', 'Liberada')->orderBy('data', 'DESC')->take(4)->get();
+        $this->data['subtipos'] = Subtipo::all();
+        $this->data['empreendimentos'] = Empreendimento::latest()->where('status', 'Liberada')->take(30)->get();
+        $this->data['noticias'] = Publicacao::where('status', 'Liberada')->orderBy('data', 'DESC')->take(3)->get();
+        $this->data['destaques'] = Empreendimento::latest()->where('status', 'Liberada')->take(12)->get();
 
         return view($this->viewHome, $this->data);
     }
@@ -141,5 +147,16 @@ class HomeController extends Controller
             'retorno' => 'Ocorreu um erro, tente novamente mais tarde'
         ]);
 
+    }
+
+    public function AutoCompleteCidades($query)
+    {
+        $municipios = Cidade::where('status', 'L')->get();
+        $data = DB::table('cidades')
+        ->select('cidades.id', 'cidades.nome', 'estados.uf')
+        ->join('estados', 'estados.id', '=', 'cidades.estado_id')
+        ->where("cidades.nome","LIKE","%($query)%")
+        ->get();
+        return response()->json($municipios);
     }
 }

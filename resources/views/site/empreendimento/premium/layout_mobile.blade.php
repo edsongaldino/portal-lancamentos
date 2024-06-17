@@ -21,7 +21,7 @@
 <body>
 
     <div class="topo">
-        <a href="/empreendimento/{{ $empreendimento->id }}/premium"><div class="logo"><img src="/assets/images/premium/logo_lancamentos_online.png" alt="" class="img-responsive"></div></a>
+        <a href="/pagina-inicial.html"><div class="logo"><img src="/assets/images/premium/logo_lancamentos_online.png" alt="" class="img-responsive"></div></a>
         <div class="logo-empreendimento"><img src="/assets/images/premium/logo_empreendimento.png" alt="" class="img-responsive"></div>
     </div>
 

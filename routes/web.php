@@ -50,7 +50,7 @@ Route::group(['middleware' => ['site']], function () {
 	Route::post('/pagina-comercial/captar-dados-cliente', 'Site\HomeController@ContatoComercial');
 
 	// Home
-	Route::get('pagina-inicial.html', 'Site\HomeController@NovaIndex')->name('homepage');
+	Route::get('pagina-inicial.html', 'Site\HomeController@index')->name('homepage');
 
 
 	Route::get('/sitemap.xml', 'Site\HomeController@SiteMap');
@@ -75,6 +75,8 @@ Route::group(['middleware' => ['site']], function () {
 		'regiao' => '(.*)',
 		'id' => '([0-9]+)'
 	]);
+
+	Route::get('/auto-complete-cidades/{query}', 'Site\HomeController@AutoCompleteCidades');
 
 	//Emprendimentos em Oferta
 
@@ -684,7 +686,7 @@ Route::get('/deleta-caracteristicas/{id}', function($id) {
 /*SITE 2023*/
 Route::any('busca-mapa.html', 'Site\BuscaController@index');
 Route::get('resultado-busca.html', 'Site\HomeController@Busca');
-Route::get('index.html', 'Site\HomeController@NovaIndex');
+Route::get('index.html', 'Site\HomeController@index');
 Route::get('painel-anunciante.html', 'Admin\AdminController@dashboard');
 
 /* Rotas Corretor */

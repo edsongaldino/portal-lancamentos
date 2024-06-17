@@ -190,6 +190,7 @@
 <script type="text/javascript" src="{{ asset('assets/site-2023/js/script.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/javascripts/mascaras/jquery.mask.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/javascripts/mascaras/jquery.maskMoney.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/typeahead.bundle.min.js"></script>
 
 <script>
 	$('.moeda').maskMoney({thousands: '.', decimal: ','});
@@ -328,7 +329,37 @@
 		// add your functions
 		gMapHome();
 	  })(jQuery);
+
+	  var municipios = new Bloodhound({
+			datumTokenizer: Bloodhound.tokenizers.obj.whitespace("nome"),
+			queryTokenizer: Bloodhound.tokenizers.whitespace,
+			remote: {
+				url: "/auto-complete-cidades/%QUERY",
+				wildcard: '%QUERY'
+			},
+			limit: 10
+		});
+		municipios.initialize();
+
+		$("#ttexto").typeahead({
+			hint: true,
+			highlight: true,
+			minLength: 1
+		},
+		{
+			name: "municipios",
+			displayKey: "nome",
+			source: municipios.ttAdapter()
+		}).bind("typeahead:selected", function(obj, datum, name) {
+			console.log(datum);
+			$(this).data("seletectedId", datum.nome);
+			$('#cidade').val(datum.id);
+			console.log(datum.value);
+		});  
+
+
 	});
+
 	</script>
 
 </body>
