@@ -46,6 +46,7 @@
 								</div>
 							</div>
 						</li>
+						
 						<li class="list-inline-item">
 							<div class="form-group">
 								<input type="text" class="form-control" id="ttexto" placeholder="Localização" name="cidade">
@@ -53,6 +54,7 @@
 								<label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
 							</div>
 						</li>
+
 						<li class="list-inline-item" style="display: none">
 							<div class="small_dropdown2">
 								<div id="prncgs" class="btn dd_btn">
