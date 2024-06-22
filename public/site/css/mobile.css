@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+    .div-select-estado {
+        width: 100%;
+    }
+
+    .div-select-estado select {
+        width: 100%;
+    }
+
+    .div-botao-buscar {
+        width: 100%;
+        text-align: center;
+        position: initial;
+    }
+
+    .div-botao-buscar .botao-buscar {
+        width: 100%;
+        float: none;
+        background-repeat: no-repeat;
+    }
+}

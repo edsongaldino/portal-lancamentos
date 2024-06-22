@@ -1,0 +1,640 @@
+/* Add here all your CSS customizations */
+
+.btn-oferta{
+    font-size: 20px;
+    color: rgb(0, 178, 104);
+}
+
+.btn-incluir-oferta{
+    font-size: 20px;
+    color: darkorange;
+}
+
+.btn-oferta-off{
+    font-size: 20px;
+    color: darkorange;
+}
+
+.btn-editar{
+    font-size: 20px;
+    color: lightseagreen;
+}
+
+.btn-remover{
+    font-size: 20px;
+    color: brown;
+}
+
+.add-produto{
+    margin-bottom: 20px !important;
+    margin-top: -10px !important;
+}
+
+.add-construtora{
+    margin-bottom: 20px !important;
+    margin-top: -10px !important;
+    height: 50px;
+    float: right;
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+}
+
+li.oferta{
+    background-color: #014358 !important;
+}
+
+li.active{
+    background-color: transparent !important;
+}
+
+span.desconto{
+    color: darkorange;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-buscar{
+    height: 55px;
+    width: 100%;
+}
+
+.topo-blackmonth{
+    background-color: black;
+    color: #FFF !important;
+}
+
+.topo-blackmonth .panel-title{
+    color: #FFF !important;
+}
+
+.modal-block.modal-blackmonth {
+    max-width: 800px;
+}
+
+.modal-block.modal-blackmonth-site {
+    max-width: 1024px !important;
+    padding: 0 !important;
+    text-align: left;
+    margin: 100px auto !important;
+    position: relative;
+}
+
+.btn-add-parcela{
+    height: 32px !important;
+    padding: 2px 10px;
+}
+
+.remove_campo{
+    height: 32px !important;
+    padding: 2px 10px;
+}
+
+.finish a.enviar{
+    background-color: #00B2B2 !important;
+    color: #FFF !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.principal{
+    width: 100%;
+    float: left;
+}
+
+img.foto-produto{
+    width: 100% !important;
+    height: 250px !important;
+}
+
+.acesso-construtora{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 50px;
+    background-color: rgb(1, 67, 88);
+}
+.acesso-construtora h2{
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+}
+.acesso-construtora .logo-construtora{
+    border-radius:50%;
+    width: 150px;
+    margin: 0 0 0 70px;
+}
+
+.produto-lista{
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.produto-lista .foto-produto-lista{
+    height: 50px;
+}
+
+.input-group textarea{
+    width: 100% !important;
+}
+
+.termos-uso{
+    width: 740px;
+    height: 100px;
+    overflow-y: scroll;
+    background-color: #F5F5F5;
+    text-align: justify;
+}
+
+
+.informacoes-proposta{
+    width: 100%;
+    height: 200px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn-add-parcela{
+    margin-right: 20px !important;
+    float: right;
+}
+
+.btn-remove-parcela{
+    margin-right: 20px !important;
+    float: right;
+}
+
+.unidades-oferta{
+    color: orange;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 0px !important;
+}
+
+.valor-desconto{
+    font-size: 18px;
+    color: darkred;
+}
+
+.box-parcelas-balao{
+    background-color: #FFFFD5;
+    padding: 0px 0 20px 0;
+    height: 155px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.saldo{
+    background-color: #DDF7FF;
+    padding: 0px 20px 10px 20px;
+}
+
+@media (min-width: 768px){
+    .box-parcelas-balao .col-sm-3 {
+        width: 25.2% !important;
+    }
+}
+
+.box-parcelas-balao .titulo-box-balao{
+    background-color: #FFE599;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.saldo .titulo-box-saldo{
+    background-color: #99E5FF;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+    padding-left: 20px;
+}
+
+.saldo .titulo-box-saldo .btn-atualizar{
+    height: 40px;
+    border: 0px;
+    float: right;
+    padding: 0 10px 0 10px;
+}
+
+.saldo .titulo-box-saldo .btn-atualizar:hover{
+    background-color: #00B2B2;
+    cursor: pointer;
+}
+
+.box-parcelas-balao .texto-baloes{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 20% 0 20%;
+    line-height: 25px;
+    color: #B25900;
+}
+
+.saldo .control-label{
+    margin-top: 40px !important;
+}
+
+.saldo input{
+    height:60px !important;
+}
+.saldo input.valor{
+    font-size: 30px;
+    color: #B25900;
+}
+
+.rodape-proposta{
+    padding: 10px 15px;
+    background-color: transparent !important;
+    border-top: 0px solid #dddddd !important;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-top: -45px;
+}
+
+.botao-avancar{
+    background-color: #00B2B2 !important;
+    color: #F5F5F5 !important;
+}
+
+form{
+    margin-bottom: 0px !important;
+}
+
+.botoes-balao{
+    float: right !important;
+}
+
+.btn-renda{
+    background-color: #00B2B2;
+}
+
+.renda .control-label{
+    margin-top: 15px !important;
+}
+
+.renda input{
+    height:60px !important;
+}
+.renda input.renda{
+    font-size: 30px;
+    color: #00B2B2;
+}
+
+.montar-proposta{
+    width: 280px;
+    height: 40px;
+    position: absolute;
+    left: 370px;
+    bottom: 60px;
+    font-size: 18px;
+    background-color: #00B2B2 !important;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.montar-proposta:hover{
+    cursor: pointer;
+}
+
+.btn-invisible{
+    background-color: transparent !important;
+}
+
+.resumo-proposta{
+    background-color: #EAFFFF;
+    height: 240px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.topo-resumo{
+    width: 100%;
+    background-color: #00B2B2;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #FFF;
+}
+
+.resumo-proposta .item-resumo{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    border-bottom: 1px solid #ccc;    
+}
+
+.resumo-proposta .item-resumo .descricao-item{
+    width: 60%;
+    float: left;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.resumo-proposta .item-resumo .descricao-item span.mensais{
+    font-size: 12px !important;
+}
+
+.resumo-proposta .item-resumo .valor-item{
+    width: 40%;
+    float: left;
+    color: #00B2B2;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.resumo-proposta .item-resumo .valor-item.proposta{
+    color: #FFBF00;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.resumo-proposta .item-saldo{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    float: left;  
+}
+
+.resumo-proposta .item-saldo .descricao-item{
+    width: 50%;
+    float: left;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.resumo-proposta .item-saldo .valor-item{
+    width: 50%;
+    float: right;
+    color: #FF4000;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.image-confirmacao{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.texto-confirmacao{
+    width: 100%;
+    padding: 0 15% 0 15%;
+    color: #00B2B2;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.texto-erro{
+    width: 100%;
+    padding: 0 15% 0 15%;
+    color: #FFBF00;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.texto-confirmacao-email{
+    width: 100%;
+    padding: 0 25% 0 25%;
+    color: #384C68;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto-email{
+    width: 100%;
+    padding: 0 25% 0 25%;
+    color: #00B2B2;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px 0 60px 0;
+}
+
+.complementar-proposta{
+    margin-top: 0px;
+    background-color: #DDF7FF;
+    width: 100%;
+    height: 80px;
+}
+
+.complementar-proposta label{
+    font-weight: bold;
+    color: #333;
+}
+
+.complementar-proposta .descricao-valores{
+    width: 100% !important;
+    height: 53px !important;
+    margin-top: 10px;
+}
+
+.complementar-proposta .negociar-financiamento{
+    line-height: 20px;
+    color: #00B2B2;
+    font-size: 14px;
+    text-align: center;
+    height: 80px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.select label.error{
+    display: none !important;
+}
+
+.checkbox-terms label.error{
+    margin-top: 30px !important;
+    margin-left: -35px;
+}
+
+.checkbox-terms label.error input{
+    display: none !important;
+}
+
+.checkbox-terms label.error:before {
+    display: none;
+    
+}
+
+.titulo{
+    width: 55%;
+    float: left;
+}
+
+button.btn-fechar-modal{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.sol{
+    width: 8%;
+    float: left;
+}
+
+.sol img{
+    align-content: center;
+}
+
+.metragem{
+    width: 12%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.metragem img{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.quartos{
+    width: 7%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.suites{
+    width: 7%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.area_lote{
+    width: 12%;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.area_app{
+    width: 12%;
+    float: left;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.qtd_unidades{
+    width: 10%;
+    float: left;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.checkbox-custom .outros-bens{
+    margin-top: 7px !important;
+}
+
+.outros-comentarios{
+    width: 100% !important;
+    height: 120px !important;
+    padding: 10px !important;
+}
+
+.margin-top-20{
+    margin-top: 20px !important;
+}
+
+.margin-bottom-20{
+    margin-bottom: 20px !important;
+}
+
+.dropdown-menu > li > a{
+    padding: 5px 30px 5px 30px;
+}
+
+.pieLabel{
+    font-size: 16px !important;
+}
+
+.topo-lead-card{
+    height: 135px;
+}
+
+.foto{
+    width: 50px;
+}
+
+select.populate{
+    height: 50px !important;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.B i{
+    color: #FF4000;
+    font-size: 40px;
+}
+
+.A i{
+    color: #00B2B2;
+    font-size: 40px;
+}

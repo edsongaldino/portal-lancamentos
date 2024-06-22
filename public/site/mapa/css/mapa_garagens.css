@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : WCOSTA
+*/
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+.carregando {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagem/carregando.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 4;
+}
+
+.controle_mapa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: 135px;
+    z-index: 3;
+}
+
+.ponto_garagem {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* alterar o tamanho dos icones, mudar no php tmb */
+.ponto_garagem_tam_pq {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 9px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 0px;
+    border: 1px solid #fff;
+}
+
+.ponto_garagem_tam_md {
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    font-size: 11px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 0px;
+    border: 2px solid #fff;
+}
+
+.ponto_garagem_tam_gd {
+    width: 60px;
+    height: 60px;
+    line-height: 57px;
+    font-size: 13px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 0px;
+    border: 2px solid #fff;
+}
+
+.ponto_garagem_sit_d { background-color: #009900; color: #fff; }
+.ponto_garagem_sit_r { background-color: #ffcc00; color: #000; }
+.ponto_garagem_sit_v { background-color: #ff0000; color: #fff; }
+.ponto_garagem_sit_o { background-color: #467eb6; color: #fff; }
+
+.ponto_garagem_pne_S_pq{background-color: #0d0131; color: #fff;}
+.ponto_garagem_pne_S_md{background-color: #0d0131; color: #fff;}
+.ponto_garagem_pne_S_gd{background-color: #0d0131; color: #fff;}
+
+
+.gaveta-descoberta-pq{line-height: 12px !important;}
+.gaveta-coberta-pq{line-height: 12px !important;}
+
+.gaveta-descoberta-md{line-height: 17px !important;}
+.gaveta-coberta-md{line-height: 17px !important;}
+
+.gaveta-descoberta-gd{line-height: 27px !important;}
+.gaveta-coberta-gd{line-height: 27px !important;}
+
+.padrao-pq{};
+.padrao-md{};
+.padrao-gd{};
+
+.formato_vaga_padrao{}
+.formato_vaga_extra{}
+.formato_vaga_visitante{background-color: #e06b0b !important; color: #fff;}
+
+.ponto_garagem_pne_N { background-color: transparent; }
+
+
+.ponto_foto {
+    position: absolute;
+    width: 45px;
+    height: 46px;
+    cursor: pointer;
+    z-index: 2;    
+}
+
+#tela {    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* inicio - janela modal */
+
+#modal_janela .modal-header {
+    background-color: #467eb6;	
+    color: #FFF;
+}
+
+#modal_janela .modal-header .close {
+    color: #FFF;	
+}
+
+#modal_janela .modal-body {
+    background-color: #dae4ef;
+}
+
+#modal_janela .modal-footer {
+    background-color: #dae4ef;
+}
+
+/* fim - janela modal */
+
+/* inicio - excluir modal */
+
+#modal_excluir .modal-header {
+    background-color: #cc4d50;	
+    color: #FFF;
+}
+
+#modal_excluir .modal-header .close {
+    color: #FFF;	
+}
+
+#modal_excluir .modal-body {
+    background-color: #dae4ef;
+}
+
+#modal_excluir .modal-footer {
+    background-color: #dae4ef;
+}
+
+/* fim - excluir modal */
+
+.topo-mapa{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}

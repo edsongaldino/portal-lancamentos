@@ -1,0 +1,98 @@
+#box-view{width: 100%; height: 103px; float: left; background-color: #F8F8F8; border: 1px solid #F1F1F1; margin: 0px 0 10px 0; position: relative;}
+#box-view .construtora{width: 103px; height: 103px; float: left; border: 1px solid #F1F1F1; margin: 0px 0 10px 0; background-color: #E9E9E9;}
+#box-view .dados{width: calc(100% - 103px);; height: 103px; float: right; border: 1px solid #F1F1F1; margin: 0px 0 10px 0;}
+#box-view .dados .title-views{height: 40px; width: 100%; background-color: #F8F8F8; line-height: 40px; font-size: 20px; color: #CCCCCC; text-align: center;}
+#box-view .dados .number-views{height: 60px; width: 100%; background-color: #F2F2F2; line-height: 60px; font-size: 40px; color: #B2B2B2; text-align: center;}
+
+#box-navigation-mouth{width: 53%; height: 50px; background-color: #F1F1F1; float: left;}
+#box-navigation-mouth .left{width: 6.5%; height: 50px; float: left;text-align: center; line-height: 50px; color: #1B75A5; padding-top: 7px;}
+#box-navigation-mouth .nav-mes{width: 29%; height: 50px; background-color: #f5f5f5; float: left; text-align: center; font-size: 14px; line-height: 50px; color: #B2B2B2;}
+#box-navigation-mouth .nav-mes:hover{width: 29%; height: 50px; background-color: #4FAFE3; float: left; text-align: center; font-size: 14px; line-height: 50px; color: #fff; cursor: pointer;}
+#box-navigation-mouth .right{width: 6.5%; height: 50px; float: right; text-align: center; line-height: 50px; color: #1B75A5; padding-top: 7px;}
+
+#box-navigation-mouth .campo-data{width:100%; height: 50px; font-size: 14px; color: #155F86 !important; float: left; border: 1px solid #F8F8F8;; display: block !important; }
+
+#box-my-stats{width: 45%; height: 50px; float: right; background-color: #1C9CE3;}
+#box-my-stats .icone{width: 30%; height: 50px; background-color: #4FAFE3; float: left; text-align: center; line-height: 50px; color: #FFF;}
+#box-my-stats .texto{width: 70%; height: 50px; float: right; text-align: center; color: #FFF; padding-top: 10px; font-size: 14px; line-height: 15px;}
+#box-my-stats:hover{cursor: pointer; background-color: #155F86;}
+
+#box-relatorio-construtora{width: 100%; height: 100px; float: left; margin: 10px 0 10px 0;}
+#box-relatorio-construtora .title{width: 30%; height: 100px; float: left; background-color: #F8F8F8; line-height: 100px; color: #FFF; text-align: center;}
+#box-relatorio-construtora .cliks{width: 35%; height: 100px; float: left; background-color: #F2F2F2; color: #239DDC; text-align: center;}
+#box-relatorio-construtora .contacts{width: 35%; height: 100px; float: left; background-color: #f5f5f5; color: #155F86; text-align: center;}
+
+#box-mude-ja{width: 100%; height: 100px; float: left; margin: 10px 0 0 0;}
+#box-mude-ja .title{width: 30%; height: 100px; float: left; background-color: #2BBB94; line-height: 100px; color: #FFF; text-align: center;}
+#box-mude-ja .cliks{width: 35%; height: 100px; float: left; background-color: #42D3AC;}
+#box-mude-ja .contacts{width: 35%; height: 100px; float: left; background-color: #5BD9B7;}
+
+#box-em-obra{width: 100%; height: 100px; float: left; margin: 10px 0 0 0;}
+#box-em-obra .title{width: 30%; height: 100px; float: left; background-color: #1B75A5; line-height: 100px; color: #FFF; text-align: center;}
+#box-em-obra .cliks{width: 35%; height: 100px; float: left; background-color: #239DDC;}
+#box-em-obra .contacts{width: 35%; height: 100px; float: left; background-color: #4FAFE3;}
+
+#box-lancamento{width: 100%; height: 100px; float: left; margin: 10px 0 0 0;}
+#box-lancamento .title{width: 30%; height: 100px; float: left; background-color: #FFCF3E; line-height: 100px; color: #FFF; text-align: center;}
+#box-lancamento .cliks{width: 35%; height: 100px; float: left; background-color: #FFD964;}
+#box-lancamento .contacts{width: 35%; height: 100px; float: left; background-color: #FFDC71;}
+
+#box-em-breve{width: 100%; height: 100px; float: left; margin: 10px 0 0 0;}
+#box-em-breve .title{width: 30%; height: 100px; float: left; background-color: #C03A45; line-height: 100px; color: #FFF; text-align: center;}
+#box-em-breve .cliks{width: 35%; height: 100px; float: left; background-color: #C8444E;}
+#box-em-breve .contacts{width: 35%; height: 100px; float: left; background-color: #CD565F;}
+
+.box-relatorios{padding: 20px 0 20px 0; line-height: 30px; color: #FFF; text-align: center;}
+span.numeros-relatorios{font-size: 30px;}
+
+
+#box-busca{width: 100%; height: 50px; margin: 10px 0 20px 0; float: left;}
+#box-busca .campo-data{width:68%; height: 50px; background-color: #FFF; color: #8A8A8A !important; float: left; border: 1px solid #F8F8F8;; display: block !important; }
+#box-busca .botao-filtrar{width:30%; height: 50px; background-color: #1C9CE3; color: #FFF; float: right; }
+
+
+#box-empreendimento{width: 100%; height: 150px; background-color: #f5f5f5; margin-bottom: 10px; float: left; padding: 10px;}
+#box-empreendimento .title{width: 100%; height: 30px; float: left; border-bottom: 1px dashed #1C9CE3; margin-bottom: 10px;}
+#box-empreendimento .title .icone{width: 10%; height: 30px; float: left; text-align: center; line-height: 30px; margin-left: -15px; color: #1C9CE3;}
+#box-empreendimento .title .texto{width: 90%; height: 30px; float: left; text-align: left; line-height: 30px; color: #8A8A8A; font-size: 18px;}
+
+#box-empreendimento .visualizacoes{width: 30%; height: 90px; float: left;}
+#box-empreendimento .visualizacoes .titulo{width: 100%; height: 20px; float: left; line-height: 20px; color: #8A8A8A; font-size: 14px; text-align: center;}
+#box-empreendimento .visualizacoes .quantidade{width: 100%; height: 50px; float: left; background-color: #FFCC99; color: #8A8A8A; font-size: 25px; text-align: center; line-height: 50px;}
+
+#box-empreendimento .cliques{width: 30%; height: 90px; float: left;}
+#box-empreendimento .cliques .titulo{width: 100%; height: 20px; float: left; line-height: 20px; color: #8A8A8A; font-size: 14px; text-align: center;}
+#box-empreendimento .cliques .quantidade{width: 100%; height: 50px; float: left; background-color: #48BEBF; color: #FFF; font-size: 25px; text-align: center; line-height: 50px;}
+
+#box-empreendimento .contatos{width: 30%; height: 90px; float: left;}
+#box-empreendimento .contatos .titulo{width: 100%; height: 20px; float: left; line-height: 20px; color: #8A8A8A; font-size: 14px; text-align: center;}
+#box-empreendimento .contatos .quantidade{width: 100%; height: 50px; float: left; background-color: #FF8584; color: #FFF; font-size: 25px; text-align: center; line-height: 50px;}
+
+#box-empreendimento .divisor{width: 5%; height: 90px; float: left;}
+
+.subtitulo{width: 100%; height: 40px; float: left; margin-top: 15px;}
+
+
+/*Estilo Select*/
+
+.select-estilo { /* <div> */
+       width: 100%;
+       height: 50px;
+       overflow: hidden;
+       background: url(../images/icones/seta-select.png) no-repeat right #FFF; /* novo ícone para o <select> */
+       border: 1px solid #1C9CE3;
+    }   
+
+.select-estilo select { /* <select> */
+    background: transparent !important; /* importante para exibir o novo ícone */
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+    -webkit-appearance: none;
+}      
+
+#box-grafico-geral{width: 100%; height: 400px; float: left; margin: 10px 0 0 0;}

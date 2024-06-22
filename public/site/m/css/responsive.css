@@ -1,0 +1,128 @@
+@media screen and (min-width: 1024px) {
+	.widget-item-slider .items .thumb {
+		height:150px;
+	}
+	.big-thumb-item,
+	.big-thumb-item .entry-thumb {
+		max-height:500px;
+	}	
+	.col-10 {
+		width: 100%;
+	}
+	.col-9 {
+		width: 90%;
+	}
+	.col-8 {
+		width: 80%;
+	}
+	.col-7 {
+		width: 70%;
+	}
+	.col-6 {
+		width: 60%;
+	}
+	.col-5 {
+		width: 50%;
+	}
+	.col-4 {
+		width: 40%;
+	}
+	.col-3 {
+		width: 30%;
+	}
+	.col-2 {
+		width: 20%;
+	}
+	.col-1 {
+		width: 10%;
+	}
+	.foto-icon, .detalhe-icon, .play-icon, .contato-icon {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.foto-icon, .detalhe-icon, .play-icon, .contato-icon {
+		width: 30%;
+	}
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:500px;
+	}
+	.widget-item-slider .items .thumb {
+		height:110px;
+	}
+	.big-thumb-item,
+	.big-thumb-item .entry-thumb {
+		max-height:400px;
+	}
+}
+@media screen and (max-width: 754px) {
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:450px; /*200px;*/
+	}
+}
+@media screen and (max-width: 750px) {
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:450px; /*200px;*/
+	}
+}
+@media screen and (max-width: 680px) {
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:450px; /*200px;*/
+	}
+}
+@media screen and (max-width: 640px) {
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:300px; /*200px;*/
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 600px) {
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:250px; /*200px;*/
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 480px) {
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:230px; /*200px;*/
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.featured-slider .featured-item,
+	.featured-gallery-slider .featured-item {
+		height:200px; /*200px;*/
+		overflow: hidden;
+	}
+	.featured-slider .featured-item .caption {
+		padding:2px 15px 25px 15px;
+	}
+	.small-listing-item .entry-thumb {
+		width:100%;
+	}
+	.small-listing-item .entry-content {
+		width:calc(100% - 105px);
+	}
+	.widget-item-slider .items .thumb {
+		height:80px;
+	}
+	.col-10, .col-9, .col-8, .col-7, .col-6, .col-4, .col-3, .col-2, .col-1 {
+		width: 100%;
+		float: left;
+	}
+	.foto-icon, .detalhe-icon, .play-icon, .contato-icon {
+		width: 100%;
+	}
+	.col-5 {
+		width: 40%;
+	}
+}

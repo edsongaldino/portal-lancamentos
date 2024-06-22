@@ -1,0 +1,12 @@
+ul.dropdown-menu{
+	left: 20px !important;
+}
+
+li.dropdown-item{
+	font-size: 16px !important;
+	color: #FFF !important;
+}
+
+li.dropdown-item:hover{
+	color: #FFF !important;
+}

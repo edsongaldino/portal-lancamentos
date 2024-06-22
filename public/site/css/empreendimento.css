@@ -1,0 +1,51 @@
+.bs-example{
+  margin: 20px;
+}
+
+.modal-content iframe{
+  margin: 0 auto;
+  display: block;
+}
+
+.modal-dialog{
+  margin-top: 50px;
+}
+
+.modal-dialog.video{
+  width: 840px !important;
+}
+
+.modal-title {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.modal-fullscreen-md-down {
+  padding: 0 !important;
+}
+.modal-fullscreen-md-down .modal-dialog {
+  width: 96%;
+  height: 80%;
+  margin: 2%;
+  padding: 0;
+}
+.modal-fullscreen-md-down .modal-content {
+  height: auto;
+  max-height: 80%;
+  border: 0 none;
+  border-radius: 0;
+}
+
+#ModalMapa .modal-header {
+  min-height: 16.43px;
+  padding: 15px;
+  width: 100%;
+  background-color: #3797dd;
+  top: 30px;
+  color: #FFF !important;
+}
+
+li.active {
+  background: none !important;
+}

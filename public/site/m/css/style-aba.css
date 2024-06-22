@@ -1,0 +1,188 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.button a {
+  float: right;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #999;
+  border: 2px solid #999;
+  border-radius: 3px;
+}
+
+.button a:hover {
+  color: #000;
+  border: 2px solid #000;
+  transition: 2s;
+}
+
+img {
+  max-width: 100%;
+}
+
+.related {
+  text-align: center;
+  padding: 5em 0;
+}
+
+.related > a {
+  width: calc(100% - 20px);
+  max-width: 340px;
+  border: 3px solid #f0f0f0;
+  border-color: initial;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 25px;
+  border-radius: 3px;
+}
+
+.related a img {
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.related a h3 {
+  margin: 0;
+  padding: 0.5em 0 0.3em;
+  max-width: 300px;
+  text-align: left;
+}
+
+.related p{
+  font-size: 1.4em;
+  color: #ccc;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	font-family: sans-serif;
+	background: #f6f9fa;
+}
+
+h1 {
+	color: #ccc;
+	text-align: center;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+
+/*Fun begins*/
+.tab_container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}*/
+
+.label {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 25%;
+  /*padding: 10px 1.5em 0;*/
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+  background: #fff;
+  color: #999;
+  border-bottom: 2px solid #f0f0f0;
+  padding: 10px;
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: left;
+}
+
+.tab_container [id^="tab"]:checked + label {
+    background: #DFE2E4;
+    box-shadow: 0px -9px 0px -6px #1C9CE3 inset;
+  opacity: 1;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 930px) {
+  label span {
+    font-size: 14px;
+  }
+  label .fa {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  label span {
+    display: none;
+  }
+
+  label .fa {
+    font-size: 16px;
+  }
+
+  .tab_container {
+    width: 100%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}

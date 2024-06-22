@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : WCOSTA
+*/
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+.box-select-posicao{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    background-color: #121212c7;
+    z-index: 999;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-select-posicao .icone-posicao{
+    width: 50px;
+    height: 50px;
+    color: #FFF;
+    font-size: 40px;
+} 
+
+.box-select-posicao .select-posicao{
+    width: 280px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.carregando {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagem/carregando.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 4;
+}
+
+.controle_mapa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: 135px;
+    z-index: 3;
+}
+
+.ponto_unidade {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* alterar o tamanho dos icones, mudar no php tmb */
+.ponto_unidade_tam_pq {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 9px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.ponto_unidade_tam_md {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 11px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+}
+
+.ponto_unidade_tam_gd {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    border: 2px solid #fff;
+}
+
+.ponto_unidade_sit_d { background-color: #009900; color: #fff; }
+.ponto_unidade_sit_r { background-color: #ffcc00; color: #000; }
+.ponto_unidade_sit_v { background-color: #ff0000; color: #fff; }
+.ponto_unidade_sit_o { background-color: #467eb6; color: #fff; }
+
+
+
+.ponto_foto {
+    position: absolute;
+    width: 45px;
+    height: 46px;
+    cursor: pointer;
+    z-index: 2;    
+}
+
+#tela {    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* inicio - janela modal */
+
+#modal_janela .modal-header {
+    background-color: #467eb6;	
+    color: #FFF;
+}
+
+#modal_janela .modal-header .close {
+    color: #FFF;	
+}
+
+#modal_janela .modal-body {
+    background-color: #dae4ef;
+}
+
+#modal_janela .modal-footer {
+    background-color: #dae4ef;
+}
+
+/* fim - janela modal */
+
+/* inicio - excluir modal */
+
+#modal_excluir .modal-header {
+    background-color: #cc4d50;	
+    color: #FFF;
+}
+
+#modal_excluir .modal-header .close {
+    color: #FFF;	
+}
+
+#modal_excluir .modal-body {
+    background-color: #dae4ef;
+}
+
+#modal_excluir .modal-footer {
+    background-color: #dae4ef;
+}
+
+/* fim - excluir modal */
+
+.topo-mapa{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}

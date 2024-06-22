@@ -1,0 +1,196 @@
+.box-aba-proposta{
+    width: 100%;
+    height: 60px;
+    float: left;
+    margin-top: 20px;
+}
+
+.box-aba-proposta .aba-proposta{
+    width: 50%;
+    float: left;
+    height: 50px;
+    background-color: #188AC7;
+    line-height: 50px;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box-aba-proposta .aba-proposta.active{
+    width: 50%;
+    height: 60px;
+    background-color: #105A83;
+    margin-top: -10px;
+}
+
+.conteudo-proposta-construtora{
+    padding: 10px !important;
+}
+
+.conteudo-proposta-cliente{
+    padding: 10px !important;
+}
+
+.box-parcelas-balao {
+    margin: 15px;
+    height: auto !important;
+    overflow-y: inherit !important;
+    overflow-x: inherit !important;
+    
+}
+
+.box-parcelas-balao.cliente {
+    margin: 0px 0 15px 0;
+
+    
+}
+
+.saldo {
+    margin: 15px;
+}
+
+.saldo.cliente {
+    margin: 0px;
+}
+
+.complementar-proposta {
+    margin: 15px 0 0 0 !important;
+    height: auto !important;
+    padding: 15px 0 15px 0 !important;
+}
+
+.complementar-proposta .descricao-valores {
+    width: 100% !important;
+    height: 53px !important;
+    margin-top: 0px !important;
+    background-color: #FFF;
+}
+
+.nome-balao{
+    width: 15% !important;
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.balao-valor{
+    width: 40% !important;
+    float: left;
+}
+
+.balao-data{
+    width: 40% !important;
+    float: left;
+    margin-left: 10px;
+}
+
+.botoes-balao{
+    width: 10% !important;
+    float: left;
+    margin-top: 7px;
+}
+
+.row.baloes{
+    margin-left: 10px !important;
+    margin-top: 7px !important;
+    margin-bottom: -10px !important;
+}
+
+.btn-enviar-proposta{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    color: #FFF;
+    background-color: #00B2B2;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-enviar-proposta:hover{
+    background-color: rgb(8, 122, 122);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form.proposta-cliente{
+    margin: 0 !important;
+    padding: 0px !important;
+    border: 0 !important;
+    outline: 0 !important;
+    font-size: 100%;
+    background: transparent !important;
+    border: 0px solid #e1a94d !important;
+}
+
+.dados-cliente{
+    padding: 15px;
+    background-color: #E8FFFF;
+    margin-bottom: 15px;
+}
+
+.topo-dados-cliente{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #00B2B2;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 50px;
+}
+form.proposta-cliente label {
+    font-size: 1.4rem !important;
+    color: #333;
+}
+
+.conteudo-proposta-construtora label {
+    font-size: 1.4rem !important;
+    color: #333;
+}
+
+form.proposta-cliente .resumo-proposta {
+    padding: 15px;
+    background-color: #FFFFF2;
+    margin-bottom: 15px;
+    height: auto;
+}
+
+form.proposta-cliente .resumo-proposta .informacoes-proposta{
+    width: 100%;
+    height: auto !important;
+    text-align: justify !important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+form.proposta-cliente .resumo-proposta .informacoes-proposta textarea{
+    background-color: #FFF !important;
+}
+
+form.proposta-cliente .resumo-proposta .checkbox-terms{
+    margin-top: 30px !important;
+    margin-left: -25px !important;
+}
+
+form.proposta-cliente input.valor-proposta{
+    font-size: 22px;
+    color: #FFBF00;
+}
+form.proposta-cliente .box-valor-entrada{
+    background-color: #00B2B2;
+    color: #FFF;
+}
+form.proposta-cliente input.valor-entrada{
+    font-size: 22px;
+    color: #00B2B2;
+}
+form.proposta-cliente input.valor-mensal{
+    font-size: 22px;
+    color: #00B2B2;
+}
+form.proposta-cliente input.valor-balao{
+    font-size: 22px;
+    color: #00B2B2;
+}
