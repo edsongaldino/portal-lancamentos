@@ -49,7 +49,7 @@
 						
 						<li class="list-inline-item">
 							<div class="form-group">
-								<input type="text" class="form-control" id="ttexto" placeholder="Localização" name="cidade">
+								<input type="text" class="form-control" id="ttexto" placeholder="Digite o nome da cidade ou estado" name="cidade">
 								<input class="typeahead form-control" id="cidade" name="cidade_id" style="margin:0px auto;width:300px;" type="hidden">
 								<label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
 							</div>

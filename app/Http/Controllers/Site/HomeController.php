@@ -34,7 +34,7 @@ class HomeController extends Controller
         $this->data['lotes'] = Empreendimento::where('subtipo_id', 4)->where('status', 'Liberada')->get()->count();
         $this->data['noticias'] = Publicacao::where('status', 'Liberada')->orderBy('data', 'DESC')->take(4)->get();
         $this->data['subtipos'] = Subtipo::all();
-        $this->data['empreendimentos'] = Empreendimento::latest()->where('status', 'Liberada')->take(30)->get();
+        $this->data['empreendimentos'] = Empreendimento::latest()->where('status', 'Liberada')->get();
         $this->data['noticias'] = Publicacao::where('status', 'Liberada')->orderBy('data', 'DESC')->take(3)->get();
         $this->data['destaques'] = Empreendimento::latest()->where('status', 'Liberada')->take(12)->get();
 
@@ -151,12 +151,13 @@ class HomeController extends Controller
 
     public function AutoCompleteCidades($query)
     {
-        $municipios = Cidade::where('status', 'L')->get();
-        $data = DB::table('cidades')
-        ->select('cidades.id', 'cidades.nome', 'estados.uf')
+        //$municipios = Cidade::where('status', 'L')->where("cidades.nome","LIKE","%$query%")->get();
+        $municipios = DB::table('cidades')
+        ->select('cidades.id', DB::Raw("CONCAT(cidades.nome, ' (', estados.uf, ')') AS nome"))
         ->join('estados', 'estados.id', '=', 'cidades.estado_id')
-        ->where("cidades.nome","LIKE","%($query)%")
+        ->where("cidades.nome","LIKE","%$query%")->orWhere("estados.uf","LIKE","%$query%")
         ->get();
+
         return response()->json($municipios);
     }
 }

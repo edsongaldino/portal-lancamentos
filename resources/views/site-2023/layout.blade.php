@@ -308,7 +308,7 @@
 		  if(iconPath) {
 			@foreach ($empreendimentos as $empreendimento)
 			map.addMarker({
-				icon: iconPath,
+				icon: 'assets/site-2023/images/resource/map-marker-{{ $empreendimento->subtipo_id }}.png',
 				lat: {{ $empreendimento->endereco->latitude ?? '-15.595626' }},
 				lng: {{ $empreendimento->endereco->longitude ?? '-56.099996' }},
 				title: 'Tenby ',
