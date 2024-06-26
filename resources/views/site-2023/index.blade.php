@@ -285,8 +285,8 @@
 		<div class="row">
 			<div class="col-lg-6 offset-lg-3">
 				<div class="main-title text-center mb40">
-					<h2>Ofertas e Proposta Online</h2>
-					<p>Confira as principais unidades em oferta e com proposta online disponível</p>
+					<h2>Novidades em Destaque no Portal</h2>
+					<p>Confira os principais lançamentos imobiliários da sua cidade</p>
 				</div>
 			</div>
 			<div class="col-lg-12">

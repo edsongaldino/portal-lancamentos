@@ -5,12 +5,12 @@
     <section class="body-sign">
         <div class="center-sign">
             <a href="/" class="logo pull-left">
-                <img src="/assets/images/logo.png" height="54" alt="Porto Admin" />
+                <img src="/assets/images/logo.png" height="54" alt="Admin" />
             </a>
 
             <div class="panel panel-sign">
                 <div class="panel-title-sign mt-xl text-right">
-                    <h2 class="title text-uppercase text-weight-bold m-none"><i class="fa fa-user mr-xs"></i> Acesso Painel/h2>
+                    <h2 class="title text-uppercase text-weight-bold m-none"><i class="fa fa-user mr-xs"></i> Acesso Painel</h2>
                 </div>
                 <div class="panel-body">
                     <form method="POST" action="{{ route('backpack.auth.login') }}">

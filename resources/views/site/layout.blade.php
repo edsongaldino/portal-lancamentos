@@ -21,11 +21,15 @@
 
         <a href="/pagina-inicial.html"><img class="logo-lancamentos-topo" src="{{ asset('assets/site-2023/images/header-logo.png') }}" alt="header-logo.png"></a>
 
-        <div class="menu">
-          <div class="item"><a href="/empreendimentos/1-apartamentos.html"><i class="fa fa-building"></i> Apartamentos</div></a>
-          <div class="item"><a href="/empreendimentos/2-salascomerciais.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Salas Comerciais</div>
-          <div class="item"><a href="/empreendimentos/3-condominiofechado.html"><i class="fa fa-home"></i> Condomínios Horizontais</a></div>
+        <div class="menu">  
+          @if($empreendimento)
+            <div class="item"><a href="/busca-mapa.html?subtipo_id={{ $empreendimento->subtipo_id }}" target="_blank"><i class="fa fa-search"></i> Ver outros anúncios</a></div>
+          @else
+            <div class="item"><a href="/busca-mapa.html" target="_blank"><i class="fa fa-search"></i> Ver outros anúncios</a></div>
+          @endif
+                
           <div class="item parceiro"><a href="/plataforma-lancamentos-online.html" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i> Anuncie</a></div>
+          <div class="item"><a href="/painel-anunciante.html" target="_blank"><i class="fa fa-user"></i> Login</a></div>
         </div>
 
     </header>

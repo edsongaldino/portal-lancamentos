@@ -46,6 +46,7 @@
 		        <!-- Responsive Menu Structure-->
 		        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
 		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
+					<!--
 		            <li>
 						<a href="/empreendimentos/1-apartamentos.html"><span class="title"><i class="fas fa-building"></i> Apartamentos</span></a>
 					</li>
@@ -55,7 +56,9 @@
 					<li>
 						<a href="/empreendimentos/3-condominiofechado.html"><span class="title"><i class="fas fa-house-damage"></i> Condomínios Horizontais</span></a>
 					</li>
-					<li class="cl_btn"><a href="/plataforma-lancamentos-online.html" target="_blank"><i class="fas fa-rocket"></i> Anuncie</a></li>
+				-->
+				<li class="list-inline-item add_listing"><a href="/plataforma-lancamentos-online.html" target="_blank"><i class="fas fa-rocket"></i><span class="dn-lg"> Anuncie</span></a></li>
+					<li class="list-inline-item painel"><a href="/painel-anunciante.html" target="_blank"><i class="fas fa-cogs"></i><span class="dn-lg"> Login</span></a></li>
 		        </ul>
 		    </nav>
 		</div>
@@ -88,7 +91,7 @@
 	</div>
 
 	<!-- Listing Grid View -->
-	<section id="feature-property" class="our-listing bgc-f7 pt0 pb0">
+	<section id="feature-property" class="our-listing bgc-f7 pt20 pb0">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
@@ -633,31 +636,7 @@
 													</p>
 													<h4>{{ $empreendimento->nome }}</h4>
 													<p><span class="flaticon-placeholder"></span> {{ $empreendimento->endereco->cidade->nome }} - {{ $empreendimento->endereco->estado->uf }}</p>
-													@if($empreendimento->subtipo_id == 1)
-													<ul class="prop_details mb0">
-														<li class="list-inline-item"><span class="fa fa-bed"></span> {{ qtd_dormitorio($empreendimento) }}</li>
-														<li class="list-inline-item"><span class="fa fa-car"></span> {{ qtd_vagas($empreendimento) }}</li>
-														<li class="list-inline-item"><span class="fa fa-object-group"></span> {{ qtd_metragem($empreendimento)}} m<sup>2</sup></li>
-													</ul>
-													@elseif($empreendimento->subtipo_id == 2)
-													<ul class="prop_details mb0">
-														<li class="list-inline-item"><span class="fa fa-bed"></span> 3</li>
-														<li class="list-inline-item"><span class="fa fa-car"></span> 2</li>
-														<li class="list-inline-item"><span class="fa fa-object-group"></span> 48,32m²</li>
-													</ul>
-													@elseif($empreendimento->subtipo_id == 3)
-													<ul class="prop_details mb0">
-														<li class="list-inline-item"><span class="fa fa-bed"></span> 3</li>
-														<li class="list-inline-item"><span class="fa fa-car"></span> 2</li>
-														<li class="list-inline-item"><span class="fa fa-object-group"></span> 48,32m²</li>
-													</ul>
-													@elseif($empreendimento->subtipo_id == 4)
-													<ul class="prop_details mb0">
-														<li class="list-inline-item"><span class="fa fa-bed"></span> 3</li>
-														<li class="list-inline-item"><span class="fa fa-car"></span> 2</li>
-														<li class="list-inline-item"><span class="fa fa-object-group"></span> 48,32m²</li>
-													</ul>
-													@endif
+													
 												</div>
 												<div class="fp_footer">
 													<ul class="fp_meta float-left mb0">
@@ -715,7 +694,7 @@
 					</div>
 					<div class="half_map_area">
 						<div class="home_two_map style2">
-							<div class="map-canvas skin2 half_style" id="contact-google-map" data-map-lat="-15.595626" data-map-lng="-56.099996" data-icon-path="{{ asset('assets/site-2023/images/logo/1.png') }}" data-map-title="Awesome Place" data-map-zoom="14"></div>
+							<div class="map-canvas skin2 half_style" id="contact-google-map" data-map-lat="{{ $empreendimentos->first()->endereco->latitude ?? '-15.595626' }}" data-map-lng="{{ $empreendimentos->first()->endereco->longitude ?? '-56.099996' }}" data-icon-path="{{ asset('assets/site-2023/images/logo/1.png') }}" data-map-title="Awesome Place" data-map-zoom="12"></div>
 						</div>
 					</div>
 				</div>
@@ -834,7 +813,7 @@ function gMapHome () {
 
       // if zoom not defined the zoom value will be 15;
       if (!mapZoom) {
-        var mapZoom = 12;
+        var mapZoom = 0;
       };
       // init map
       var map;
@@ -856,7 +835,7 @@ function gMapHome () {
             title: 'Tenby ',
             infoWindow: {
             content:
-            '<a href="/imoveis/{{ url_amigavel($empreendimento->subtipo->nome)}}-{{ url_amigavel($empreendimento->nome)}}-{{ $empreendimento->id }}.html" target="_blank"><img src="{{ $empreendimento->fotoPrincipal() }}" alt="fp1.jpg"/> <h5>{{ $empreendimento->nome }}</h5> <h4>{{ $empreendimento->subtipo->nome }}</h4> <p>{{ $empreendimento->endereco->bairro->nome }}, {{ $empreendimento->endereco->cidade->nome }} - {{ $empreendimento->endereco->estado->uf }}</p> <p><span><span class="fa fa-bed"></span> 3</span> <span><span class="fa fa-car"></span> 3</span> <span><span class="fa fa-object-group"></span> 48,32m²</span></p></a>'
+            '<a href="/imoveis/{{ url_amigavel($empreendimento->subtipo->nome)}}-{{ url_amigavel($empreendimento->nome)}}-{{ $empreendimento->id }}.html" target="_blank"><img src="{{ $empreendimento->fotoPrincipal() }}" alt="fp1.jpg"/> <h5>{{ $empreendimento->nome }}</h5> <h4>{{ $empreendimento->subtipo->nome }}</h4> <p>{{ $empreendimento->endereco->bairro->nome }}, {{ $empreendimento->endereco->cidade->nome }} - {{ $empreendimento->endereco->estado->uf }}</p></a>'
           }
         });
         @endforeach

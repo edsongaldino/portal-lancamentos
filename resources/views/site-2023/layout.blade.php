@@ -46,6 +46,7 @@
 		        <!-- Responsive Menu Structure-->
 		        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
 		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
+					<!--
 		            <li>
 		                <a href="/empreendimentos/1-apartamentos.html"><span class="title"><i class="fas fa-building"></i> Apartamentos</span></a>
 		            </li>
@@ -55,8 +56,9 @@
 		            <li>
 		                <a href="/empreendimentos/3-condominiofechado.html"><span class="title"><i class="fas fa-house-damage"></i> Condomínios Horizontais</span></a>
 		            </li>
+					-->
 	                <li class="list-inline-item add_listing"><a href="/plataforma-lancamentos-online.html" target="_blank"><i class="fas fa-rocket"></i><span class="dn-lg"> Anuncie</span></a></li>
-					<li class="list-inline-item painel"><a href="/painel-anunciante.html" target="_blank"><i class="fas fa-cogs"></i><span class="dn-lg"> Painel do Anunciante</span></a></li>
+					<li class="list-inline-item painel"><a href="/painel-anunciante.html" target="_blank"><i class="fas fa-cogs"></i><span class="dn-lg"> Login</span></a></li>
 		        </ul>
 		    </nav>
 		</div>
