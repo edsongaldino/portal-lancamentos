@@ -58,7 +58,7 @@
 		            </li>
 					-->
 	                <li class="list-inline-item add_listing"><a href="/plataforma-lancamentos-online.html" target="_blank"><i class="fas fa-rocket"></i><span class="dn-lg"> Anuncie</span></a></li>
-					<li class="list-inline-item painel"><a href="/painel-anunciante.html" target="_blank"><i class="fas fa-cogs"></i><span class="dn-lg"> Login</span></a></li>
+					<li class="list-inline-item painel"><a href="/painel-anunciante.html" target="_blank"><i class="fas fa-user"></i><span class="dn-lg"> Login</span></a></li>
 		        </ul>
 		    </nav>
 		</div>
