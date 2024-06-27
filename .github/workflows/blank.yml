@@ -1,16 +1,20 @@
-name: Deploy via ftp
-on: push
+on: 
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on push
 jobs:
-  deploy:
-    name: Deploy
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 1200
     steps:
-    - uses: actions/checkout@v3
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
 
-    - name: FTP Deploy Locaweb
-      uses: locaweb/ftp-deploy@1.0.0
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        host: ${{ secrets.HOST }} 
-        user: ${{ secrets.USER }}
+        server: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
+        server-dir: /public_html/
