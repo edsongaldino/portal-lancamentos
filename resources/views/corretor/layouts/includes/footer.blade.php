@@ -14,5 +14,6 @@
     <script type="text/javascript" src="/site/m/js/jquery.swipebox.min.js"></script>
     <script type="text/javascript" src="/site/m/js/custom.js"></script>
     <script type="text/javascript" src="/site/m/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/corretor/app-assets/js/custom.js"></script>
 </body>
 </html>

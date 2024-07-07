@@ -1317,9 +1317,12 @@ if (!function_exists('filemtime')) {
 if (!function_exists('get_elevadores')) {
 	function get_elevadores($empreendimento) {
 		$torres = Torre::where('empreendimento_id', $empreendimento)->get();
+
+		$elevador_social = 0;
+		$elevador_servico = 0;
+
 		foreach($torres as $torre){
-			$elevador_social = 0;
-			$elevador_servico = 0;
+			
 			if($torre->caracteristicas->where('nome', 'elevador_social')->first()){
 				$elevador_social += $torre->caracteristicas->where('nome', 'elevador_social')->first()->pivot->valor;
 			}
@@ -1330,8 +1333,7 @@ if (!function_exists('get_elevadores')) {
 
 		}
 
-
-		return $elevador_servico + $elevador_servico;
+		return $elevador_social + $elevador_servico;
 
 	}
 }

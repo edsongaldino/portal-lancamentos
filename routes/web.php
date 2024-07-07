@@ -707,4 +707,5 @@ Route::get('/corretor/perfil', 'Corretor\HomeController@Perfil')->name('corretor
 Route::get('/corretor/leads', 'Corretor\HomeController@Leads')->name('corretor.leads');
 Route::get('/corretor/logout', 'Corretor\AuthController@Logout')->name('corretor.logout');
 Route::post('/corretor/update', 'Corretor\CorretorController@update')->name('corretor.update');
+Route::get('/corretor/empreendimentos/{cidade_id}/{subtipo_id}/buscar', 'Corretor\HomeController@BuscarEmpreendimentos')->name('corretor.buscar-empreendimento');
 Route::get('/corretor/usuario/{id}/foto', 'Corretor\UserController@getFoto')->name('corretor.usuario.foto');

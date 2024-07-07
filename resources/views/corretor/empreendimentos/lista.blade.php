@@ -5,19 +5,20 @@
 
     <div class="busca">
         <div class="icone-filtro"><span class="glyphicon glyphicon-search" aria-hidden="true"></div>
+        <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
         <div class="busca-cidade">
-            <select class="form-control" name="cidade" id="BuscaCidade">
-                <option value="" selected>Cidade</option>
+            <select class="form-control BuscaAjax" name="cidade" id="BuscaCidade">
+                <option value="0" selected>Cidade</option>
                 @foreach (get_cidades() as $cidade)
-                <option value="{{ $cidade->id }}">{{ $cidade->nome }} ({{ $cidade->estado->uf }})</option>
+                <option value="{{ $cidade->id }}" @if($cidade_id == $cidade->id) selected @endif>{{ $cidade->nome }} ({{ $cidade->estado->uf }})</option>
                 @endforeach
             </select>
         </div>
         <div class="busca-tipo">
-            <select class="form-control" name="tipo" id="BuscaTipo">
-                <option value="">Tipo:</option>
+            <select class="form-control BuscaAjax" name="tipo" id="BuscaTipo">
+                <option value="0">Tipo:</option>
                 @foreach (get_subtipos() as $subtipo)
-                <option value="{{ $subtipo->id }}">{{ $subtipo->nome }}</option>
+                <option value="{{ $subtipo->id }}" @if($subtipo_id == $subtipo->id) selected @endif>{{ $subtipo->nome }}</option>
                 @endforeach
             </select>
         </div>
