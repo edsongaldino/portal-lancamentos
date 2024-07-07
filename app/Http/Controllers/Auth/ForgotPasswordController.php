@@ -50,7 +50,6 @@ class ForgotPasswordController extends Controller
         if($User){
 
             //ENVIA PARA O USUÁRIO
-            $email["template"] = "email.template_senha";
             $email["assunto"] = "Você solicitou uma nova senha! App Explicaí";
             $email["destinatario"] = $User->email;
             $email["email"] = $User->email;
