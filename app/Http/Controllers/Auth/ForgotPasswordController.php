@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Mail\SendMailUser;
+use App\Mail\Painel\SendMailPanel;
 use App\Models\User;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
@@ -56,7 +56,7 @@ class ForgotPasswordController extends Controller
             $email["nome"] = $User->nome;
             $email["link"] = getenv('APP_URL').'/nova-senha/'.base64_encode($User->email);
 
-            Mail::to($email["destinatario"])->send(new SendMailUser($email));
+            Mail::to($email["destinatario"])->send(new SendMailPanel($email));
 
             $this->data['title'] = trans('backpack::base.login'); // set the page title
             $this->data['status'] = "Sucesso";

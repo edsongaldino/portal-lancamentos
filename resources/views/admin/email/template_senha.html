@@ -46,7 +46,7 @@ table td img[class=imgresponsive] {
 a.alterar-senha{
 	width:200px;
 	height:60px;
-	background-color:#F30;
+	background-color:#FC0;
 	color:#FFF;
 	font-size:16px;
 	margin:auto;
@@ -55,7 +55,7 @@ a.alterar-senha{
 }
 
 a.alterar-senha:hover{
-	background-color:#C00;
+	background-color:rgb(255, 217, 0);
 	cursor:pointer;
 }
 
@@ -138,12 +138,12 @@ table td[class=template-img] img {
         <tr>
           <td><table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style="border-radius:5px 5px 0 0; background-color:#008A8A;">
               <tr>
-                <td height="29" bgcolor="#D93600">&nbsp;</td>
+                <td height="29" bgcolor="#0085B2">&nbsp;</td>
               </tr>
               <tr>
                 <td bgcolor="#FFFFFF"><table border="0" cellspacing="0" cellpadding="0" align="center" class="inner" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
                     <tr>
-                      <td height="75" class="hide"><a href="#"><img class="logo" src="../../../../public/app-assets/images/logo-app.png" width="120" height="120" alt="Logo"></a></td>
+                      <td height="75" class="hide"><a href="#"><img class="logo" src="https://lancamentosonline.com.br/public/assets/images/logo.png" width="200" alt="Logo"></a></td>
                     </tr>
                   </table></td>
               </tr>
@@ -161,12 +161,12 @@ table td[class=template-img] img {
         <tr>
           <td><table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style="background-color:#ffffff;">
               <tr>
-                <td style="border-bottom:1px solid #dbdbdb; font-size:14px; color:#FFF !important;"><table width="100%" bgcolor="#D93600" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(http://domusapp.com.br/sistema/ferramenta/templates_email/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
+                <td style="border-bottom:1px solid #dbdbdb; font-size:14px; color:#FFF !important;"><table width="100%" bgcolor="#0085B2" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(http://domusapp.com.br/sistema/ferramenta/templates_email/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
                   <tr>
                     <td height="23" colspan="4">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td colspan="4" align="center"><img src="https://sasconvenios.com.br/public/app-assets/img/contato.png" width="83" height="83" alt="picture" /></td>
+                    <td colspan="4" align="center"><img src="https://lancamentosonline.com.br/public/assets/images/password.png" width="83" height="83" alt="picture" /></td>
                   </tr>
                   <tr>
                     <td width="8%" height="23" bgcolor="#FFFFFF">&nbsp;</td>
@@ -216,7 +216,7 @@ table td[class=template-img] img {
   <tr>
     <td align="center"><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="devicewidth">
         <tr>
-          <td><table width="100%" bgcolor="#D93600" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(http://domusapp.com.br/sistema/ferramenta/templates_email/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
+          <td><table width="100%" bgcolor="#0085B2" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(https://lancamentosonline.com.br/public/assets/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
               <tr>
                 <td height="23">&nbsp;</td>
               </tr>
@@ -227,10 +227,7 @@ table td[class=template-img] img {
                 <td height="23">&nbsp;</td>
               </tr>   
               <tr>
-                <td align="center"><img src="../../../../public/app-assets/images/logo.png" width="64" height="64" alt="picture" /></td>
-              </tr>
-              <tr>
-                <td height="23">&nbsp;</td>
+                <td align="center"><img src="https://lancamentosonline.com.br/public/assets/images/premium/logo_lancamentos_online.png" width="60" alt="picture" /></td>
               </tr>
               <tr>
                 <td align="center" style="font:18px Arial, Helvetica, sans-serif; color:#FFFFFF; padding:0 15px 0 15px;" class="smallfont">Lançamentos Online</td>
