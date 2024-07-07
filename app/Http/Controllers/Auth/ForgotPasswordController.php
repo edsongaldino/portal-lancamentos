@@ -7,6 +7,7 @@ use App\Mail\Painel\SendMailPanel;
 use App\Models\User;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
 class ForgotPasswordController extends Controller
@@ -54,7 +55,7 @@ class ForgotPasswordController extends Controller
             $email["destinatario"] = $User->email;
             $email["email"] = $User->email;
             $email["nome"] = $User->nome;
-            $email["link"] = getenv('APP_URL').'/nova-senha/'.base64_encode($User->email);
+            $email["link"] = getenv('APP_URL').'/admin/password/reset/'.base64_encode($User->email);
 
             Mail::to($email["destinatario"])->send(new SendMailPanel($email));
 
@@ -70,4 +71,5 @@ class ForgotPasswordController extends Controller
 
         return view('auth.passwords.email', $this->data);
     }
+
 }

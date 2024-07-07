@@ -13,10 +13,16 @@
                     <h2 class="title text-uppercase text-weight-bold m-none"><i class="fa fa-user mr-xs"></i> {{ trans('backpack::base.reset_password') }}</h2>
                 </div>
                 <div class="panel-body">
-                    @if (session('status'))
+                    @if (isset($status))
+                        @if ($status == "Erro")
+                            <div class="alert alert-warning">
+                                {{ $mensagem }}
+                            </div>
+                        @elseif ($status == "Sucesso")
                         <div class="alert alert-success">
-                            {{ session('status') }}
+                            {{ $mensagem }}
                         </div>
+                        @endif
                     @else
                         <div class="alert alert-info">
                             <p class="m-none text-weight-semibold h6">Digite sua nova senha abaixo</p>
@@ -30,37 +36,19 @@
 
                         <div class="form-group">
                             <div>
-                                <input type="email" class="form-control input-lg" name="email" value="{{ $email ?? old('email') }}">
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+                                <input type="email" class="form-control input-lg" name="email" value="{{ $email ?? old('email') }}" readonly>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div>
                                 <input type="password" class="form-control" name="password" placeholder="Senha">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div>
                                 <input type="password" class="form-control" name="password_confirmation" placeholder="Confirmar Senha">
-
-                                @if ($errors->has('password_confirmation'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                    </span>
-                                @endif
                             </div>
                         </div>
                         

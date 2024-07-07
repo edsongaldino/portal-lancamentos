@@ -13,6 +13,19 @@
                     <h2 class="title text-uppercase text-weight-bold m-none"><i class="fa fa-user mr-xs"></i> Acesso Painel</h2>
                 </div>
                 <div class="panel-body">
+
+                    @if (isset($status))
+                        @if ($status == "Erro")
+                            <div class="alert alert-warning">
+                                {{ $mensagem }}
+                            </div>
+                        @elseif ($status == "Sucesso")
+                        <div class="alert alert-success">
+                            {{ $mensagem }}
+                        </div>
+                        @endif
+                    @endif
+
                     <form method="POST" action="{{ route('backpack.auth.login') }}">
                         {!! csrf_field() !!}
                         <div class="form-group mb-lg">
