@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
+    protected $data = []; // the information we send to the view
+
     public function home(){
 
         if(Auth::guard("corretor")->check() === true){
@@ -67,13 +69,12 @@ class AuthController extends Controller
         if($User){
 
             //ENVIA PARA O USUÁRIO
-            $request->template = "layouts.email.template_senha";
-            $request->assunto = "Você solicitou uma nova senha! App Explicaí";
-            $request->destinatario = $User->email;
-            $request->nome = $User->nome;
-            $request->link = getenv('APP_URL').'/nova-senha/'.base64_encode($User->email);
+            $data["assunto"] = "Você solicitou uma nova senha! App Corretor - Lançamentos Online";
+            $data["destinatario"] = $User->email;
+            $data["nome"] = $User->nome;
+            $data["link"] = getenv('APP_URL').'/corretor/nova-senha/'.base64_encode($User->email);
 
-            Mail::to($request->destinatario)->send(new SendMailUser($request));
+            Mail::to($data["destinatario"])->send(new SendMailUser($data));
 
             return redirect()->route('login')->with('success', 'Sua nova senha foi enviada no email de cadastro! Verifique a caixa de SPAM');
         }

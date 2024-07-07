@@ -58,7 +58,7 @@ class HomeController extends Controller
         if(Auth::guard("corretor")->check() === false){
             return view('corretor.login');
         }
-        $empreendimentos = Empreendimento::where('view_corretor', 'Sim')->get();
+        $empreendimentos = Empreendimento::where('status','Liberada')->orderBy('id', 'desc')->get();
         $ocultarLinks = "Sim";
         return view('corretor.empreendimentos.lista')->with(compact('empreendimentos', 'ocultarLinks'));
     }

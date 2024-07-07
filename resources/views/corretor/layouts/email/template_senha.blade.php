@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600" rel="stylesheet" type="text/css">
 <head>
-<title>SAS Convênios</title>
+<title>Painel</title>
 <style type="text/css">
 div, p, a, li, td {
 	-webkit-text-size-adjust:none;
@@ -46,7 +46,7 @@ table td img[class=imgresponsive] {
 a.alterar-senha{
 	width:200px;
 	height:60px;
-	background-color:#F30;
+	background-color:#FC0;
 	color:#FFF;
 	font-size:16px;
 	margin:auto;
@@ -55,7 +55,7 @@ a.alterar-senha{
 }
 
 a.alterar-senha:hover{
-	background-color:#C00;
+	background-color:rgb(255, 217, 0);
 	cursor:pointer;
 }
 
@@ -138,12 +138,12 @@ table td[class=template-img] img {
         <tr>
           <td><table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style="border-radius:5px 5px 0 0; background-color:#008A8A;">
               <tr>
-                <td height="29" bgcolor="#D93600">&nbsp;</td>
+                <td height="29" bgcolor="#0085B2">&nbsp;</td>
               </tr>
               <tr>
                 <td bgcolor="#FFFFFF"><table border="0" cellspacing="0" cellpadding="0" align="center" class="inner" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
                     <tr>
-                      <td height="75" class="hide"><a href="#"><img class="logo" src="../../../../public/app-assets/images/logo-app.png" width="120" height="120" alt="Logo"></a></td>
+                      <td height="75" class="hide"><a href="#"><img class="logo" src="https://lancamentosonline.com.br/public/assets/images/logo.png" width="200" alt="Logo"></a></td>
                     </tr>
                   </table></td>
               </tr>
@@ -161,12 +161,12 @@ table td[class=template-img] img {
         <tr>
           <td><table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style="background-color:#ffffff;">
               <tr>
-                <td style="border-bottom:1px solid #dbdbdb; font-size:14px; color:#FFF !important;"><table width="100%" bgcolor="#D93600" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(http://domusapp.com.br/sistema/ferramenta/templates_email/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
+                <td style="border-bottom:1px solid #dbdbdb; font-size:14px; color:#FFF !important;"><table width="100%" bgcolor="#0085B2" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(https://lancamentosonline.com.br/public/assets/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
                   <tr>
                     <td height="23" colspan="4">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td colspan="4" align="center"><img src="https://sasconvenios.com.br/public/app-assets/img/contato.png" width="83" height="83" alt="picture" /></td>
+                    <td colspan="4" align="center"><img src="https://lancamentosonline.com.br/public/assets/images/password.png" width="83" height="83" alt="picture" /></td>
                   </tr>
                   <tr>
                     <td width="8%" height="23" bgcolor="#FFFFFF">&nbsp;</td>
@@ -176,8 +176,8 @@ table td[class=template-img] img {
                   </tr>
                   <tr>
                     <td align="center" bgcolor="#FFFFFF" class="smallfont" style="font:18px Arial, Helvetica, sans-serif; font-style:italic; color:#333333; padding:0 15px 0 15px;">&nbsp;</td>
-                    <td colspan="2" align="center" bgcolor="#FFFFFF" style="font:18px Arial, Helvetica, sans-serif; font-style:italic; color:#333333; padding:0 15px 0 15px;"><p>Olá {{ $request->nome }},</p>
-                      <p>Recebemos sua solicitação de nova senha, para criar uma nova senha, clique no botão logm abaixo,</p></td>
+                    <td colspan="2" align="center" bgcolor="#FFFFFF" style="font:18px Arial, Helvetica, sans-serif; font-style:italic; color:#333333; padding:0 15px 0 15px;"><p>Olá {{ $dados["nome"] }},</p>
+                      <p>Recebemos sua solicitação de nova senha, para criar uma nova senha, clique no botão logo abaixo,</p></td>
                     <td align="center" bgcolor="#FFFFFF" class="smallfont" style="font:18px Arial, Helvetica, sans-serif; font-style:italic; color:#333333; padding:0 15px 0 15px;">&nbsp;</td>
                   </tr>
                   <tr>
@@ -189,7 +189,7 @@ table td[class=template-img] img {
                   <tr>
                     <td height="76" align="center" bgcolor="#FFFFFF" style="font:18px Arial, Helvetica, sans-serif; font-style:italic; color:#333333; padding:0 15px 0 15px;">&nbsp;</td>
                     <td height="76" colspan="2" align="center" bgcolor="#FFFFFF" style="font:18px Arial, Helvetica, sans-serif; font-style:italic; color:#FFF; padding:0 15px 0 15px;">
-                    		<a class="alterar-senha" href="{{ $request->link }}"><em><strong> ALTERAR SENHA</strong></em></a>
+                    		<a class="alterar-senha" href="{{ $dados["link"] }}"><em><strong> ALTERAR SENHA</strong></em></a>
                     </td>
                     <td height="76" align="center" bgcolor="#FFFFFF" style="font:18px Arial, Helvetica, sans-serif; font-style:italic; color:#333333; padding:0 15px 0 15px;">&nbsp;</td>
                   </tr>
@@ -216,7 +216,7 @@ table td[class=template-img] img {
   <tr>
     <td align="center"><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="devicewidth">
         <tr>
-          <td><table width="100%" bgcolor="#D93600" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(http://domusapp.com.br/sistema/ferramenta/templates_email/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
+          <td><table width="100%" bgcolor="#0085B2" border="0" cellspacing="0" cellpadding="0" align="center" class="full" style=" background-image:url(https://lancamentosonline.com.br/public/assets/images/white-bg.gif); background-repeat:repeat-x; background-position:left top;">
               <tr>
                 <td height="23">&nbsp;</td>
               </tr>
@@ -227,13 +227,10 @@ table td[class=template-img] img {
                 <td height="23">&nbsp;</td>
               </tr>   
               <tr>
-                <td align="center"><img src="../../../../public/app-assets/images/logo.png" width="64" height="64" alt="picture" /></td>
+                <td align="center"><img src="https://lancamentosonline.com.br/public/assets/images/premium/logo_lancamentos_online.png" width="60" alt="picture" /></td>
               </tr>
               <tr>
-                <td height="23">&nbsp;</td>
-              </tr>
-              <tr>
-                <td align="center" style="font:18px Arial, Helvetica, sans-serif; color:#FFFFFF; padding:0 15px 0 15px;" class="smallfont">App Explicaí</td>
+                <td align="center" style="font:18px Arial, Helvetica, sans-serif; color:#FFFFFF; padding:0 15px 0 15px;" class="smallfont">Lançamentos Online</td>
               </tr>
               <tr>
                 <td height="16">&nbsp;</td>
@@ -272,7 +269,7 @@ table td[class=template-img] img {
                       <td align="center" style="font:11px Helvetica,  Arial, sans-serif; color:#AAA;">Este e-mail foi enviado para:</td>
                     </tr>
                     <tr>
-                      <td height="18" align="center" style="font:12px Helvetica,  Arial, sans-serif; color:#AAA;"><p><span style="font-size:20px;">{{ $request->destinatario }}</p>
+                      <td height="18" align="center" style="font:12px Helvetica,  Arial, sans-serif; color:#AAA;"><p><span style="font-size:20px;">{{ $dados["destinatario"] }}</p>
                         <p>&nbsp;</p></td>
                     </tr>
                   </table></td>

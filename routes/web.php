@@ -19,6 +19,7 @@ use App\Models\User;
 use App\Models\Usuario;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
 
 Route::group(
 [
@@ -695,6 +696,7 @@ Route::post('/corretor/login', 'Corretor\AuthController@Login')->name('login-cor
 Route::post('/corretor/salvar', 'Corretor\CorretorController@store')->name('corretor.salvar');
 Route::post('/corretor/reenviar-senha', 'Corretor\AuthController@ReenviarSenha')->name('corretor.reenviar-senha');
 Route::get('/corretor/lembrar-senha', 'Corretor\AuthController@LembrarSenha')->name('corretor.lembrar-senha');
+Route::get('/corretor/nova-senha/{token}', 'Corretor\AuthController@NovaSenha')->name('nova-senha-corretor');
 Route::get('/corretor/cadastro', 'Corretor\HomeController@cadastro')->name('corretor.cadastro');
 Route::get('/login', 'Corretor\HomeController@login')->name('login');
 Route::get('/corretor/empreendimentos', 'Corretor\HomeController@ListaEmpreendimentos')->name('corretor.empreendimentos');

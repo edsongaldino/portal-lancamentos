@@ -78,7 +78,7 @@
             <a href="#openModal" id="ModalChat">
                 <div class="chat-corretor">
                     @if(Session::get('usuario.foto') <> null)
-                    <img class="img-circle border-effect" src="{{ url('corretor/usuario/'.Session::get('usuario.id').'/foto') }}" alt=" ">
+                    <img class="img-circle border-effect" src="/uploads/{{ Session::get('usuario.foto') }}" alt=" ">
                     @else
                     <img class="img-circle border-effect" src="{{ asset('corretor/app-assets/images/userFoto.png') }}" alt=" ">
                     @endif

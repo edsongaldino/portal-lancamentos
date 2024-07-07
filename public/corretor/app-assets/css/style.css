@@ -2336,6 +2336,7 @@ input[type="file"] {
 
 
 .conteudo{
+	width: 100%;
 	height: 100%;
 	padding: 20px;
 	background-color: #FFF !important;
@@ -2766,6 +2767,10 @@ form.cadastro-usuario input{
 	height: 50px;
 	font-size: 14px;
 	margin-bottom: 10px;
+}
+
+form.cadastro-usuario input.form-control{
+	font-size: 20px;
 }
 
 form.cadastro-usuario .gravar-dados-usuario{

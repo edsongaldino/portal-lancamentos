@@ -6,7 +6,7 @@
         @csrf
         <div id="profile-container" class="profile-container">
             @if($usuario->foto):
-                <img id="profileImage" class="profileImage" src="{{ url('corretor/usuario/'.$usuario->id.'/foto') }}" />
+                <img id="profileImage" class="profileImage" src="/uploads/{{ $usuario->foto }}" />
             @else:
                 <img id="profileImage" class="profileImage" src="{{ asset('corretor/app-assets/images/userFoto.png') }}" />
             @endif
@@ -15,11 +15,11 @@
         <label for="cpf_usuario">CPF</label>
         <input type="text" class="form-control" name="cpf" id="cpf" placeholder="" value="{{ $usuario->cpf }}" onblur="$(this).mask('000.000.000-00')" onkeypress="$(this).mask('000.000.000-00')" disabled>
         <label for="nome_usuario">NOME COMPLETO</label>
-        <input type="text" class="form-control" name="nome" id="nome" placeholder="" value="{{ $usuario->name }}" required>
+        <input type="text" class="form-control" name="nome" id="nome" placeholder="" value="{{ $usuario->nome }}" required>
         <label for="nome_usuario">DATA DE NASCIMENTO</label>
-        <input type="text" class="form-control" name="data_nascimento" id="data_nascimento" placeholder="" onblur="$(this).mask('00/00/0000')" onkeypress="$(this).mask('00/00/0000')" value="{{ $usuario->data_nascimento }}" required>
+        <input type="text" class="form-control" name="data_nascimento" id="data_nascimento" placeholder="" onblur="$(this).mask('00/00/0000')" onkeypress="$(this).mask('00/00/0000')" value="{{ data_br($usuario->data_nascimento) }}" required>
         <label for="nome_usuario">TELEFONE</label>
-        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="" onblur="$(this).mask('(00) 00009-0000')" onkeypress="$(this).mask('(00) 00009-0000')" value="{{ $usuario->celular }}" required>
+        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="" onblur="$(this).mask('(00) 00009-0000')" onkeypress="$(this).mask('(00) 00009-0000')" value="{{ $usuario->telefone }}" required>
         <label for="nome_usuario">EMAIL (LOGIN)</label>
         <input type="email" class="form-control" name="email" id="email" placeholder="" value="{{ $usuario->email }}" required>
         <label for="nome_usuario">SENHA</label>

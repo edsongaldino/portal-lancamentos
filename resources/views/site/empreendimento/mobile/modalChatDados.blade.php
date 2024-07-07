@@ -5,7 +5,7 @@
       @if(isset($viewCorretor))
 
         @if(Session::get('usuario.foto') <> null)
-            <div class="icone-chat-modal"><img src="{{ url('corretor/usuario/'.Session::get('usuario.id').'/foto') }}" alt="" class="img-responsive foto-user"></div>
+            <div class="icone-chat-modal"><img src="/uploads/{{ Session::get('usuario.foto') }}" alt="" class="img-responsive foto-user"></div>
         @else
             <div class="icone-chat-modal"><img src="{{ asset('corretor/app-assets/images/userFoto.png') }}" alt="" class="img-responsive foto-user"></div>
         @endif

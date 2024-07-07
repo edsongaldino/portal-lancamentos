@@ -11,11 +11,11 @@ class SendMailUser extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $corretor;
+    public $dados;
 
-    public function __construct($corretor)
+    public function __construct($dados)
     {
-        $this->corretor = $corretor;
+        $this->dados = $dados;
     }
 
     /**
@@ -25,6 +25,6 @@ class SendMailUser extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.senha')->from('contato@lancamentosonline.com.br', 'App Corretor - Lançamentos Online')->replyTo('contato@lancamentosonline.com.br', 'Lançamentos Online')->subject('Redefinição de Senha. App Corretor (Lançamentos Online!');
+        return $this->view('corretor.layouts.email.template_senha')->from('contato@lancamentosonline.com.br', 'App Corretor - Lançamentos Online')->replyTo('contato@lancamentosonline.com.br', 'Lançamentos Online')->subject('Redefinição de Senha. App Corretor (Lançamentos Online!');
     }
 }
