@@ -363,9 +363,9 @@ ul.social li{
 						<td>
 							<div class="text" style="padding: 0 2.5em; text-align: center;">
 
-								<h2>Olá {{ $corretor->nome ?? '' }}, </h2>
+								<h2>Olá {{ $corretor["nome"] ?? '' }}, </h2>
 								<h2>Clique abaixo para criar uma nova senha</h2>
-								<a href="{{ $corretor->link }}"><div class="botao">NOVA SENHA</div></a>
+								<a href="{{ $corretor["link"] }}"><div class="botao">NOVA SENHA</div></a>
 
 							</div>
 						</td>

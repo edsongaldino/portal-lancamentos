@@ -14,10 +14,16 @@
                     <h2 class="title text-uppercase text-weight-bold m-none"><i class="fa fa-user mr-xs"></i> {{ trans('backpack::base.reset_password') }}</h2>
                 </div>
                 <div class="panel-body">
-                    @if (session('status'))
+                    @if (isset($status))
+                        @if ($status == "Erro")
+                            <div class="alert alert-warning">
+                                {{ $mensagem }}
+                            </div>
+                        @elseif ($status == "Sucesso")
                         <div class="alert alert-success">
-                            {{ session('status') }}
+                            {{ $mensagem }}
                         </div>
+                        @endif
                     @else
                         <div class="alert alert-info">
                             <p class="m-none text-weight-semibold h6">Digite seu e-mail abaixo e nós lhe enviaremos as instruções!</p>
