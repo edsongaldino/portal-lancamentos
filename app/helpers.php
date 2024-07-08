@@ -372,7 +372,7 @@ if (!function_exists('get_estados')) {
 
 if (!function_exists('get_cidades')) {
 	function get_cidades() {
-		return Cidade::where('status', 'L')->get();
+		return Cidade::select('cidades.*')->join('enderecos', 'enderecos.cidade_id', '=', 'cidades.id')->join('empreendimentos', 'empreendimentos.endereco_id', '=', 'enderecos.id')->where('empreendimentos.status', 'Liberada')->groupBy('cidades.id')->get();
 	}
 }
 
