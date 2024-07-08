@@ -42,6 +42,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('corretor/app-assets/css/util.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('corretor/app-assets/css/main.css') }}">
     <!--===============================================================================================-->
+    <link href="{{ asset('assets/sweetalert/dist/sweetalert.css') }}" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -50,6 +51,7 @@
         <div class="wrap-login100 p-t-190 p-b-30">
             <form class="login100-form validate-form" method="POST" action="{{ route('alterar.senha') }}">
                 @csrf
+                <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
                 <input type="hidden" name="acao" value="login">
                 <div class="login100-form-avatar">
                     <img src="{{ asset('corretor/app-assets/images/avatar-01.png') }}" alt="AVATAR">
@@ -60,7 +62,7 @@
                 </span>
 
                 <div class="wrap-input100 validate-input m-b-10" data-validate = "O usuário é obrigatório">
-                    <input class="input100" type="text" name="email" value="{{ $email }}" readonly>
+                    <input class="input100" type="text" name="email" id="email" value="{{ $email }}" readonly>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
 							<i class="fa fa-user"></i>
@@ -68,7 +70,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-10" data-validate = "A senha é obrigatória">
-                    <input class="input100" type="password" name="senha" placeholder="Senha">
+                    <input class="input100" type="password" name="senha" id="senha" placeholder="Senha">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
 							<i class="fa fa-lock"></i>
@@ -76,7 +78,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-10" data-validate = "O campo repetir senha é obrigatória">
-                    <input class="input100" type="password" name="confirmar_senha" placeholder="Confirmar Senha">
+                    <input class="input100" type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirmar Senha">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
 							<i class="fa fa-lock"></i>
@@ -84,7 +86,7 @@
                 </div>
 
                 <div class="container-login100-form-btn p-t-10">
-                    <button class="login100-form-btn" type="submit" name="btLogar">
+                    <button class="login100-form-btn AlterarSenha" type="button" name="btLogar">
                         ALTERAR E ENTRAR
                     </button>
                 </div>
@@ -106,6 +108,8 @@
 <script src="{{ asset('corretor/app-assets/vendor/select2/select2.min.js') }}"></script>
 <!--===============================================================================================-->
 <script src="{{ asset('corretor/app-assets/js/main.js') }}"></script>
+
+<script type="text/javascript" src="{{ asset('assets/sweetalert/dist/sweetalert.js') }}" ></script>
 
 </body>
 </html>

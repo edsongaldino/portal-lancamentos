@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Mail\SendMailUser;
 use App\Models\Empreendimento;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
@@ -76,16 +77,23 @@ class AuthController extends Controller
 
             Mail::to($data["destinatario"])->send(new SendMailUser($data));
 
-            return redirect()->route('login')->with('success', 'Sua nova senha foi enviada no email de cadastro! Verifique a caixa de SPAM');
+            return response()->json([
+                'success'=>'success',
+                'message'=>'Sua nova senha foi enviada no email de cadastro! Verifique a caixa de SPAM'
+            ]);
+
         }
 
-        return redirect()->back()->with('warning', 'Este e-mail não consta em nosso banco de dados! Confira.');
+        return response()->json([
+            'error'=>'error',
+            'message'=>'Este e-mail não consta em nosso banco de dados! Confira.'
+        ]);
 
     }
 
     public function FormAlterarSenha($email){
         $email = base64_decode($email);
-        return view('nova-senha')->with(compact('email'));
+        return view('corretor.nova-senha')->with(compact('email'));
 
     }
 
@@ -96,13 +104,15 @@ class AuthController extends Controller
         if($request->senha == $request->confirmar_senha){
             $user->password = Hash::make($request->senha);
             $user->save();
-
-            $empreendimentos = Empreendimento::where('destaque','Sim')->get();
-
-            return view('home', compact('empreendimentos'));
+            return response()->json([
+                'success'=>'success',
+                'message'=>'Sua nova senha foi cadastrada com sucesso!'
+            ]);
         }
-
-        return redirect()->back()->with('warning', 'As senhas precisam ser idênticas.');
+        return response()->json([
+            'error'=>'error',
+            'message'=>'As senhas precisam ser idênticas.'
+        ]);
 
 
     }

@@ -69,3 +69,99 @@ $(document).on('click', '.loginCorretor', function (e) {
 	});
   
   });
+
+  $(document).on('click', '.reenviarSenhaCorretor', function (e) {
+  
+	e.preventDefault();
+  
+	let email = $('#emailCorretor').val();
+ 
+  
+	if (email == '') {
+	  swal('Ops', 'Por favor, nos informe o email', "info");
+	  return false;
+	}
+    
+	$.ajaxSetup({
+	  headers: {
+		'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	  }
+	});
+	
+	$.ajax({
+	  url: "/corretor/reenviar-senha",
+	  type:"POST",
+	  data:{
+		"_token": $('#token').val(),
+		email:email,
+	  },
+	  success:function(response){
+	
+		if(response.success){
+			swal('OK', response.message, "success");
+		}else{
+			swal('Ops', response.message, "warning");
+	  		return false;
+		}
+		
+	  },
+	  error: function(response) {
+		swal('Ops', 'Algo deu errado!', "warning");
+	  	return false;
+	  },
+	});
+  
+  });
+
+  $(document).on('click', '.AlterarSenha', function (e) {
+  
+	e.preventDefault();
+  
+	let email = $('#email').val();
+	let senha = $('#senha').val();
+	let confirmar_senha = $('#confirmar_senha').val();
+ 
+  
+	if (email == '') {
+	  swal('Desculpe', 'Por favor, nos informe o email', "info");
+	  return false;
+	}
+  
+	if (senha != confirmar_senha) {
+	  swal('Ops', 'As duas senhas devem ser idênticas!', "info");
+	  return false;
+	}
+  
+	$.ajaxSetup({
+	  headers: {
+		'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	  }
+	});
+	
+	$.ajax({
+	  url: "/corretor/alterar-senha",
+	  type:"POST",
+	  data:{
+		"_token": $('#token').val(),
+		email:email,
+		senha:senha,
+		confirmar_senha:confirmar_senha,
+	  },
+	  success:function(response){
+	
+		if(response.success){
+			swal('OK', response.message, "success");
+			window.location.href = "/login";
+		}else{
+			swal('Ops', response.message, "warning");
+	  		return false;
+		}
+		
+	  },
+	  error: function(response) {
+		swal('Ops', 'Erro interno do servidor!', "warning");
+	  	return false;
+	  },
+	});
+  
+  });
