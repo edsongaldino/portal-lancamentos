@@ -43,7 +43,7 @@ class BuscaController extends Controller
             'construtora_id_multiplo' => $request->input('construtora_id_multiplo', null),
             'construtora_id' => $request->input('construtora_id', null),
             'subtipo_id_multiplo' => $request->input('subtipo_id_multiplo', null),
-            'modalidade_id_multiplo' => $request->input('modalidade_id_multiplo', null),
+            'modalidade' => $request->input('modalidade', null),
             'estado_id_multiplo' => $request->estado_id_multiplo,
             'cidade_id_multiplo' => $request->input('cidade_id_multiplo', null),
             'bairro_id_multiplo' => $request->input('bairro_id_multiplo', null),
@@ -55,6 +55,8 @@ class BuscaController extends Controller
             'querystring' => $request->getQueryString(),
             'url' => isset($array['url']) ? $array['url'] : '/resultado-busca',
             'ordenacao' => $request->input('ordenacao', null),
+            'valor_min' => str_replace(' ', '', $request->input('valor_min', null)),
+            'valor_max' => str_replace(' ', '', $request->input('valor_max', null))
         ];
 
         $retorno = (new Empreendimento())->buscar($parametros);
@@ -154,7 +156,7 @@ class BuscaController extends Controller
             4 => 'Mude Já'
         ];        
 
-        $request->request->set('modalidade_id_multiplo', [$modalidades[$id]]);
+        $request->request->set('modalidade', $modalidades[$id]);
 
         $subtipos = [
             'apartamentos' => 1,

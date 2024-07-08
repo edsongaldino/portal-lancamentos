@@ -861,6 +861,7 @@ class Empreendimento extends Model
         $this->buscarRangeArea($parametros, $empreendimentos);
         $this->buscarOferta($parametros, $empreendimentos);
         $this->buscaOrdenacao($parametros, $empreendimentos);
+        $this->buscarModalidade($parametros, $empreendimentos);
 
         $empreendimentos->groupBy('empreendimentos.id');
 
@@ -972,8 +973,6 @@ class Empreendimento extends Model
     }
 
 
-
-
     public function buscarTipo($parametros, $empreendimentos)
     {
         $tipo = isset($parametros['tipo']) ? $parametros['tipo'] : null;
@@ -986,6 +985,14 @@ class Empreendimento extends Model
                 $q->join('empreendimentos_variacoes', 'empreendimentos.variacao_id', '=', 'empreendimentos_variacoes.id')
                     ->whereIn('variacao_id', $tipos[$tipo]);
             }
+        });
+    }
+
+    public function buscarModalidade($parametros, $empreendimentos)
+    {
+        $modalidade = isset($parametros['modalidade']) ? $parametros['modalidade'] : null;
+        $empreendimentos->when($modalidade, function ($q) use ($modalidade) {
+            $q->where('empreendimentos.modalidade', $modalidade);
         });
     }
 
@@ -1098,11 +1105,23 @@ class Empreendimento extends Model
 
     public function buscarRangeValor($parametros, $empreendimentos)
     {
-        $valor = isset($parametros['valor']) ? $parametros['valor'] : null;
+        $valor_min = 0;
+        $valor_max = 999999999999.99;
 
-        $empreendimentos->when($valor, function ($q) use ($valor) {
-            $range = explode('-', $valor);
-            $q->whereRaw("empreendimentos.valor_inicial >= {$range[0]} and empreendimentos.valor_inicial <= {$range[1]}");
+        if($parametros['valor_min'] <> null){
+            $valor_min = converte_reais_to_mysql($parametros['valor_min']);
+        }
+        
+        if($parametros['valor_max'] <> null){
+            $valor_max = converte_reais_to_mysql($parametros['valor_max']);
+        }
+
+        $empreendimentos->when($valor_min, function ($q) use ($valor_min) {
+            $q->whereRaw("empreendimentos.valor_inicial >= '{$valor_min}'");
+        });
+
+        $empreendimentos->when($valor_max, function ($q) use ($valor_max) {
+            $q->whereRaw("empreendimentos.valor_final <= '{$valor_max}'");
         });
     }
 

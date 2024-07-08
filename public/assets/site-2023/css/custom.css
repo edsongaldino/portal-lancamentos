@@ -73,6 +73,7 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 /*AUTOCOMPLETE CIDADES*/
 .twitter-typeahead {     
   position: relative;
+  width: 100% !important;
 }
 .tt-dropdown-menu {
   width: 100%;
@@ -114,4 +115,26 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 }
 .tt-suggestion p {
   margin: 0;
+}
+
+.entrega{
+  background-color: rgb(251 214 76);
+  color: rgb(72, 72, 72) !important;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.pronto{
+  background-color: #00cc77;
+  color: #012b11 !important; 
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.twitter-typeahead.localizacao-busca{
+  width: 100% !important;
 }

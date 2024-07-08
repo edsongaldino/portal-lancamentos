@@ -360,7 +360,8 @@
 									<ul class="sasw_list style2 mb0">
 										<li class="search_area">
 										    <div class="form-group">
-										    	<input type="text" class="form-control" id="exampleInputEmail" placeholder="Localização">
+										    	<input type="text" class="form-control localizacao-busca" id="ttexto" placeholder="Digite a cidade ou estado" name="cidade">
+												<input class="typeahead form-control" id="cidade" name="cidade_id" style="margin:0px auto;width:300px;" type="hidden">
 										    	<label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
 										    </div>
 										</li>
@@ -642,7 +643,11 @@
 													<ul class="fp_meta float-left mb0">
 														<li class="list-inline-item" title="{{ $empreendimento->construtora->nome_abreviado }}"><img src="{{ $empreendimento->construtora->getLogoUrl('260x260') }}" width="50" alt="pposter1.png"></li>
 													</ul>
-													<div class="fp_pdate float-right">{{ get_previsao_entrega($empreendimento) }}</div>
+													@if(get_previsao_entrega($empreendimento) == 'Pronto')
+													<div class="fp_pdate float-right pronto"><i class="fas fa-key"></i> {{get_previsao_entrega($empreendimento)}}</div>									
+													@else
+													<div class="fp_pdate float-right entrega"><i class="fas fa-calendar"></i> {{get_previsao_entrega($empreendimento)}}</div>		
+													@endif
 												</div>
 											</div>
 											</a>
@@ -666,10 +671,11 @@
 										'construtora_id_multiplo' => $parametros['construtora_id_multiplo'],
 										'construtora_id' => $parametros['construtora_id'],
 										'subtipo_id_multiplo' => $parametros['subtipo_id_multiplo'],
-										'modalidade_id_multiplo' => $parametros['modalidade_id_multiplo'],
+										'modalidade' => $parametros['modalidade'],
 										'cidade_id_multiplo' => $parametros['cidade_id_multiplo'],
 										'bairro_id_multiplo' => $parametros['bairro_id_multiplo'],
-										'valor' => $parametros['valor'],
+										'valor_min' => $parametros['valor_min'],
+										'valor_max' => $parametros['valor_max'],
 										'quarto' => $parametros['quarto'],
 										'area' => $parametros['area'],
 										'ordenacao' => $parametros['ordenacao'],
@@ -727,6 +733,7 @@
 <script type="text/javascript" src="{{ asset('assets/site-2023/js/script.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/javascripts/mascaras/jquery.mask.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/javascripts/mascaras/jquery.maskMoney.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/typeahead.bundle.min.js"></script>
 
 
 <script>
@@ -850,6 +857,34 @@ jQuery(document).on('ready', function () {
     // add your functions
     gMapHome();
   })(jQuery);
+
+  var municipios = new Bloodhound({
+		datumTokenizer: Bloodhound.tokenizers.obj.whitespace("nome"),
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		remote: {
+			url: "/auto-complete-cidades/%QUERY",
+			wildcard: '%QUERY'
+		},
+		limit: 10
+	});
+	municipios.initialize();
+
+	$("#ttexto").typeahead({
+		hint: true,
+		highlight: true,
+		minLength: 1
+	},
+	{
+		name: "municipios",
+		displayKey: "nome",
+		source: municipios.ttAdapter()
+	}).bind("typeahead:selected", function(obj, datum, name) {
+		console.log(datum);
+		$(this).data("seletectedId", datum.nome);
+		$('#cidade').val(datum.id);
+		console.log(datum.value);
+	});
+
 });
 </script>
 </body>
