@@ -5,7 +5,7 @@
     <section class="body-sign">
         <div class="center-sign">
             <a href="/" class="logo pull-left">
-                <img src="/assets/images/logo.png" height="54" alt="Admin" />
+                <img src="/assets/images/logo_lancamentos.png" height="54" alt="Admin" />
             </a>
 
             <div class="panel panel-sign">
