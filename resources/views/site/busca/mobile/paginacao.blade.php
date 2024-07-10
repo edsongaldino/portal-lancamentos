@@ -7,7 +7,7 @@
   'construtora_id_multiplo' => $parametros['construtora_id_multiplo'],
   'construtora_id' => $parametros['construtora_id'],
   'subtipo_id_multiplo' => $parametros['subtipo_id_multiplo'],
-  'modalidade_id_multiplo' => $parametros['modalidade_id_multiplo'],
+  'modalidade' => $parametros['modalidade'],
   'cidade_id_multiplo' => $parametros['cidade_id_multiplo'],
   'bairro_id_multiplo' => $parametros['bairro_id_multiplo'],
   'valor' => $parametros['valor'],

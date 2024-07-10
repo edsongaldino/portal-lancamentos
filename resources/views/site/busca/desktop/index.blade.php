@@ -130,7 +130,7 @@
                 @endforeach
               </select>
                             
-              <select name="modalidade" id="modalidade_id_multiplo" class="bootstrap-select" title="Etapa:" multiple>
+              <select name="modalidade" id="modalidade" class="bootstrap-select" title="Etapa:" multiple>
                 <option value="Lançamento">Lançamento</option>
                 <option value="Em Obra">Em obra</option>
                 <option value="Mude Já">Pronto</option>

@@ -4,7 +4,7 @@
 
       <div class="item-sessao-busca" id="sessao_busca_subtipos" style="display: none">Tipo(s): <i class="fa fa-close close remover-parametro" data-id="subtipo_id_multiplo" data-complemento="sessao_busca_subtipos" aria-hidden="true" title="Remover parâmetro"></i></div>
 
-      <div class="item-sessao-busca" id="sessao_busca_modalidades" style="display: none">Etapa(s): <i class="fa fa-close close remover-parametro" data-id="modalidade_id_multiplo" data-complemento="sessao_busca_modalidades" aria-hidden="true" title="Remover parâmetro"></i></div>
+      <div class="item-sessao-busca" id="sessao_busca_modalidades" style="display: none">Etapa(s): <i class="fa fa-close close remover-parametro" data-id="modalidade" data-complemento="sessao_busca_modalidades" aria-hidden="true" title="Remover parâmetro"></i></div>
 
       <div class="item-sessao-busca cidade_id_multiplo" id="sessao_busca_cidades" style="display: none">Cidade <i class="fa fa-close close remover-parametro" data-id="cidade_id_multiplo" data-complemento="sessao_busca_cidades" aria-hidden="true" title="Remover parâmetro"></i></div>
 
