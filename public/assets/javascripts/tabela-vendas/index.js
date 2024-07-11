@@ -156,7 +156,7 @@ $(function(){
         dados: $("#formTabelaVendas").serialize(),
         feedback: true,
         mensagemSucesso: 'Tabela de vendas salva',
-        mensagemErro: 'Erro, tente novamente mais tarde',
+        //mensagemErro: 'Erro, tente novamente mais tarde',
         redirect: '/admin/construtora/'+$("#construtora_id").val()+'/tabela-vendas'
       });
 
@@ -242,7 +242,7 @@ $(function(){
         dados: $("#formAtualizarTabelaVendas").serialize(),
         feedback: true,
         mensagemSucesso: 'Tabela de vendas atualizada',
-        mensagemErro: 'Erro, tente novamente mais tarde',
+        //mensagemErro: 'Erro, tente novamente mais tarde',
         redirect: '/admin/construtora/'+$("#construtora_id").val()+'/tabela-vendas'
       });
 
