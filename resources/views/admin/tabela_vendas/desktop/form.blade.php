@@ -30,7 +30,7 @@
 
         <div class="col-md-3" id="selectTorresQuadras">
 
-            @if(isset($tabela) && $tabela->empreendimento->tipo ?? '' == 'Vertical')
+            @if(isset($tabela) && $empreendimento->subtipo->tipo == 'Vertical')
             <div class="form-group">
                 <label>Torre</label>
                 <div class="input-group">
@@ -39,9 +39,9 @@
                     </span>
                     <select class="form-control select-empreendimento" name="torre_id" id="torre_id">
                         @foreach($empreendimento->torres as $torre)
-                        <option value="{{ $torre->id }}" @if(isset($tabela) && $tabela->torre->id == $torre->id) selected="true" @endif>{{ $torre->nome }}</option>
+                        <option value="{{ $torre->id }}" @if(isset($tabela) && $tabela->torre_id == $torre->id) selected="true" @endif>{{ $torre->nome }}</option>
                         @endforeach
-                        <option value="1" @if(isset($tabela)) @if($tabela->torre->id == 1) selected="true" @endif @endif>Todas as torres</option>
+                        <option value="1" @if(isset($tabela)) @if($tabela->torre_id == 1) selected="true" @endif @endif>Todas as torres</option>
                     </select>
                 </div>
             </div>
@@ -55,9 +55,9 @@
                     </span>
                     <select class="form-control select-empreendimento" name="quadra_id" id="quadra_id">
                         @foreach($empreendimento->quadras as $quadra)
-                        <option value="{{ $quadra->id }}" @if(isset($tabela) && $tabela->quadra->id == $quadra->id) selected="true" @endif>{{ $quadra->nome }}</option>
+                        <option value="{{ $quadra->id }}" @if(isset($tabela) && $tabela->quadra_id == $quadra->id) selected="true" @endif>{{ $quadra->nome }}</option>
                         @endforeach
-                        <option value="1" @if(isset($tabela)) @if($tabela->quadra->id == 1) selected="true" @endif @endif>Todas as quadras</option>
+                        <option value="1" @if(isset($tabela)) @if($tabela->quadra_id == 1) selected="true" @endif @endif>Todas as quadras</option>
                     </select>
                 </div>
             </div>
@@ -68,7 +68,7 @@
 
         <div class="col-md-2" id="previsaoEntrega">
 
-            @if(isset($tabela) && $tabela->empreendimento->tipo ?? '' == 'Vertical')
+            @if(isset($tabela) && $tabela->empreendimento->subtipo->tipo ?? '' == 'Vertical')
             <div class="form-group">
                 <label>Previsão de entrega</label>
                 <div class="input-group">
