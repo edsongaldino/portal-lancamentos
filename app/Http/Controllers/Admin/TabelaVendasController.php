@@ -75,10 +75,24 @@ class TabelaVendasController extends Controller
     public function buscarPrevisaoEntrega(Request $request)
     {
         if ($request->torre_id) {
-            $this->data['previsao'] = Torre::find($request->torre_id);
+            if($request->torre_id == 1){
+                $valor = Torre::where('empreendimento_id', $request->empreendimento_id)->first();
+            }else{
+                $valor = Torre::find($request->torre_id)->first();
+            }
+            
         } elseif($request->quadra_id) {
-            $this->data['previsao'] = Quadra::find($request->quadra_id);
+
+            if($request->quadra_id == 1){
+                $valor = Quadra::where('empreendimento_id', $request->empreendimento_id)->first();
+            }else{
+                $valor = Quadra::find($request->quadra_id)->first();
+            }
+
         }
+        $this->data['previsao_entrega_mes'] = $valor->previsao_entrega_mes;
+        $this->data['previsao_entrega_ano'] = $valor->previsao_entrega_ano;
+
         return view('admin.tabela_vendas.desktop.getPrevisao', $this->data);
     }
 
