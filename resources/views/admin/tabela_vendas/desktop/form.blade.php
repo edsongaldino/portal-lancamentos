@@ -41,6 +41,7 @@
                         @foreach($empreendimento->torres as $torre)
                         <option value="{{ $torre->id }}" @if(isset($tabela) && $tabela->torre->id == $torre->id) selected="true" @endif>{{ $torre->nome }}</option>
                         @endforeach
+                        <option value="0" @if(isset($tabela) && $tabela->torre->id == 0) selected="true" @endif>Todas as torres</option>
                     </select>
                 </div>
             </div>
@@ -56,6 +57,7 @@
                         @foreach($empreendimento->quadras as $quadra)
                         <option value="{{ $quadra->id }}" @if(isset($tabela) && $tabela->quadra->id == $quadra->id) selected="true" @endif>{{ $quadra->nome }}</option>
                         @endforeach
+                        <option value="0" @if(isset($tabela) && $tabela->quadra->id == 0) selected="true" @endif>Todas as quadras</option>
                     </select>
                 </div>
             </div>
