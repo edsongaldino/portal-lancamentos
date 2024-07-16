@@ -22,7 +22,7 @@
         <a href="/pagina-inicial.html"><img class="logo-lancamentos-topo" src="{{ asset('assets/site-2023/images/header-logo.png') }}" alt="header-logo.png"></a>
 
         <div class="menu">  
-          @if($empreendimento)
+          @if(isset($empreendimento))
             <div class="item"><a href="/busca-mapa.html?subtipo_id={{ $empreendimento->subtipo_id }}" target="_blank"><i class="fa fa-search"></i> Ver outros anúncios</a></div>
           @else
             <div class="item"><a href="/busca-mapa.html" target="_blank"><i class="fa fa-search"></i> Ver outros anúncios</a></div>
