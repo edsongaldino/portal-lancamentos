@@ -206,14 +206,11 @@ class Lead extends Model
 
         }
 
-
         Mail::to($this->email)->send(new EmailCliente($this));
 
         if (config('app.ambiente') == 'producao') {
-            $adms = [];
-            $adms[] = 'edson@lancamentosonline.com.br';
-            $adms[] = 'contato@lancamentosonline.com.br';
-            Mail::to($adms)->send(new EmailAdm($this));
+            $EmailAdmin = 'contato@lancamentosonline.com.br';
+            Mail::to($EmailAdmin)->send(new EmailAdm($this));
         }
     }
 
@@ -243,10 +240,8 @@ class Lead extends Model
 
 
         if (config('app.ambiente') == 'producao') {
-            $adms = [];
-            $adms[] = 'edson@lancamentosonline.com.br';
-            $adms[] = 'contato@lancamentosonline.com.br';
-            Mail::to($adms)->send(new EmailAdm($this));
+            $EmailAdmin = 'contato@lancamentosonline.com.br';
+            Mail::to($EmailAdmin)->send(new EmailAdm($this));
         }
 
     }
