@@ -383,6 +383,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'auth'], 'namespace' 
 
 	Route::post('salvar-midias-empreendimento', 'EmpreendimentoController@salvarMidiasEmpreendimento');
 
+	Route::post('salvar-canais-empreendimento', 'EmpreendimentoController@salvarCanaisEmpreendimento');
+
 	Route::post('salvar-honorarios-intermediacao', 'EmpreendimentoController@salvarHonorariosIntermediacao');
 
 	Route::post('salvar-arquivos-empreendimento', 'EmpreendimentoController@salvarArquivosEmpreendimento');

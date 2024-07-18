@@ -29,6 +29,7 @@
                 @endif
 
                 @if ($unidade->empreendimento->tipo == 'Horizontal')
+                
                     Unidade {{ $unidade->nome }}
                   
                     @if ($unidade->empreendimento->variacao_id == 6 || $unidade->empreendimento->variacao_id == 10 || $unidade->empreendimento->variacao_id == 11)

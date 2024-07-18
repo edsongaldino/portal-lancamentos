@@ -1492,7 +1492,7 @@ if (!function_exists('total_vgv_geral')) {
 		if ($empreendimento_id) {
 			$unidades = Unidade::where('empreendimento_id', $empreendimento_id)->get();
 		} else {
-			$unidades = Construtora::find($construtora_id)->unidades;
+			$unidades = Unidade::where('construtora_id', $construtora_id)->get();
 		}
 
 		foreach ($unidades as $un) {
@@ -1588,25 +1588,45 @@ if (!function_exists('total_vagas_unidade')) {
 if (!function_exists('obter_valor_unidade')) {
 
 	function obter_valor_unidade($unidade) {
+		
 		$valor_unidade = 0;
 
 		$valor = $unidade->caracteristicas->where('nome', 'valor_unidade')->first();
 
 		if ($valor) {
+			
+			$valor = $unidade->caracteristicas->where('nome', 'valor_unidade')->first()->pivot->valor;
 
-			$valor_unidade = $valor->pivot->valor;
+			if($valor > 0){
+				$valor_unidade = $valor;
+			}else{
+				$valor_unidade = obter_valor_unidade_por_m2($unidade);
+			}
 
 		} else {
 
-			$valor = $unidade->caracteristicas->where('nome', 'valor_m2')->first();
+			$valor_unidade = obter_valor_unidade_por_m2($unidade);
+		}
 
-			if ($valor) {
+		return $valor_unidade;
+	}
 
-				$metragem = $unidade->caracteristicas->where('nome', 'metragem_total')->first();
+}
 
-				if ($metragem) {
-					$valor_unidade = ($valor->pivot->valor * $metragem->pivot->valor);
-				}
+if (!function_exists('obter_valor_unidade_por_m2')) {
+
+	function obter_valor_unidade_por_m2($unidade) {
+
+		$valor_unidade = 0;
+
+		$valor = $unidade->caracteristicas->where('nome', 'valor_m2')->first();
+
+		if ($valor) {
+
+			$metragem = $unidade->caracteristicas->where('nome', 'metragem_total')->first();
+
+			if ($metragem) {
+				$valor_unidade = ($valor->pivot->valor * $metragem->pivot->valor);
 			}
 		}
 

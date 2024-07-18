@@ -4,6 +4,6 @@
         <span class="input-group-addon">
             <i class="fa fa-calendar"></i>
         </span>
-        <input type="text" class="form-control previsao-entrega" value="{{ mes_extenso_abreviado($previsao->previsao_entrega_mes) }}/{{ $previsao->previsao_entrega_ano }}" readonly>
+        <input type="text" class="form-control previsao-entrega" value="{{ mes_extenso_abreviado($previsao_entrega_mes) }}/{{ $previsao_entrega_ano }}" readonly>
     </div>
 </div>

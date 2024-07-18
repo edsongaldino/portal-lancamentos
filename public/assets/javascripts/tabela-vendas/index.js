@@ -156,7 +156,7 @@ $(function(){
         dados: $("#formTabelaVendas").serialize(),
         feedback: true,
         mensagemSucesso: 'Tabela de vendas salva',
-        mensagemErro: 'Erro, tente novamente mais tarde',
+        //mensagemErro: 'Erro, tente novamente mais tarde',
         redirect: '/admin/construtora/'+$("#construtora_id").val()+'/tabela-vendas'
       });
 
@@ -242,7 +242,7 @@ $(function(){
         dados: $("#formAtualizarTabelaVendas").serialize(),
         feedback: true,
         mensagemSucesso: 'Tabela de vendas atualizada',
-        mensagemErro: 'Erro, tente novamente mais tarde',
+        //mensagemErro: 'Erro, tente novamente mais tarde',
         redirect: '/admin/construtora/'+$("#construtora_id").val()+'/tabela-vendas'
       });
 
@@ -450,11 +450,13 @@ $(function(){
 
     $(document).on('change', '#quadra_id', function () {
       var quadra_id = $(this).val();
+      var empreendimento_id = $("#empreendimento").val();
       ajaxRequest({
         metodo: 'POST',
         url: '/admin/buscar-previsao-entrega',
         dados: {
-          quadra_id: quadra_id
+          quadra_id: quadra_id,
+          empreendimento_id: empreendimento_id
         },
         feedback: false,
         resultado: "#previsaoEntrega"
@@ -464,11 +466,13 @@ $(function(){
 
     $(document).on('change', '#torre_id', function () {
       var torre_id = $(this).val();
+      var empreendimento_id = $("#empreendimento").val();
       ajaxRequest({
         metodo: 'POST',
         url: '/admin/buscar-previsao-entrega',
         dados: {
-          torre_id: torre_id
+          torre_id: torre_id,
+          empreendimento_id: empreendimento_id
         },
         feedback: false,
         resultado: "#previsaoEntrega"
