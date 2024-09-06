@@ -142,4 +142,5 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 .home_two_map{
     background-image: url(/public/assets/site-2023/images/banner-index.jpg);
     background-size: cover;
+    height: 350px;
 }

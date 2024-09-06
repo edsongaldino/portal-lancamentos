@@ -687,7 +687,7 @@ Route::get('/deleta-caracteristicas/{id}', function($id) {
 });
 
 /*SITE 2023*/
-Route::any('busca-mapa.html', 'Site\BuscaController@index');
+Route::any('lista.html', 'Site\BuscaController@index');
 Route::get('resultado-busca.html', 'Site\HomeController@Busca');
 Route::get('index.html', 'Site\HomeController@index');
 Route::get('painel-anunciante.html', 'Admin\AdminController@dashboard');
