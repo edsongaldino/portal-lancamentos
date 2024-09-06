@@ -21,7 +21,7 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->viewHome = isMobile() ? 'site.home.mobile.index' : 'site.home.desktop.index';
+        $this->viewHome = isMobile() ? 'site.home.mobile.index' : 'site-2023.index';
         $this->viewConstrutora = isMobile() ? 'site.construtora.mobile.index' : 'site.construtora.desktop.index';
     }
 
