@@ -71,7 +71,7 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 
 
 /*AUTOCOMPLETE CIDADES*/
-.twitter-typeahead {     
+.twitter-typeahead {
   position: relative;
   width: 100% !important;
 }
@@ -128,7 +128,7 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 
 .pronto{
   background-color: #00cc77;
-  color: #012b11 !important; 
+  color: #012b11 !important;
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 14px !important;
@@ -137,4 +137,9 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 
 .twitter-typeahead.localizacao-busca{
   width: 100% !important;
+}
+
+.home_two_map{
+    background-image: url(/public/assets/site-2023/images/banner-index.jpg);
+    background-size: cover;
 }

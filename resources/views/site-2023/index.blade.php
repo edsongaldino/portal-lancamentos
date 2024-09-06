@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="home_two_map">
-					<div class="map-canvas skin2 h500" id="contact-google-map" data-map-lat="-15.595626" data-map-lng="-56.099996" data-icon-path="{{ asset('assets/site-2023/images/logo/1.png') }}" data-map-title="Awesome Place" data-map-zoom="14"></div>
+
 				</div>
 			</div>
 		</div>
@@ -19,7 +19,7 @@
 		<div class="row featured_row">
 			<div class="col-lg-12">
 				<div class="home1-advnc-search home2 mt20">
-					<form action="busca-mapa.html" method="GET">
+					<form action="lista.html" method="GET">
 					@csrf
 					<ul class="h1ads_1st_list mb0">
 						<li class="list-inline-item" style="display: none">
@@ -46,7 +46,7 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li class="list-inline-item">
 							<div class="form-group">
 								<input type="text" class="form-control" id="ttexto" placeholder="Digite o nome da cidade ou estado" name="cidade">
@@ -66,7 +66,7 @@
 										<span id="slider-range-value1"></span>
 										<span id="slider-range-value2"></span>
 										<div id="slider"></div>
-										<!-- <input type="text" class="amount" placeholder="$52,239"> 
+										<!-- <input type="text" class="amount" placeholder="$52,239">
 										<input type="text" class="amount2" placeholder="$985,14">
 										<div class="slider-range"></div> -->
 									</div>
@@ -280,7 +280,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="container ovh">
 		<div class="row">
 			<div class="col-lg-6 offset-lg-3">
@@ -307,10 +307,10 @@
 							<div class="details">
 								<div class="tc_content">
 									<h4>{{ $destaque->nome }}</h4>
-									<p><span class="flaticon-placeholder"></span> 
+									<p><span class="flaticon-placeholder"></span>
 										@if ($destaque->endereco)
 										{{ $destaque->endereco->bairro->nome }}, {{ $destaque->endereco->cidade->nome }} - {{ $destaque->endereco->cidade->estado->nome }}
-										@endif	
+										@endif
 									</p>
 								</div>
 								<div class="fp_footer">
@@ -318,9 +318,9 @@
 										<li class="list-inline-item"><img src="{{ $destaque->construtora->getLogoUrl('125x95') }}" width="80" class="logo-construtora" alt=""></li>
 									</ul>
 									@if(get_previsao_entrega($destaque) == 'Pronto')
-									<div class="fp_pdate float-right pronto"><i class="fas fa-key"></i> {{get_previsao_entrega($destaque)}}</div>									
+									<div class="fp_pdate float-right pronto"><i class="fas fa-key"></i> {{get_previsao_entrega($destaque)}}</div>
 									@else
-									<div class="fp_pdate float-right entrega"><i class="fas fa-calendar"></i> {{get_previsao_entrega($destaque)}}</div>		
+									<div class="fp_pdate float-right entrega"><i class="fas fa-calendar"></i> {{get_previsao_entrega($destaque)}}</div>
 									@endif
 								</div>
 							</div>
@@ -349,7 +349,7 @@
 		<div class="row">
 
 			@foreach($noticias as $noticia)
-			
+
 			<div class="col-md-6 col-lg-4 col-xl-4">
 				<div class="for_blog feat_property home9">
 					<div class="thumb">
@@ -361,14 +361,14 @@
 							<h4 class="resumo">{{ substr($noticia->resumo, 0, 100) }}...</h4>
 						</div>
 						<div class="fp_footer">
-							
+
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 			@endforeach
-			
+
 		</div>
 	</div>
 </section>
