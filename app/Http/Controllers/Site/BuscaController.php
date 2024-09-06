@@ -17,11 +17,11 @@ class BuscaController extends Controller
 
     public function __construct()
     {
-        $this->view = isMobile() ? 'site.busca.mobile.index' : 'site-2023.busca-mapa';
+        $this->view = isMobile() ? 'site.busca.mobile.index' : 'site-2023.lista';
     }
 
     public function index(Request $request)
-    {        
+    {
         $this->getDadosBusca($request);
         return view($this->view, $this->data);
     }
@@ -29,7 +29,7 @@ class BuscaController extends Controller
     public function ajax(Request $request)
     {
         $this->getDadosBusca($request);
-        return view('site-2023.busca-mapa', $this->data);
+        return view('site-2023.lista', $this->data);
     }
 
     public function getDadosBusca($request, $array = null)
@@ -61,25 +61,25 @@ class BuscaController extends Controller
 
         $retorno = (new Empreendimento())->buscar($parametros);
 
-        $this->data['parametros'] = $parametros;      
-        $this->data['subtipos'] = Subtipo::all();   
+        $this->data['parametros'] = $parametros;
+        $this->data['subtipos'] = Subtipo::all();
         $this->data['total'] = $retorno['total'];
         $this->data['empreendimentos'] = $retorno['resultados'];
         $this->data['paginacao'] = $retorno['paginacao'];
-        
+
         if($parametros["oferta"]):
             $this->data['construtora'] = Construtora::find($parametros["construtora_id"]);
         else:
             $this->data['construtora'] = null;
         endif;
-        
+
         $empreendimentos_autocomplete = Empreendimento::where('status', 'Liberada')->get();
         $this->data['empreendimentos_autocomplete'] = $empreendimentos_autocomplete;
         return $this->data;
     }
 
     public function cidade(Request $request, $cidade, $id)
-    {                     
+    {
         $request->request->set('cidade_id', $id);
 
         $this->getDadosBusca($request);
@@ -88,8 +88,8 @@ class BuscaController extends Controller
     }
 
     public function Regiao(Request $request, $regiao, $id)
-    {  
-                           
+    {
+
         switch ($id) {
             //Centro Oeste
             case '1':
@@ -123,12 +123,12 @@ class BuscaController extends Controller
     }
 
     public function subtipo(Request $request, $id)
-    {        
+    {
         $subtipo = Subtipo::find($id);
-        
+
         if (!$subtipo) {
             return redirect('/pagina-inicial.html');
-        }            
+        }
 
         $request->request->set('subtipo_id', $subtipo->id);
 
@@ -138,7 +138,7 @@ class BuscaController extends Controller
     }
 
     public function oferta(Request $request, $id = null)
-    {                
+    {
         $request->request->set('oferta', true);
         $request->request->set('construtora_id', $id);
 
@@ -148,13 +148,13 @@ class BuscaController extends Controller
     }
 
     public function modalidade(Request $request, $subtipo, $id)
-    {               
+    {
         $modalidades = [
             1 => 'Em Obra',
             2 => 'Breve',
             3 => 'Lançamento',
             4 => 'Mude Já'
-        ];        
+        ];
 
         $request->request->set('modalidade', $modalidades[$id]);
 
@@ -164,7 +164,7 @@ class BuscaController extends Controller
             'condominios' => 3,
         ];
 
-        $request->request->set('subtipo_id', $subtipos[$subtipo]);        
+        $request->request->set('subtipo_id', $subtipos[$subtipo]);
 
         $this->getDadosBusca($request);
 
@@ -172,7 +172,7 @@ class BuscaController extends Controller
     }
 
     public function autocomplete(Request $request)
-    {        
+    {
         $retorno = (new Empreendimento())->GetPorNomes($request->term)->get('nome')->toArray();
 
         if ($retorno) {
@@ -182,11 +182,11 @@ class BuscaController extends Controller
     }
 
     public function autocompleteGeral(Request $request)
-    {        
+    {
         $texto = $request->texto;
 
-        $retorno = (new Empreendimento())->autocompleteGeral($texto);      
-        
+        $retorno = (new Empreendimento())->autocompleteGeral($texto);
+
         if ($retorno) {
             $retorno = array_column($retorno, 'nome');
             return response()->json($retorno);
