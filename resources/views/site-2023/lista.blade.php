@@ -122,11 +122,16 @@
                     <div class="sidebar_listing_grid1 dn-991">
                         <div class="sidebar_listing_list">
                             <div class="sidebar_advanced_search_widget">
+                            <form action="lista.html" method="GET">
+                                @csrf
                                 <ul class="sasw_list mb0">
                                     <li class="search_area">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputEmail" placeholder="Localização">
+
+                                            <input type="text" class="form-control localizacao-busca" id="ttexto" placeholder="Digite a cidade ou estado" name="cidade">
+                                            <input class="typeahead form-control" id="cidade" name="cidade_id" style="margin:0px auto;width:300px;" type="hidden">
                                             <label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
+
                                         </div>
                                     </li>
                                     <li>
@@ -343,6 +348,7 @@
                                             <button type="submit" class="btn btn-block btn-thm">Filtrar</button>
                                         </div>
                                     </li>
+                                </form>
                                 </ul>
                             </div>
                         </div>
@@ -430,7 +436,30 @@
                         <div class="col-lg-12 mb30">
                             <div class="mbp_pagination">
                                 <ul class="page_navigation">
+                                    @if (isset($paginacao))
+                                    {{ $paginacao->appends([
+                                    'estado_id' => $parametros['estado_id'],
+                                    'cidade_id' => $parametros['cidade_id'],
+                                    'subtipo_id' => $parametros['subtipo_id'],
+                                    'busca_rapida' => $parametros['busca_rapida'],
+                                    'construtora_id_multiplo' => $parametros['construtora_id_multiplo'],
+                                    'construtora_id' => $parametros['construtora_id'],
+                                    'subtipo_id_multiplo' => $parametros['subtipo_id_multiplo'],
+                                    'modalidade' => $parametros['modalidade'],
+                                    'cidade_id_multiplo' => $parametros['cidade_id_multiplo'],
+                                    'bairro_id_multiplo' => $parametros['bairro_id_multiplo'],
+                                    'valor_min' => $parametros['valor_min'],
+                                    'valor_max' => $parametros['valor_max'],
+                                    'quarto' => $parametros['quarto'],
+                                    'area' => $parametros['area'],
+                                    'ordenacao' => $parametros['ordenacao'],
+                                    ])->links() }}
+
+                                    @else
+
                                     {{ $empreendimentos->links() }}
+
+                                    @endif
                                 </ul>
                             </div>
                         </div>
