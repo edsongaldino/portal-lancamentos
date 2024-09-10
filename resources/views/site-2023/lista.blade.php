@@ -106,7 +106,7 @@
                 <div class="col-lg-6">
                     <div class="listing_list_style mb20-xsd tal-991">
                         <ul class="mb0">
-                            <li class="list-inline-item"><a href="busca-mapa.html"><span class="fa fa-th-large"></span></a></li>
+                            <li class="list-inline-item"><a href="resultado-busca.html"><span class="fa fa-th-large"></span></a></li>
                             <li class="list-inline-item"><a href="resultado-busca.html"><span class="fa fa-th-list"></span></a></li>
                         </ul>
                     </div>
