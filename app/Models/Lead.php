@@ -366,7 +366,7 @@ class Lead extends Model
     {
         $empreendimento = Empreendimento::find($this->empreendimento_id);
 
-        if ($empreendimento->construtora_id == 46) {
+        if ($empreendimento->construtora_id == 58) {
 
             $dados = [
                 'leadOrigin' => 'Lançamentos Online',
@@ -384,7 +384,7 @@ class Lead extends Model
             $client = new Client();
 
             try {
-                $request = $client->post('http://ginco.api.facilitavendas.com/public/portals/lead', [
+                $request = $client->post('https://grupovivart.api.facilitavendas.com/public/portals/lead', [
                     'json' => $dados
                 ]);
             } catch (\Exception $e) {
