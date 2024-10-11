@@ -28,6 +28,15 @@
   max-width: 1370px !important;
 }
 
+.form-index{
+  background-color: rgb(235 235 235 / 74%);
+}
+
+.home_adv_srch_opt .tab-content {
+  margin-top: 15px !important;
+  margin-bottom: 50px !important;
+}
+
 h4.resumo{
   font-size: 16px !important;
   font-weight: lighter !important;
