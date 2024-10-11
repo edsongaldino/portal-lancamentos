@@ -2253,10 +2253,12 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 }
 .home_adv_srch_opt.home3{
   margin-top: -17px;
+  /*
   -webkit-box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
   -moz-box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
   -o-box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
   box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  */
 }
 .home_adv_srch_opt.home4{
   margin-top: 40px;
