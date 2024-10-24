@@ -65,7 +65,7 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 }
 
 .home1-advnc-search .tipo-busca .search_option_two .dropdown.bootstrap-select>.dropdown-toggle {
-  width: 300px !important;
+  width: 400px !important;
 }
 
 .home1-advnc-search .bootstrap-select .dropdown-menu li a {
@@ -73,7 +73,7 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 }
 
 .home1-advnc-search ul li:nth-child(3) .form-group .form-control {
-  width: 585px !important;
+  width: 665px !important;
 }
 
 
@@ -100,7 +100,7 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 }
 
 .home1-advnc-search ul li:nth-child(3) .form-group .form-control.filtro-nome-empreendimento{
-  width: 900px !important;
+  width: 1080px !important;
 }
 
 
