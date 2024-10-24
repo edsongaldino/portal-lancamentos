@@ -42,6 +42,7 @@ class BuscaController extends Controller
             'busca_rapida' => $request->input('busca_rapida', null),
             'construtora_id_multiplo' => $request->input('construtora_id_multiplo', null),
             'construtora_id' => $request->input('construtora_id', null),
+            'empreendimento_id' => $request->input('empreendimento_id', null),
             'subtipo_id_multiplo' => $request->input('subtipo_id_multiplo', null),
             'modalidade' => $request->input('modalidade', null),
             'estado_id_multiplo' => $request->estado_id_multiplo,

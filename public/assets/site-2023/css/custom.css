@@ -77,6 +77,25 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
 }
 
 
+.busca-localizacao-tipo{
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #0077b3;
+  float: left;
+}
+
+.buscar-nome-empreendimento{
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #0077b3;
+  float: left;
+}
+
+.home1-advnc-search ul li:nth-child(3) .form-group .form-control.filtro-nome-empreendimento{
+  width: 900px !important;
+}
 
 
 /*AUTOCOMPLETE CIDADES*/

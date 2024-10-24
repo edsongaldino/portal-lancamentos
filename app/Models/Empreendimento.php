@@ -849,6 +849,7 @@ class Empreendimento extends Model
         $this->buscarSubTipo($parametros, $empreendimentos);
         $this->buscarTipo($parametros, $empreendimentos);
         $this->buscarEmpreendimentoNome($parametros, $empreendimentos);
+        $this->buscarEmpreendimentoId($parametros, $empreendimentos);
         $this->buscarConstrutoraMultiplo($parametros, $empreendimentos);
         $this->buscarConstrutora($parametros, $empreendimentos);
         $this->buscarSubtipoMultiplo($parametros, $empreendimentos);
@@ -1043,6 +1044,15 @@ class Empreendimento extends Model
 
         $empreendimentos->when($construtora_id, function ($q) use ($construtora_id) {
             $q->where('empreendimentos.construtora_id', $construtora_id);
+        });
+    }
+
+    public function buscarEmpreendimentoId($parametros, $empreendimentos)
+    {
+        $empreendimento_id = isset($parametros['empreendimento_id']) ? $parametros['empreendimento_id'] : null;
+
+        $empreendimentos->when($empreendimento_id, function ($q) use ($empreendimento_id) {
+            $q->where('empreendimentos.id', $empreendimento_id);
         });
     }
 

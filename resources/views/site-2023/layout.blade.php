@@ -332,7 +332,7 @@
 		gMapHome();
 	  })(jQuery);
 
-	  var municipios = new Bloodhound({
+	  	var municipios = new Bloodhound({
 			datumTokenizer: Bloodhound.tokenizers.obj.whitespace("nome"),
 			queryTokenizer: Bloodhound.tokenizers.whitespace,
 			remote: {
@@ -358,6 +358,35 @@
 			$('#cidade').val(datum.id);
 			console.log(datum.value);
 		});  
+
+
+
+		var empreendimentos = new Bloodhound({
+			datumTokenizer: Bloodhound.tokenizers.obj.whitespace("nome"),
+			queryTokenizer: Bloodhound.tokenizers.whitespace,
+			remote: {
+				url: "/auto-complete-empreendimentos/%QUERY",
+				wildcard: '%QUERY'
+			},
+			limit: 10
+		});
+		empreendimentos.initialize();
+
+		$("#etexto").typeahead({
+			hint: true,
+			highlight: true,
+			minLength: 1
+		},
+		{
+			name: "empreendimentos",
+			displayKey: "nome",
+			source: empreendimentos.ttAdapter()
+		}).bind("typeahead:selected", function(obj, datum, name) {
+			console.log(datum);
+			$(this).data("seletectedId", datum.nome);
+			$('#empreendimento').val(datum.id);
+			console.log(datum.value);
+		});
 
 
 	});

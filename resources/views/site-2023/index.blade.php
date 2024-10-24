@@ -26,10 +26,10 @@
 						@csrf
 						<ul class="nav nav-pills" id="pills-tab" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" title="Filtrar por localização"><i class="fa fa-street-view" aria-hidden="true"></i></a>
+								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" title="Filtrar por localização"><i class="fa fa-street-view" aria-hidden="true"></i> Busca por localização e tipo</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" title="Filtrar pelo nome do empreendimento"><i class="fa fa-building" aria-hidden="true"></i></a>
+								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" title="Filtrar pelo nome do empreendimento"><i class="fa fa-building" aria-hidden="true"></i> Busca por nome do empreendimento</a>
 							</li>
 						</ul>
 						<div class="tab-content home1_adsrchfrm" id="pills-tabContent">
@@ -306,7 +306,7 @@
 												</div>
 											</div>
 										</li>
-										<li class="list-inline-item tipo-busca">
+										<li class="list-inline-item tipo-busca" style="display: none">
 											<div class="search_option_two home2">
 												<div class="candidate_revew_select">
 													<select class="selectpicker w100 show-tick" name="subtipo_id" id="subtipo_id">
@@ -321,9 +321,9 @@
 				
 										<li class="list-inline-item">
 											<div class="form-group">
-												<input type="text" class="form-control" id="ttexto" placeholder="Digite o nome da cidade ou estado" name="cidade">
-												<input class="typeahead form-control" id="cidade" name="cidade_id" style="margin:0px auto;width:300px;" type="hidden">
-												<label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
+												<input type="text" class="form-control filtro-nome-empreendimento" id="etexto" placeholder="Digite o nome do empreendimento" name="empreendimento">
+												<input class="typeahead form-control" id="empreendimento" name="empreendimento_id" style="margin:0px auto;width:300px;" type="hidden">
+												<label for="exampleInputEmail"><i class="fa fa-building" aria-hidden="true"></i></label>
 											</div>
 										</li>
 				
