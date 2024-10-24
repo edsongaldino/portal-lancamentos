@@ -80,7 +80,7 @@
 <!-- Examples -->
 <script src="/assets/javascripts/forms/examples.advanced.form.js" /></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzzfaZRQcQvaSDOtK3hyLoeY9YVUKedjQ&amp;libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR2IVq3jVk74-DZM8sEliKtRcVJqZoLPI&amp;libraries=places"></script>
 <script src="/assets/javascripts/empreendimento/marcar_mapa.js?v={{ filemtime('assets/javascripts/empreendimento/marcar_mapa.js') }}"></script>
 
 <script type="text/javascript">
