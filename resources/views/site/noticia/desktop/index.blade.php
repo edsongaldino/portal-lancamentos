@@ -19,7 +19,7 @@
   <!-- Bootstrap-->
   <script src="/site/ferramenta/bootstrap/bootstrap.min.js"></script>
   <!-- Google Maps -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2iyRbAD5MmPd04zL6XmdobC96fNVbjDc&amp;libraries=places"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzzfaZRQcQvaSDOtK3hyLoeY9YVUKedjQ&amp;libraries=places"></script>
   <!-- plugins script -->
   <script src="/site/ferramenta/js/plugins.js"></script>
   <!-- template scripts -->
