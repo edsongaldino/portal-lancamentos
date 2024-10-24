@@ -85,6 +85,12 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
   float: left;
 }
 
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1370px !important;
+  }
+}
+
 .buscar-nome-empreendimento{
   width: 300px;
   height: 50px;
