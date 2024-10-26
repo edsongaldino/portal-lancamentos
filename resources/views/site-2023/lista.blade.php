@@ -488,7 +488,11 @@
                                         <ul class="fp_meta float-left mb0">
                                             <li class="list-inline-item"><a href="#"><img src="{{ $empreendimento->construtora->getLogoUrl('125x95') }}" width="80" alt=""></a></li>
                                         </ul>
-                                        <div class="fp_pdate float-right">{{get_previsao_entrega($empreendimento)}}</div>
+                                        @if(get_previsao_entrega($empreendimento) == 'Pronto')
+                                        <div class="fp_pdate float-right pronto"><i class="fas fa-key"></i> {{get_previsao_entrega($empreendimento)}}</div>
+                                        @else
+                                        <div class="fp_pdate float-right entrega"><i class="fas fa-calendar"></i> {{get_previsao_entrega($empreendimento)}}</div>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
