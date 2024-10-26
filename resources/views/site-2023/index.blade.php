@@ -29,7 +29,7 @@
 								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" title="Filtrar por localização"><i class="fa fa-street-view" aria-hidden="true"></i> Busca por localização e tipo</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" title="Filtrar pelo nome do empreendimento"><i class="fa fa-building" aria-hidden="true"></i> Busca por nome do empreendimento</a>
+								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" title="Filtrar pelo nome do empreendimento"><i class="fa fa-building" aria-hidden="true"></i> Busca por empreendimento e construtora</a>
 							</li>
 						</ul>
 						<div class="tab-content home1_adsrchfrm" id="pills-tabContent">
@@ -306,16 +306,11 @@
 												</div>
 											</div>
 										</li>
-										<li class="list-inline-item tipo-busca" style="display: none">
-											<div class="search_option_two home2">
-												<div class="candidate_revew_select">
-													<select class="selectpicker w100 show-tick" name="subtipo_id" id="subtipo_id">
-														<option disabled selected>Tipo</option>
-														@foreach ($subtipos as $subtipo)
-														<option value="{{ $subtipo->id }}">{{ $subtipo->nome }}</option>
-														@endforeach
-													</select>
-												</div>
+										<li class="list-inline-item">
+											<div class="form-group">
+												<input type="text" class="form-control filtro-nome-construtora" id="ctexto" placeholder="Digite o nome da construtora" name="construtora">
+												<input class="typeahead form-control" id="construtora" name="construtora_id" type="hidden">
+												<!--<label for="exampleInputEmail"><i class="fa fa-building" aria-hidden="true"></i></label>-->
 											</div>
 										</li>
 				

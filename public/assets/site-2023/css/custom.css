@@ -91,6 +91,20 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
   }
 }
 
+
+.home1-advnc-search ul li:nth-child(2) .form-group label {
+  background-color: #ffffff;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  right: 850px;
+  text-align: center;
+  top: 38px;
+  width: 40px;
+}
+
+
 .buscar-nome-empreendimento{
   width: 300px;
   height: 50px;
@@ -99,8 +113,12 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.painel a {
   float: left;
 }
 
+.home1-advnc-search ul li:nth-child(2) .form-group .form-control.filtro-nome-construtora{
+  width: 450px !important;
+}
+
 .home1-advnc-search ul li:nth-child(3) .form-group .form-control.filtro-nome-empreendimento{
-  width: 1080px !important;
+  width: 600px !important;
 }
 
 

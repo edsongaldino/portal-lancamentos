@@ -171,4 +171,16 @@ class HomeController extends Controller
 
         return response()->json($empreendimentos);
     }
+
+    public function AutoCompleteConstrutoras($query)
+    {
+        //$municipios = Cidade::where('status', 'L')->where("cidades.nome","LIKE","%$query%")->get();
+        $construtoras = DB::table('construtoras')
+        ->select('construtoras.id', 'construtoras.nome')
+        ->where("construtoras.nome","LIKE","%$query%")->where("construtoras.status", 'Liberada')
+        ->get();
+
+        return response()->json($construtoras);
+    }
+    
 }

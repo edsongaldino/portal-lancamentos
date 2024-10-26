@@ -4381,9 +4381,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   position: relative;
   background-color: #000;
 }
-.feat_property .thumb img{
-  opacity: 0.79;
-}
+
 .feat_property .thumb .blog_tag{
   background-color: #00A3D9;
   border-radius: 3px;

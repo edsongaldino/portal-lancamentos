@@ -79,6 +79,7 @@ Route::group(['middleware' => ['site']], function () {
 
 	Route::get('/auto-complete-cidades/{query}', 'Site\HomeController@AutoCompleteCidades');
 	Route::get('/auto-complete-empreendimentos/{query}', 'Site\HomeController@AutoCompleteEmpreendimentos');
+	Route::get('/auto-complete-construtoras/{query}', 'Site\HomeController@AutoCompleteConstrutoras');
 
 	//Emprendimentos em Oferta
 

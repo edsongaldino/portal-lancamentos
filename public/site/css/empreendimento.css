@@ -2,6 +2,12 @@
   margin: 20px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+      width: 1370px !important;
+  }
+}
+
 .modal-content iframe{
   margin: 0 auto;
   display: block;

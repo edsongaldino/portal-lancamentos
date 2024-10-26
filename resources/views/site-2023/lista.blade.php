@@ -134,6 +134,24 @@
 
                                         </div>
                                     </li>
+                                    <li class="search_area">
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control localizacao-busca" id="ctexto" placeholder="Buscar pela construtora" name="construtora">
+                                            <input class="typeahead form-control" id="construtora" name="construtora_id" style="margin:0px auto;width:300px;" type="hidden">
+                                            <label for="exampleInputEmail"><i class="fa fa-cubes" aria-hidden="true"></i></label>
+
+                                        </div>
+                                    </li>
+                                    <li class="search_area">
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control localizacao-busca" id="etexto" placeholder="Nome do empreendimento" name="empreendimento">
+                                            <input class="typeahead form-control" id="empreendimento" name="empreendimento_id" style="margin:0px auto;width:300px;" type="hidden">
+                                            <label for="exampleInputEmail"><i class="fa fa-building" aria-hidden="true"></i></label>
+
+                                        </div>
+                                    </li>
                                     <li>
                                         <div class="search_option_two">
                                             <div class="candidate_revew_select">
@@ -383,6 +401,18 @@
 
 
                         @foreach ($empreendimentos as $empreendimento)
+                        @php
+                        $area_unidade_min = 0;
+                        $area_unidade_max = 0;
+
+                        if ($c = $empreendimento->caracteristicas->where('nome', 'area_unidade_min')->first()) {
+                        $area_unidade_min = $c->pivot->valor;
+                        }
+
+                        if ($c = $empreendimento->caracteristicas->where('nome', 'area_unidade_max')->first()) {
+                        $area_unidade_max = $c->pivot->valor;
+                        }
+                        @endphp
                         <div class="col-lg-12">
                             <div class="feat_property list">
                                 <div class="thumb">
@@ -415,11 +445,44 @@
                                             {{ $empreendimento->endereco->bairro->nome }}, {{ $empreendimento->endereco->cidade->nome }} - {{ $empreendimento->endereco->cidade->estado->nome }}
                                             @endif
                                         </p>
+
+                                        @if($empreendimento->subtipo_id == 1)
                                         <ul class="prop_details mb0">
                                             <li class="list-inline-item"><a href="#"><i class="fas fa-bed"></i> {!! qtd_dormitorio($empreendimento, true) !!}</a></li>
                                             <li class="list-inline-item"><a href="#"><i class="fas fa-toilet"></i> {!! qtd_banheiro($empreendimento) !!}</a></li>
                                             <li class="list-inline-item"><a href="#"><i class="fas fa-ruler-combined"></i> {{ qtd_metragem($empreendimento)}} m<sup>2</sup></a></li>
                                         </ul>
+                                        @elseif($empreendimento->subtipo_id == 2)
+                                        <ul class="prop_details mb0">
+                                            <li class="list-inline-item"><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Salas à partir de {{qtd_metragem($empreendimento, true) }} m<sup>2</sup></a></li>
+                                        </ul>
+                                        @elseif ($empreendimento->subtipo_id == 3)
+                                        <ul class="prop_details mb0">
+                                            @if ($empreendimento->variacao_id == 6)
+                                            <li class="list-inline-item"><a href="#"><i class="fa fa-map" aria-hidden="true"></i> Lotes de {{ $area_unidade_min }} à {{ $area_unidade_max }} m<sup>2</sup></a></li> 
+                                            @else
+                                            <li class="list-inline-item"><a href="#"><i class="fas fa-bed"></i> {!! qtd_dormitorio($empreendimento, true) !!}</a></li>
+                                            <li class="list-inline-item"><a href="#"><i class="fas fa-toilet"></i> {!! qtd_banheiro($empreendimento) !!}</a></li>
+                                            <li class="list-inline-item"><a href="#"><i class="fas fa-ruler-combined"></i> {{ qtd_metragem($empreendimento)}} m<sup>2</sup></a></li>
+                                            @endif  
+                                        </ul> 
+                                        @elseif ($empreendimento->subtipo_id == 4)
+                                        <ul class="prop_details mb0">
+                                            @if ($empreendimento->variacao_id == 10)
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-map" aria-hidden="true"></i> Lotes de {{ $area_unidade_min }} à {{ $area_unidade_max }} m<sup>2</sup></a></li>
+                                            @else
+                                                <li class="list-inline-item"><a href="#"><i class="fas fa-bed"></i> {!! qtd_dormitorio($empreendimento, true) !!}</a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fas fa-toilet"></i> {!! qtd_banheiro($empreendimento) !!}</a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fas fa-ruler-combined"></i> {{ qtd_metragem($empreendimento)}} m<sup>2</sup></a></li>
+                                            @endif
+                                        </ul>
+                                        @else
+                                        <ul class="prop_details mb0">
+                                            <li class="list-inline-item"><a href="#"><i class="fas fa-bed"></i> {!! qtd_dormitorio($empreendimento, true) !!}</a></li>
+                                            <li class="list-inline-item"><a href="#"><i class="fas fa-toilet"></i> {!! qtd_banheiro($empreendimento) !!}</a></li>
+                                            <li class="list-inline-item"><a href="#"><i class="fas fa-ruler-combined"></i> {{ qtd_metragem($empreendimento)}} m<sup>2</sup></a></li>
+                                        </ul>
+                                        @endif
                                     </div>
                                     <div class="fp_footer">
                                         <ul class="fp_meta float-left mb0">
@@ -531,6 +594,60 @@ jQuery(document).on('ready', function () {
 		$('#cidade').val(datum.id);
 		console.log(datum.value);
 	});
+
+    var empreendimentos = new Bloodhound({
+			datumTokenizer: Bloodhound.tokenizers.obj.whitespace("nome"),
+			queryTokenizer: Bloodhound.tokenizers.whitespace,
+			remote: {
+				url: "/auto-complete-empreendimentos/%QUERY",
+				wildcard: '%QUERY'
+			},
+			limit: 10
+		});
+		empreendimentos.initialize();
+
+		$("#etexto").typeahead({
+			hint: true,
+			highlight: true,
+			minLength: 1
+		},
+		{
+			name: "empreendimentos",
+			displayKey: "nome",
+			source: empreendimentos.ttAdapter()
+		}).bind("typeahead:selected", function(obj, datum, name) {
+			console.log(datum);
+			$(this).data("seletectedId", datum.nome);
+			$('#empreendimento').val(datum.id);
+			console.log(datum.value);
+		});
+
+		var construtoras = new Bloodhound({
+			datumTokenizer: Bloodhound.tokenizers.obj.whitespace("nome"),
+			queryTokenizer: Bloodhound.tokenizers.whitespace,
+			remote: {
+				url: "/auto-complete-construtoras/%QUERY",
+				wildcard: '%QUERY'
+			},
+			limit: 10
+		});
+		construtoras.initialize();
+
+		$("#ctexto").typeahead({
+			hint: true,
+			highlight: true,
+			minLength: 1
+		},
+		{
+			name: "construtoras",
+			displayKey: "nome",
+			source: construtoras.ttAdapter()
+		}).bind("typeahead:selected", function(obj, datum, name) {
+			console.log(datum);
+			$(this).data("seletectedId", datum.nome);
+			$('#construtora').val(datum.id);
+			console.log(datum.value);
+		});
 
 });
 </script>

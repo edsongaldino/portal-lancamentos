@@ -388,6 +388,33 @@
 			console.log(datum.value);
 		});
 
+		var construtoras = new Bloodhound({
+			datumTokenizer: Bloodhound.tokenizers.obj.whitespace("nome"),
+			queryTokenizer: Bloodhound.tokenizers.whitespace,
+			remote: {
+				url: "/auto-complete-construtoras/%QUERY",
+				wildcard: '%QUERY'
+			},
+			limit: 10
+		});
+		construtoras.initialize();
+
+		$("#ctexto").typeahead({
+			hint: true,
+			highlight: true,
+			minLength: 1
+		},
+		{
+			name: "construtoras",
+			displayKey: "nome",
+			source: construtoras.ttAdapter()
+		}).bind("typeahead:selected", function(obj, datum, name) {
+			console.log(datum);
+			$(this).data("seletectedId", datum.nome);
+			$('#construtora').val(datum.id);
+			console.log(datum.value);
+		});
+
 
 	});
 
