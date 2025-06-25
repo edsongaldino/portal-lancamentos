@@ -57,7 +57,7 @@
 <script type="text/javascript" src="/site/ferramenta/bootstrap/bootstrap.min.js"></script>
 
 <!-- Google Maps -->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR2IVq3jVk74-DZM8sEliKtRcVJqZoLPI&amp;libraries=places"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzzfaZRQcQvaSDOtK3hyLoeY9YVUKedjQ&amp;libraries=places"></script>
   
 <!-- plugins script -->
 <script type="text/javascript" src="/site/ferramenta/js/plugins.js"></script>
