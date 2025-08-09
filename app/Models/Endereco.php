@@ -174,17 +174,17 @@ class Endereco extends Model
 
 	public function cidade()
 	{
-		return $this->belongsTo('App\Models\Cidade');
+		return $this->belongsTo('App\Models\Cidade')->withDefault();
 	}
 
 	public function estado()
 	{
-		return $this->belongsTo('App\Models\Estado');
+		return $this->belongsTo('App\Models\Estado')->withDefault();
 	}
 
 	public function bairro()
 	{
-		return $this->belongsTo('App\Models\Bairro');
+		return $this->belongsTo('App\Models\Bairro')->withDefault();
 	}
 
 	public function construtora()
