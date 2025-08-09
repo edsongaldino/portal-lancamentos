@@ -197,6 +197,7 @@
 <script>
 	$('.moeda').maskMoney({thousands: '.', decimal: ','});
 
+	/*
 	//verifica se o navegador tem suporte a geolocalização
 	if(navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position){ // callback de sucesso
@@ -210,7 +211,7 @@
 		});
 	} else {
 		console.log('Navegador não suporta Geolocalização!');
-	}
+	}*/
 
 	/* New Map CustomCode */
 	"use strict";
