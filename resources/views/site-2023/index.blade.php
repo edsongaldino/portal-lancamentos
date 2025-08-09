@@ -580,7 +580,7 @@
 									<h4>{{ $destaque->nome }}</h4>
 									<p><span class="flaticon-placeholder"></span>
 										@if ($destaque->endereco)
-										{{ $destaque->endereco->bairro->nome }}, {{ $destaque->endereco->cidade->nome }} - {{ $destaque->endereco->cidade->estado->nome }}
+										{{ $destaque->endereco->bairro->nome ?? '' }}, {{ $destaque->endereco->cidade->nome ?? '' }} - {{ $destaque->endereco->cidade->estado->nome ?? '' }}
 										@endif
 									</p>
 								</div>
